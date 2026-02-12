@@ -40,6 +40,10 @@ import galleryAmericanStandardPromo from "@/assets/gallery/american-standard-pro
 import galleryAmericanStandardRoof from "@/assets/gallery/american-standard-rooftop.jpg";
 import galleryMitsubishiIndoor from "@/assets/gallery/mitsubishi-indoor.jpg";
 import galleryMitsubishiOutdoor from "@/assets/gallery/mitsubishi-outdoor.jpg";
+import galleryPackageStand from "@/assets/gallery/goodman-package-stand.jpg";
+import galleryCondenserWallMount from "@/assets/gallery/condenser-wall-mount.jpg";
+import galleryDualOpen from "@/assets/gallery/goodman-dual-open.jpg";
+import galleryPackageTrailer from "@/assets/gallery/goodman-package-trailer.jpg";
 
 const images = [
   { src: galleryFleet, alt: "Emmons Air fleet of trucks and trailer" },
@@ -79,6 +83,10 @@ const images = [
   { src: galleryCloset, alt: "Air handler in utility closet" },
   { src: galleryCloset2, alt: "Air handler closet installation" },
   { src: galleryCloset3, alt: "Vertical air handler in closet" },
+  { src: galleryPackageStand, alt: "Goodman package unit on elevated stand" },
+  { src: galleryCondenserWallMount, alt: "Condenser unit wall-mounted on bracket" },
+  { src: galleryDualOpen, alt: "Dual Goodman condensers with fans open" },
+  { src: galleryPackageTrailer, alt: "Goodman package unit installed at mobile home" },
 ];
 
 const GalleryPage = () => (
