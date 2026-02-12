@@ -21,26 +21,46 @@ import galleryMiniSplit from "@/assets/gallery/aciq-mini-split.jpg";
 import galleryCondenserStand from "@/assets/gallery/goodman-condenser-stand.jpg";
 import galleryCloset from "@/assets/gallery/air-handler-closet.jpg";
 import galleryCloset2 from "@/assets/gallery/air-handler-closet-2.jpg";
+import galleryGoodmanPad from "@/assets/gallery/goodman-pad.jpg";
+import galleryEnergyGuide from "@/assets/gallery/energy-guide-unit.jpg";
+import galleryGreeMini from "@/assets/gallery/gree-mini-split.jpg";
+import galleryGoodmanBracket from "@/assets/gallery/goodman-wall-bracket.jpg";
+import galleryPackageCommercial from "@/assets/gallery/goodman-package-commercial.jpg";
+import galleryCloset3 from "@/assets/gallery/air-handler-closet-3.jpg";
+import galleryNewInstall from "@/assets/gallery/goodman-new-install.jpg";
+import galleryTestimony from "@/assets/gallery/testimony-promo.png";
+import galleryOwnerUnits from "@/assets/gallery/owner-with-units.png";
+import galleryEventBooth from "@/assets/gallery/event-booth.png";
 
 const images = [
   { src: galleryFleet, alt: "Emmons Air fleet of trucks and trailer" },
+  { src: galleryOwnerUnits, alt: "Owner with Goodman AC units display" },
   { src: galleryTrailer, alt: "Emmons Air company trailer" },
   { src: galleryOwner, alt: "Emmons Air owner" },
+  { src: galleryTestimony, alt: "Customer testimonial graphic" },
+  { src: galleryEventBooth, alt: "Emmons Air community event booth" },
   { src: galleryWork, alt: "Technician performing AC diagnostics" },
   { src: galleryDaikin, alt: "Daikin rooftop unit installation" },
   { src: galleryFamily, alt: "The Emmons family" },
   { src: galleryAmericanStandard, alt: "American Standard AC units" },
   { src: galleryGoodmanDual, alt: "Dual Goodman condenser units" },
   { src: galleryCondenserStand, alt: "Goodman condenser on elevated stand" },
+  { src: galleryGoodmanPad, alt: "Goodman unit on concrete pad" },
+  { src: galleryNewInstall, alt: "New Goodman condenser installation" },
+  { src: galleryEnergyGuide, alt: "AC unit with energy efficiency label" },
   { src: galleryInstall1, alt: "Residential AC condenser installation" },
   { src: galleryInstall2, alt: "Goodman package unit on stand" },
   { src: galleryInstall3, alt: "Wall-mounted condenser unit" },
+  { src: galleryGoodmanBracket, alt: "Goodman unit on wall bracket" },
+  { src: galleryPackageCommercial, alt: "Commercial Goodman package unit" },
   { src: galleryMiniSplit, alt: "ACiQ mini-split outdoor unit" },
+  { src: galleryGreeMini, alt: "Gree mini-split system" },
   { src: galleryAirHandler, alt: "Indoor air handler installation" },
   { src: galleryCeilingHandler, alt: "Ceiling-mounted air handler" },
   { src: galleryAirHandler2, alt: "Air handler with ductwork" },
   { src: galleryCloset, alt: "Air handler in utility closet" },
   { src: galleryCloset2, alt: "Air handler closet installation" },
+  { src: galleryCloset3, alt: "Vertical air handler in closet" },
 ];
 
 const GalleryPage = () => (
