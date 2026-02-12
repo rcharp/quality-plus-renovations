@@ -42,8 +42,8 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
                 </a>
                 <button
                   onClick={openQuoteModal}
-                  className="px-8 py-3 font-semibold rounded-full hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: "#f59e0b", color: "#fff" }}
+                  className="px-8 py-3 font-semibold hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
                 >
                   Get Free Quote
                 </button>
@@ -117,8 +117,8 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
               </a>
               <button
                 onClick={openQuoteModal}
-                className="px-8 py-3 font-semibold rounded-full hover:opacity-90 transition-opacity"
-                style={{ backgroundColor: "#f59e0b", color: "#fff" }}
+                className="px-8 py-3 font-semibold hover:opacity-90 transition-opacity"
+                style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
               >
                 Get Free Quote
               </button>
