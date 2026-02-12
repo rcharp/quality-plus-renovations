@@ -23,7 +23,7 @@ const TrustBadges = () => (
             className="flex items-center gap-3"
           >
             <badge.icon className="w-5 h-5 text-secondary" />
-            <span className="text-sm font-semibold text-foreground whitespace-nowrap">{badge.label}</span>
+            <span className="text-base font-semibold text-foreground whitespace-nowrap">{badge.label}</span>
           </motion.div>
         ))}
       </div>

@@ -20,7 +20,7 @@ const GallerySection = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <span className="text-sm font-semibold text-primary uppercase tracking-wider">Our Work</span>
+        <span className="text-base font-semibold text-primary uppercase tracking-wider">Our Work</span>
         <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
           See Us In Action
         </h2>

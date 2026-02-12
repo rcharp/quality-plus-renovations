@@ -14,7 +14,7 @@ const CTASection = () => {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto text-center space-y-8"
         >
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Get Started</span>
+          <span className="text-base font-semibold text-primary uppercase tracking-wider">Get Started</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground">
             Ready to get started?
           </h2>

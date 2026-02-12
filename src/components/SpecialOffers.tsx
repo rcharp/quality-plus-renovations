@@ -36,7 +36,7 @@ const SpecialOffers = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Limited Time</span>
+        <span className="text-base font-semibold text-secondary uppercase tracking-wider">Limited Time</span>
         <h2 className="font-heading text-4xl lg:text-5xl font-bold text-primary-foreground mt-3">
           Special Offers & Benefits
         </h2>
@@ -57,7 +57,7 @@ const SpecialOffers = () => (
               <offer.icon className="w-7 h-7 text-secondary" />
             </div>
             <h3 className="font-heading text-lg font-bold text-primary-foreground mb-3">{offer.title}</h3>
-            <p className="text-sm text-primary-foreground/70 leading-relaxed">{offer.description}</p>
+            <p className="text-base text-primary-foreground/70 leading-relaxed">{offer.description}</p>
           </motion.div>
         ))}
       </div>
