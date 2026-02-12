@@ -9,6 +9,7 @@ const services = [
   {
     image: heroRepair,
     title: "AC Repair",
+    href: "/services/ac-repair",
     features: [
       "Fast response for quick repairs",
       "Expert diagnosis of any issue",
@@ -19,6 +20,7 @@ const services = [
   {
     image: heroInstall,
     title: "AC Installation",
+    href: "/services/ac-installation",
     features: [
       "Residential AC Installation",
       "Energy-efficient systems to reduce costs",
@@ -29,6 +31,7 @@ const services = [
   {
     image: serviceMaintenance,
     title: "AC Maintenance",
+    href: "/services/ac-maintenance",
     features: [
       "Prevent costly breakdowns",
       "Lower your utility bills",
@@ -39,6 +42,7 @@ const services = [
   {
     image: serviceDuct,
     title: "Duct Cleaning",
+    href: "/services/duct-cleaning",
     features: [
       "Remove dust, allergens, and contaminants",
       "Improve airflow and efficiency",
@@ -77,13 +81,13 @@ const ServicesSection = () => (
             className="rounded-2xl overflow-hidden card-elevated border border-secondary/30 group"
             style={{ backgroundColor: "#0f172a" }}
           >
-            <div className="aspect-[16/9] overflow-hidden">
+            <a href={service.href} className="block aspect-[16/9] overflow-hidden cursor-pointer">
               <img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-            </div>
+            </a>
             <div className="p-8">
               <h3 className="font-heading text-2xl font-bold text-primary-foreground mb-4">{service.title}</h3>
               <ul className="space-y-3 mb-6">
