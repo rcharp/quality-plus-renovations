@@ -52,6 +52,8 @@ const HeroSection = () => {
               className="text-lg text-primary-foreground/70 max-w-lg leading-relaxed"
             >
               When your AC breaks down in July or your furnace fails in January, you need someone who shows up—fast. We're your neighbors, and we treat your home like our own.
+              <br /><br />
+              Based in Palmetto, FL since 2012, Emmons Air has been providing high-quality heating and AC installation and repair services for hundreds of families and businesses in the Manatee, Sarasota, and surrounding areas.
             </motion.p>
 
             {/* Social Proof */}
