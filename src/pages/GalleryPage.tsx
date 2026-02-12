@@ -55,7 +55,7 @@ const images = [
   { src: galleryServiceTruck, alt: "Emmons Air service truck" },
   { src: galleryOwner, alt: "Emmons Air owner", portrait: true },
   { src: galleryOwnerThumbsup, alt: "Owner on rooftop with commercial units", portrait: true },
-  { src: galleryTestimony, alt: "Customer testimonial graphic" },
+  { src: galleryTestimony, alt: "Customer testimonial graphic", portrait: true },
   { src: galleryEventBooth, alt: "Emmons Air community event booth" },
   { src: galleryWork, alt: "Technician performing AC diagnostics" },
   { src: galleryDaikin, alt: "Daikin rooftop unit installation" },
