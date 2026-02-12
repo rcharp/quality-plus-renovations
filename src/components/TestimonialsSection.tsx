@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Testimonials</span>
+          <span className="text-base font-semibold text-secondary uppercase tracking-wider">Testimonials</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
             What Our Customers Are Saying
           </h2>
@@ -64,7 +64,7 @@ const TestimonialsSection = () => {
                 <Star key={s} className="w-4 h-4 fill-accent text-accent" />
               ))}
             </div>
-            <span className="text-sm text-muted-foreground font-medium">5.0 Rating</span>
+            <span className="text-base text-muted-foreground font-medium">5.0 Rating</span>
           </div>
         </motion.div>
 
@@ -89,12 +89,12 @@ const TestimonialsSection = () => {
                 "{testimonials[current].text}"
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-11 h-11 rounded-full bg-secondary/15 flex items-center justify-center font-heading font-bold text-secondary text-sm">
+                <div className="w-11 h-11 rounded-full bg-secondary/15 flex items-center justify-center font-heading font-bold text-secondary text-base">
                   {testimonials[current].name.charAt(0)}
                 </div>
                 <div>
                   <div className="font-heading font-semibold text-foreground">{testimonials[current].name}</div>
-                  <div className="text-xs text-muted-foreground">Google Review</div>
+                  <div className="text-sm text-muted-foreground">Google Review</div>
                 </div>
               </div>
             </motion.div>
@@ -134,7 +134,7 @@ const TestimonialsSection = () => {
               href={GOOGLE_REVIEW_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-semibold text-secondary hover:underline"
+              className="text-base font-semibold text-secondary hover:underline"
             >
               See All Reviews →
             </a>

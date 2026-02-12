@@ -83,7 +83,7 @@ const HeroSection = () => {
                     <Star key={i} className="w-4 h-4 fill-accent text-accent" />
                   ))}
                 </div>
-                <span className="text-sm text-primary-foreground/70">Trusted by 100+ happy customers!</span>
+                <span className="text-base text-primary-foreground/70">Trusted by 100+ happy customers!</span>
               </div>
             </motion.div>
 
@@ -95,7 +95,7 @@ const HeroSection = () => {
               className="flex items-center gap-6 pt-2"
             >
               <div className="flex items-center gap-2">
-                <span className="text-sm font-semibold text-primary-foreground">Google</span>
+                <span className="text-base font-semibold text-primary-foreground">Google</span>
                 <div className="flex gap-0.5">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
@@ -103,7 +103,7 @@ const HeroSection = () => {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-sm font-semibold text-primary-foreground">Facebook</span>
+                <span className="text-base font-semibold text-primary-foreground">Facebook</span>
                 <div className="flex gap-0.5">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />

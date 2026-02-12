@@ -11,7 +11,7 @@ const AboutSection = () => (
           viewport={{ once: true }}
           className="space-y-6"
         >
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">About Us</span>
+          <span className="text-base font-semibold text-primary uppercase tracking-wider">About Us</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground">
             Family Owned. Locally Operated.
           </h2>
@@ -27,8 +27,8 @@ const AboutSection = () => (
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <div className="text-xs text-muted-foreground">Address</div>
-                <div className="text-sm font-semibold text-foreground">531 46th St W, Palmetto, FL 34221</div>
+                <div className="text-sm text-muted-foreground">Address</div>
+                <div className="text-base font-semibold text-foreground">531 46th St W, Palmetto, FL 34221</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -36,8 +36,8 @@ const AboutSection = () => (
                 <Phone className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <div className="text-xs text-muted-foreground">Phone</div>
-                <a href="tel:+19412584006" className="text-sm font-semibold text-foreground hover:text-primary transition-colors">
+                <div className="text-sm text-muted-foreground">Phone</div>
+                <a href="tel:+19412584006" className="text-base font-semibold text-foreground hover:text-primary transition-colors">
                   (941) 258-4006
                 </a>
               </div>

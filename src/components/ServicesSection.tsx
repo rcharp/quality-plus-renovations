@@ -57,7 +57,7 @@ const ServicesSection = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <span className="text-sm font-semibold text-primary uppercase tracking-wider">What We Do</span>
+        <span className="text-base font-semibold text-primary uppercase tracking-wider">What We Do</span>
         <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
           Homeowners in Palmetto, Bradenton and Sarasota Trust Us
         </h2>
@@ -88,7 +88,7 @@ const ServicesSection = () => (
               <h3 className="font-heading text-2xl font-bold text-primary-foreground mb-4">{service.title}</h3>
               <ul className="space-y-3 mb-6">
                 {service.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3 text-sm text-primary-foreground/80">
+                  <li key={feature} className="flex items-start gap-3 text-base text-primary-foreground/80">
                     <Check className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
                     {feature}
                   </li>
@@ -96,7 +96,7 @@ const ServicesSection = () => (
               </ul>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-secondary hover:gap-3 transition-all"
+                className="inline-flex items-center gap-2 text-base font-semibold text-secondary hover:gap-3 transition-all"
               >
                 Learn More <ArrowRight className="w-4 h-4" />
               </a>
