@@ -37,7 +37,7 @@ const ReviewPage = () => {
           <div className="bg-card rounded-2xl border border-border card-elevated overflow-hidden">
             <iframe
               src="https://api.juniesystems.com/widget/form/UPF7Y8V1WfGW9dBEhSu1"
-              style={{ width: "100%", height: "600px", border: "none", borderRadius: "10px" }}
+              style={{ width: "100%", height: "600px", border: "none", borderRadius: "10px", display: "block", opacity: 1, visibility: "visible" as const }}
               id="inline-UPF7Y8V1WfGW9dBEhSu1"
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"

@@ -157,8 +157,9 @@
   50% { transform: translateY(-8px); }
 }
 
-/* Force quote form iframe visibility */
-#inline-P2loR2dW6LgPnGhKf4Px {
+/* Force form iframe visibility */
+#inline-P2loR2dW6LgPnGhKf4Px,
+#inline-UPF7Y8V1WfGW9dBEhSu1 {
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
