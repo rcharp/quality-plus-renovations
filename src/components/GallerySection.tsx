@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import heroHvac from "@/assets/hero-hvac.jpg";
 import heroRepair from "@/assets/hero-ac-repair.jpg";
 import heroInstall from "@/assets/hero-ac-install.jpg";
@@ -40,6 +43,21 @@ const GallerySection = () => (
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3 }}
+        className="text-center mt-12"
+      >
+        <Link to="/gallery">
+          <Button size="lg" className="group">
+            View Full Gallery
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
+        </Link>
+      </motion.div>
     </div>
   </section>
 );
