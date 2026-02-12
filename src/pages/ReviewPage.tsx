@@ -36,21 +36,11 @@ const ReviewPage = () => {
           </div>
           <div className="bg-card rounded-2xl border border-border card-elevated overflow-hidden">
             <iframe
-              src="https://api.juniesystems.com/widget/form/UPF7Y8V1WfGW9dBEhSu1"
-              style={{ width: "100%", height: "600px", border: "none", borderRadius: "10px", display: "block", opacity: 1, visibility: "visible" as const }}
-              id="inline-UPF7Y8V1WfGW9dBEhSu1"
-              data-layout="{'id':'INLINE'}"
-              data-trigger-type="alwaysShow"
-              data-trigger-value=""
-              data-activation-type="alwaysActivated"
-              data-activation-value=""
-              data-deactivation-type="neverDeactivate"
-              data-deactivation-value=""
-              data-form-name="Review Form"
-              data-height="600"
-              data-layout-iframe-id="inline-UPF7Y8V1WfGW9dBEhSu1"
-              data-form-id="UPF7Y8V1WfGW9dBEhSu1"
-              title="Review Form"
+              src="https://api.juniesystems.com/widget/survey/GDi5S8ill5dR5K4tNV1Q"
+              style={{ width: "100%", border: "none" }}
+              scrolling="no"
+              id="GDi5S8ill5dR5K4tNV1Q"
+              title="survey"
             />
           </div>
         </div>
