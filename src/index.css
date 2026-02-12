@@ -61,7 +61,7 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased text-base lg:text-lg;
     font-family: var(--font-body);
   }
 
