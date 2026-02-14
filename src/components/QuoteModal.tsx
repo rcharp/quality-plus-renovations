@@ -65,7 +65,7 @@ export const QuoteModalProvider = ({ children }: { children: ReactNode }) => {
           style={{ pointerEvents: isOpen ? "auto" : "none" }}
         >
           <div
-className="relative w-full max-w-lg h-[100dvh] max-h-[100dvh] overflow-hidden flex flex-col"
+className="relative w-full max-w-lg max-h-[85dvh] overflow-hidden flex flex-col"
             onClick={(e) => e.stopPropagation()}
             style={{
               transform: isOpen ? "scale(1)" : "scale(0.95)",
