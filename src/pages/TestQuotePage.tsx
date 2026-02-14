@@ -114,7 +114,7 @@ const TestQuotePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="rounded-2xl border-2 p-8 space-y-6 shadow-2xl"
-              style={{ backgroundColor: "#0f172a", borderColor: "#3b82f6" }}
+              style={{ backgroundColor: "#0f172a", borderColor: "#3b82f6", opacity: 0.6 }}
             >
               {/* Header */}
               <div className="text-center space-y-3 pb-2">
@@ -129,7 +129,7 @@ const TestQuotePage = () => {
                 </Label>
                 <Input
                   id="fullName"
-                  placeholder="Full Name"
+                  placeholder="John Smith"
                   required
                   maxLength={100}
                   value={formData.fullName}
@@ -148,7 +148,7 @@ const TestQuotePage = () => {
                 <Input
                   id="phone"
                   type="tel"
-                  placeholder="Phone"
+                  placeholder="(888) 123-4567"
                   maxLength={20}
                   value={formData.phone}
                   onChange={(e) =>
@@ -166,7 +166,7 @@ const TestQuotePage = () => {
                 </Label>
                 <Textarea
                   id="helpWith"
-                  placeholder="What do you need help with?"
+                  placeholder="Your message goes straight to my phone, so I'll be able to get back to you ASAP!"
                   required
                   maxLength={1000}
                   rows={4}
