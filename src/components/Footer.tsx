@@ -1,4 +1,4 @@
-import { Phone, MapPin, Clock, Facebook } from "lucide-react";
+import { Phone, MapPin, Clock, Facebook, Award } from "lucide-react";
 import logo from "@/assets/logo.png";
 import icon from "@/assets/icon.png";
 
@@ -70,6 +70,7 @@ const Footer = () => (
             <a href="https://share.google/W7fsLxWgOy8fWOhTQ" target="_blank" rel="noopener noreferrer" className="text-base opacity-80 hover:opacity-100 transition-opacity">Google</a>
           </div>
           <div className="flex items-start gap-3">
+            <Award className="w-4 h-4 mt-0.5 opacity-60" />
             <span className="text-base opacity-80">License # 1821895</span>
           </div>
         </div>
