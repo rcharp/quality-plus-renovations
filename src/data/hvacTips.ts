@@ -164,7 +164,7 @@ const hvacTips: HVACTip[] = [
       "In Florida's mild winters, set your heat to 68°F when home and 60-65°F when away. Most days you won't need heating at all, but having a proper setting prevents your system from overworking on the occasional cold snap.",
       "Smart thermostats like the Nest or Ecobee learn your schedule and adjust automatically. They can save 10-15% on annual energy costs and let you control your system from your phone — perfect for snowbirds who leave their homes seasonally.",
       "Avoid the common mistake of cranking the thermostat way down to cool your home faster. Your AC cools at the same rate regardless of the setting — you'll just overshoot your comfort zone and waste energy.",
-      "Humidity plays a huge role in comfort. If your home feels clammy at 78°F, the issue might be humidity rather than temperature. A properly maintained AC system should keep indoor humidity between 30-50%. If it doesn't, contact Emmons Air for a system evaluation.",
+      "Humidity plays a huge role in comfort. If your home feels clammy at 78°F, the issue might be humidity rather than temperature. A properly maintained AC system should keep indoor humidity between 30-50%. If it doesn't, contact us for a system evaluation.",
     ],
     relatedServices: [
       { label: "AC Maintenance", href: "/services/ac-maintenance" },
