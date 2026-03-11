@@ -165,7 +165,7 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">Ready to Get Started?</h2>
             <p className="text-primary-foreground/70 mb-8 max-w-xl mx-auto">
-              <a href="/contact" className="text-secondary hover:underline">Contact Emmons Air</a> today for a free consultation and experience the difference.
+              <a href="/contact" className="text-secondary hover:underline">Contact us</a> today for a free consultation and experience the difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
