@@ -1,4 +1,5 @@
 import { Phone, MapPin, Clock, Facebook } from "lucide-react";
+import logoPlaceholder from "@/assets/logo-placeholder.png";
 
 const Footer = () => (
   <footer className="bg-foreground text-card py-16">
@@ -6,12 +7,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
         {/* Brand */}
         <div className="space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center">
-              <span className="text-secondary-foreground font-bold text-lg">CB</span>
-            </div>
-            <span className="font-heading text-xl font-bold text-card">CoolBreeze HVAC</span>
-          </div>
+          <img src={logoPlaceholder} alt="Company Logo" className="h-14 w-auto" />
           <p className="text-sm opacity-60">Your trusted local HVAC experts.</p>
         </div>
 
