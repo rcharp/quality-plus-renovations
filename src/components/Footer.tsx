@@ -1,6 +1,4 @@
-import { Phone, MapPin, Clock, Facebook, Award } from "lucide-react";
-import logo from "@/assets/logo.png";
-import icon from "@/assets/icon.png";
+import { Phone, MapPin, Clock, Facebook } from "lucide-react";
 
 const Footer = () => (
   <footer className="bg-foreground text-card py-16">
