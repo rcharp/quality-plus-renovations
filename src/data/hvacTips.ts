@@ -188,7 +188,7 @@ const hvacTips: HVACTip[] = [
       "A dirty evaporator coil reduces the surface area available for condensation, lowering dehumidification capacity. This is one reason annual maintenance is critical in Florida — we clean your coils to ensure maximum moisture removal.",
       "If your AC runs constantly but humidity stays above 55%, you may benefit from a whole-home dehumidifier. These systems work alongside your AC to independently control moisture levels, improving comfort and preventing mold growth.",
       "Warning signs of humidity problems include foggy windows, musty odors, peeling wallpaper, and visible mold. Don't ignore these — prolonged high humidity damages your home's structure and can cause serious health issues.",
-      "Emmons Air specializes in humidity solutions for Palmetto, Memphis, and Manatee County homes. From maintenance tune-ups to dehumidifier installations, we'll help you achieve the perfect indoor environment.",
+      "We specialize in humidity solutions for homes in our service area. From maintenance tune-ups to dehumidifier installations, we'll help you achieve the perfect indoor environment.",
     ],
     relatedServices: [
       { label: "AC Maintenance", href: "/services/ac-maintenance" },
