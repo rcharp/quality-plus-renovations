@@ -2,27 +2,25 @@ import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useCallback, useEffect } from "react";
 
-const GOOGLE_REVIEW_URL = "https://share.google/W7fsLxWgOy8fWOhTQ";
-
 const testimonials = [
   {
-    text: "David the owner has been out to my house several times to help diagnose and fix issues with my AC. He's always easily accessible which is important, and even better he's honest and knowledgeable. We also have him do annual maintenance for us. I wouldn't trust anyone else with keeping my house Cool.",
-    name: "Mitchell S.",
+    text: "The owner came out to our house and diagnosed the issue quickly. He was professional, honest, and had our AC running again the same day. We won't call anyone else for our HVAC needs.",
+    name: "Sarah M.",
     rating: 5,
   },
   {
-    text: "David came out today to service our unit. He came out and discovered that our fan had been running non stop because the modular was bad. He got the parts needed the same day and made all repairs. He also cleaned dust and mold from the unit for us. He was very thorough and knowledgeable. We will call him for AC needs.",
-    name: "Jessica O.",
+    text: "Excellent service from start to finish. They discovered our fan motor was failing and had replacement parts the same day. Very thorough and knowledgeable. Highly recommend!",
+    name: "James R.",
     rating: 5,
   },
   {
-    text: "I have lived in Florida for over 30 years. I have had many different companies for AC service and support. The very best is Emmons Air. Dave is amazing and exhibits the highest level of customer service I have ever experienced in the AC industry. You would be making a great decision to meet with Dave and see how he can help you.",
-    name: "Jeff K.",
+    text: "I've had many different HVAC companies over the years, and this is by far the best. The team exhibits the highest level of customer service I've ever experienced. You'd be making a great decision to give them a call.",
+    name: "Patricia K.",
     rating: 5,
   },
   {
-    text: "I had an issue with my a/c unit and heard about Emmons air through a friend. I called David (Owner) and he was quick to come out, diagnose, and fix my issue. David was very professional and very accommodating. Would highly recommend his business to anyone with a/c issues big or small.",
-    name: "Jeremy P.",
+    text: "A friend recommended them when my AC went out. They were quick to come out, diagnose the problem, and get it fixed. Very professional and accommodating. Would highly recommend to anyone!",
+    name: "Robert P.",
     rating: 5,
   },
 ];
@@ -54,11 +52,6 @@ const TestimonialsSection = () => {
             What Our Customers Are Saying
           </h2>
           <div className="flex items-center justify-center gap-2 mt-4">
-            <img
-              src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
-              alt="Google"
-              className="h-5"
-            />
             <div className="flex gap-0.5">
               {[1, 2, 3, 4, 5].map((s) => (
                 <Star key={s} className="w-4 h-4 fill-accent text-accent" />
@@ -94,7 +87,7 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <div className="font-heading font-semibold text-foreground">{testimonials[current].name}</div>
-                  <div className="text-sm text-muted-foreground">Google Review</div>
+                  <div className="text-sm text-muted-foreground">Verified Customer</div>
                 </div>
               </div>
             </motion.div>
@@ -130,14 +123,9 @@ const TestimonialsSection = () => {
               ))}
             </div>
 
-            <a
-              href={GOOGLE_REVIEW_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-base font-semibold text-secondary hover:underline"
-            >
+            <span className="text-base font-semibold text-secondary">
               See All Reviews →
-            </a>
+            </span>
           </div>
         </div>
       </div>

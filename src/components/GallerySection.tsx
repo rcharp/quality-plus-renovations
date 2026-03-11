@@ -1,15 +1,16 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import img1 from "@/assets/gallery/goodman-new-install.jpg";
-import img2 from "@/assets/gallery/emmons-team.png";
-import img3 from "@/assets/gallery/air-handler-closet.jpg";
-import img4 from "@/assets/gallery/fleet-trucks.png";
-import img5 from "@/assets/gallery/goodman-dual-units.jpg";
-import img6 from "@/assets/gallery/owner-with-units.png";
 
-const images = [img1, img2, img3, img4, img5, img6];
+const placeholders = [
+  "New AC Installation",
+  "Team Photo",
+  "Air Handler Setup",
+  "Service Fleet",
+  "Dual Unit Install",
+  "Completed Project",
+];
 
 const GallerySection = () => (
   <section className="py-20 lg:py-28 section-gradient">
@@ -27,20 +28,17 @@ const GallerySection = () => (
       </motion.div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {images.map((img, i) => (
+        {placeholders.map((label, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.08 }}
-            className="rounded-xl overflow-hidden aspect-square group cursor-pointer"
+            className="rounded-xl overflow-hidden aspect-square bg-muted flex flex-col items-center justify-center gap-3 border border-border"
           >
-            <img
-              src={img}
-              alt={`HVAC work ${i + 1}`}
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-            />
+            <Image className="w-10 h-10 text-muted-foreground/40" />
+            <span className="text-sm text-muted-foreground/60 font-medium">{label}</span>
           </motion.div>
         ))}
       </div>

@@ -79,12 +79,12 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
               <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mt-6 leading-relaxed">{intro}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
                 <a
-                  href="tel:+18445201313"
+                  href="tel:+15551234567"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                   style={{ borderRadius: "10px" }}
                 >
                   <Phone className="w-5 h-5" />
-                  (844) 520-1313
+                  (555) 123-4567
                 </a>
                 <button
                   onClick={openQuoteModal}
@@ -148,7 +148,7 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
         <section className="py-12 lg:py-16 border-t border-border">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
             <p className="text-muted-foreground text-lg">
-              Want to know who's coming to your home? <a href="/about" className="text-secondary font-semibold hover:underline">Meet the Emmons Air team</a> — family-owned and locally operated since 2012. You can also <a href="/gallery" className="text-secondary font-semibold hover:underline">browse our work gallery</a> to see recent projects.
+              Want to know who's coming to your home? <a href="/about" className="text-secondary font-semibold hover:underline">Meet our team</a> — family-owned and locally operated. You can also <a href="/gallery" className="text-secondary font-semibold hover:underline">browse our work gallery</a> to see recent projects.
             </p>
           </div>
         </section>
@@ -160,16 +160,16 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
               Need HVAC Service in {city}?
             </h2>
             <p className="text-primary-foreground/70 mb-8 max-w-xl mx-auto">
-              <a href="/contact" className="text-secondary hover:underline">Contact Emmons Air</a> today. We're your trusted local HVAC experts serving {city} and surrounding areas.
+              <a href="/contact" className="text-secondary hover:underline">Contact us</a> today. We're your trusted local HVAC experts serving {city} and surrounding areas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+18445201313"
+                href="tel:+15551234567"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                 style={{ borderRadius: "10px" }}
               >
                 <Phone className="w-5 h-5" />
-                (844) 520-1313
+                (555) 123-4567
               </a>
               <button
                 onClick={openQuoteModal}

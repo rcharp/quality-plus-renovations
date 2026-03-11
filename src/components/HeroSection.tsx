@@ -3,26 +3,12 @@ import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import QuoteForm from "./QuoteForm";
 import heroBg from "@/assets/hero-bg.png";
-import palmettoTruck from "@/assets/palmetto-point-truck.png";
-import logo from "@/assets/logo.png";
-import reviewerImg1 from "@/assets/reviewers/reviewer-1.jpg";
-import reviewerImg2 from "@/assets/reviewers/reviewer-2.jpg";
-import reviewerImg3 from "@/assets/reviewers/reviewer-3.jpg";
-import reviewerImg4 from "@/assets/reviewers/reviewer-4.jpg";
 
 const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
 
   return (
     <>
-      {/* Mobile truck image - between header and h1 */}
-      <div className="lg:hidden">
-        <img
-          src={palmettoTruck}
-          alt="Emmons Air truck and trailer at Palmetto Point"
-          className="w-full h-auto"
-        />
-      </div>
     <section className="relative overflow-hidden max-w-[100vw]">
 
       {/* Background Image */}
@@ -59,7 +45,7 @@ const HeroSection = () => {
             >
               When your AC breaks down in July or your furnace fails in January, you need someone who shows up—fast. We're your neighbors, and we treat your home like our own.
               <br /><br />
-              Local to Manatee County, <strong>Emmons Air</strong> has been providing high-quality heating and AC installation and repair services for hundreds of families and businesses in the Manatee, Sarasota, and surrounding areas since 2012.
+              <strong>Your Company Name</strong> has been providing high-quality heating and AC installation and repair services for hundreds of families and businesses in your area.
             </motion.p>
 
             {/* Social Proof */}
@@ -70,13 +56,13 @@ const HeroSection = () => {
               className="flex flex-wrap items-center gap-3"
             >
               <div className="flex -space-x-2">
-                {[reviewerImg1, reviewerImg2, reviewerImg3, reviewerImg4].map((img, i) => (
-                  <img
+                {[1, 2, 3, 4].map((i) => (
+                  <div
                     key={i}
-                    src={img}
-                    alt="Happy customer"
-                    className="w-9 h-9 rounded-full border-2 border-primary object-cover"
-                  />
+                    className="w-9 h-9 rounded-full border-2 border-primary bg-muted flex items-center justify-center text-xs font-bold text-muted-foreground"
+                  >
+                    {String.fromCharCode(64 + i)}
+                  </div>
                 ))}
               </div>
               <div className="flex items-center gap-2">

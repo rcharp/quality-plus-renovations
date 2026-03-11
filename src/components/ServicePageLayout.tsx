@@ -37,12 +37,12 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
               <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mt-6 leading-relaxed">{intro}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
                 <a
-                   href="tel:+18445201313"
+                   href="tel:+15551234567"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                   style={{ borderRadius: "10px" }}
                 >
                   <Phone className="w-5 h-5" />
-                  (844) 520-1313
+                  (555) 123-4567
                 </a>
                 <button
                   onClick={openQuoteModal}
@@ -165,16 +165,16 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">Ready to Get Started?</h2>
             <p className="text-primary-foreground/70 mb-8 max-w-xl mx-auto">
-              <a href="/contact" className="text-secondary hover:underline">Contact Emmons Air</a> today for a free consultation and experience the difference.
+              <a href="/contact" className="text-secondary hover:underline">Contact us</a> today for a free consultation and experience the difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+18445201313"
+                href="tel:+15551234567"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                 style={{ borderRadius: "10px" }}
               >
                 <Phone className="w-5 h-5" />
-                (844) 520-1313
+                (555) 123-4567
               </a>
               <button
                 onClick={openQuoteModal}

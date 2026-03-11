@@ -8,9 +8,9 @@ import useSEO from "@/hooks/useSEO";
 
 const ContactPage = () => {
   useSEO({
-    title: "Contact Emmons Air | Get a Free Quote | (844) 520-1313",
-    description: "Contact Emmons Air for HVAC service in Palmetto & Bradenton. Get a free quote, schedule service, or call (844) 520-1313. Open 24/7.",
-    canonical: "https://emmonsair.com/contact",
+    title: "Contact Us | Get a Free Quote | (555) 123-4567",
+    description: "Contact us for HVAC service in your area. Get a free quote, schedule service, or call (555) 123-4567. Open 24/7.",
+    canonical: "https://example.com/contact",
   });
 
   return (
@@ -64,8 +64,8 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-foreground mb-1">Phone</h3>
-                      <a href="tel:+18445201313" className="text-muted-foreground hover:text-secondary transition-colors">
-                        (844) 520-1313
+                      <a href="tel:+15551234567" className="text-muted-foreground hover:text-secondary transition-colors">
+                        (555) 123-4567
                       </a>
                     </div>
                   </div>
@@ -76,8 +76,8 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-foreground mb-1">Email</h3>
-                      <a href="mailto:emmonsairllc@gmail.com" className="text-muted-foreground hover:text-secondary transition-colors">
-                        emmonsairllc@gmail.com
+                      <a href="mailto:info@example.com" className="text-muted-foreground hover:text-secondary transition-colors">
+                        info@example.com
                       </a>
                     </div>
                   </div>
@@ -88,7 +88,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-foreground mb-1">Address</h3>
-                      <p className="text-muted-foreground">531 46th St W, Palmetto, FL 34221</p>
+                      <p className="text-muted-foreground">123 Main Street, Anytown, FL 34000</p>
                     </div>
                   </div>
 
@@ -103,18 +103,12 @@ const ContactPage = () => {
                   </div>
                 </div>
 
-                {/* Map embed */}
-                <div className="rounded-2xl overflow-hidden border border-border shadow-md">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.235860983608!2d-82.57248938797551!3d27.555189576171195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c3197718acd711%3A0x5d1b29104c06ff28!2sEmmons!5e0!3m2!1sen!2sus!4v1770394947689!5m2!1sen!2sus"
-                    width="100%"
-                    height="250"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Emmons Air location"
-                  />
+                {/* Map placeholder */}
+                <div className="rounded-2xl overflow-hidden border border-border shadow-md bg-muted flex items-center justify-center" style={{ height: 250 }}>
+                  <div className="text-center text-muted-foreground p-8">
+                    <MapPin className="w-12 h-12 mx-auto mb-3 opacity-30" />
+                    <p className="font-semibold">Your Google Map Here</p>
+                  </div>
                 </div>
               </motion.div>
 

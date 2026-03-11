@@ -45,7 +45,7 @@ const hvacTips: HVACTip[] = [
       "3. Unusual odors: A musty smell could mean mold in your ductwork. A burning smell could indicate an electrical issue. Either way, shut off the system and call for AC repair right away.",
       "4. Frequent cycling: If your AC is turning on and off more often than usual (short cycling), it could be oversized for your space, have a faulty thermostat, or be low on refrigerant. This wastes energy and puts extra wear on your system.",
       "5. Higher energy bills: A sudden spike in your electric bill without a change in usage is a clear sign your system is working harder than it should. A professional diagnosis can identify the root cause and save you money long-term.",
-      "If you notice any of these signs, don't wait. Contact Emmons Air for a fast, honest diagnosis. We serve Palmetto, Memphis, Ellenton, and the entire Manatee County area with same-day emergency service.",
+      "If you notice any of these signs, don't wait. Contact us for a fast, honest diagnosis. We offer same-day emergency service throughout our service area.",
     ],
     relatedServices: [
       { label: "AC Repair", href: "/services/ac-repair" },
@@ -68,7 +68,7 @@ const hvacTips: HVACTip[] = [
       "During a professional maintenance visit, our technicians inspect and clean key components: evaporator and condenser coils, refrigerant levels, electrical connections, thermostat calibration, drain lines, and moving parts. We catch small problems before they become expensive emergencies.",
       "The average AC system lasts 10-15 years. With regular maintenance, many systems exceed 15-20 years of reliable performance. Without it, you might be looking at a full replacement in as little as 7-8 years.",
       "Most manufacturer warranties also require proof of annual maintenance. Skipping it could void your coverage when you need it most.",
-      "Emmons Air offers comprehensive maintenance services throughout Palmetto, Bradenton, Palma Sola, and surrounding areas. Schedule your tune-up before the summer rush and enjoy peace of mind all season long.",
+      "We offer comprehensive maintenance services throughout our service area. Schedule your tune-up before the summer rush and enjoy peace of mind all season long.",
     ],
     relatedServices: [
       { label: "AC Maintenance", href: "/services/ac-maintenance" },
@@ -91,7 +91,7 @@ const hvacTips: HVACTip[] = [
       "Use the $5,000 rule: Multiply the age of your system by the repair cost. If the result is more than $5,000, it's typically better to replace. For example, a 12-year-old system needing a $500 repair = $6,000, suggesting replacement is the smarter move.",
       "R-22 refrigerant (Freon) has been phased out and is now extremely expensive. If your system uses R-22, a replacement with a modern R-410A system will save you significantly on future repairs and refrigerant costs.",
       "New AC installations also come with manufacturer warranties (typically 5-10 years), improved humidity control, quieter operation, and smart thermostat compatibility. Many homeowners see their investment pay for itself within 3-5 years through energy savings alone.",
-      "At Emmons Air, we provide honest assessments — we'll never push a replacement when a repair will do. We help homeowners across Palmetto, Bradenton, Ellenton, and Manatee County make the right choice for their budget and comfort.",
+      "We provide honest assessments — we'll never push a replacement when a repair will do. We help homeowners make the right choice for their budget and comfort.",
     ],
     relatedServices: [
       { label: "AC Installation", href: "/services/ac-installation" },
@@ -115,7 +115,7 @@ const hvacTips: HVACTip[] = [
       "Control humidity. Florida's humidity creates ideal conditions for mold and mildew growth. Your AC system naturally dehumidifies, but if you notice condensation on windows or a musty smell, you may need additional dehumidification or a maintenance check.",
       "Consider UV germicidal lights. Installed in your air handler, these lights kill bacteria, viruses, and mold spores as air passes through your system. It's an increasingly popular upgrade for health-conscious homeowners.",
       "Regular AC maintenance also plays a critical role in air quality. Dirty coils, clogged drain lines, and neglected systems can become breeding grounds for mold and bacteria. Schedule annual maintenance to keep your system — and your air — clean.",
-      "Emmons Air provides duct cleaning, air quality assessments, and maintenance services throughout Palmetto, Memphis, Palma Sola, and all of Manatee County. Breathe easier — call us today.",
+      "We provide duct cleaning, air quality assessments, and maintenance services throughout our service area. Breathe easier — call us today.",
     ],
     relatedServices: [
       { label: "Duct Cleaning", href: "/services/duct-cleaning" },
@@ -140,8 +140,8 @@ const hvacTips: HVACTip[] = [
       "4. Use ceiling fans. Fans create a wind-chill effect that makes a room feel 4-6 degrees cooler, allowing you to raise your thermostat without sacrificing comfort. Remember to set fans to counter-clockwise in summer.",
       "5. Seal air leaks. Check around windows, doors, and ductwork for gaps that let cool air escape and hot air in. Weatherstripping and caulking are cheap, easy fixes that make a big difference.",
       "6. Schedule professional maintenance. A tune-up ensures your system runs at peak efficiency. Our technicians optimize refrigerant levels, clean coils, and check electrical connections — all of which directly impact energy consumption.",
-      "7. Consider upgrading to a high-efficiency system. If your AC is over 10 years old, a new ENERGY STAR-rated system can cut cooling costs by 20-40%. Emmons Air can help you find the right system for your home and budget.",
-      "Serving Palmetto, Bradenton, Ellenton, Memphis, and Palma Sola — contact Emmons Air for energy-saving solutions tailored to your home.",
+      "7. Consider upgrading to a high-efficiency system. If your AC is over 10 years old, a new ENERGY STAR-rated system can cut cooling costs by 20-40%. We can help you find the right system for your home and budget.",
+      "Contact us for energy-saving solutions tailored to your home.",
     ],
     relatedServices: [
       { label: "AC Maintenance", href: "/services/ac-maintenance" },
@@ -164,7 +164,7 @@ const hvacTips: HVACTip[] = [
       "In Florida's mild winters, set your heat to 68°F when home and 60-65°F when away. Most days you won't need heating at all, but having a proper setting prevents your system from overworking on the occasional cold snap.",
       "Smart thermostats like the Nest or Ecobee learn your schedule and adjust automatically. They can save 10-15% on annual energy costs and let you control your system from your phone — perfect for snowbirds who leave their homes seasonally.",
       "Avoid the common mistake of cranking the thermostat way down to cool your home faster. Your AC cools at the same rate regardless of the setting — you'll just overshoot your comfort zone and waste energy.",
-      "Humidity plays a huge role in comfort. If your home feels clammy at 78°F, the issue might be humidity rather than temperature. A properly maintained AC system should keep indoor humidity between 30-50%. If it doesn't, contact Emmons Air for a system evaluation.",
+      "Humidity plays a huge role in comfort. If your home feels clammy at 78°F, the issue might be humidity rather than temperature. A properly maintained AC system should keep indoor humidity between 30-50%. If it doesn't, contact us for a system evaluation.",
     ],
     relatedServices: [
       { label: "AC Maintenance", href: "/services/ac-maintenance" },
@@ -188,7 +188,7 @@ const hvacTips: HVACTip[] = [
       "A dirty evaporator coil reduces the surface area available for condensation, lowering dehumidification capacity. This is one reason annual maintenance is critical in Florida — we clean your coils to ensure maximum moisture removal.",
       "If your AC runs constantly but humidity stays above 55%, you may benefit from a whole-home dehumidifier. These systems work alongside your AC to independently control moisture levels, improving comfort and preventing mold growth.",
       "Warning signs of humidity problems include foggy windows, musty odors, peeling wallpaper, and visible mold. Don't ignore these — prolonged high humidity damages your home's structure and can cause serious health issues.",
-      "Emmons Air specializes in humidity solutions for Palmetto, Memphis, and Manatee County homes. From maintenance tune-ups to dehumidifier installations, we'll help you achieve the perfect indoor environment.",
+      "We specialize in humidity solutions for homes in our service area. From maintenance tune-ups to dehumidifier installations, we'll help you achieve the perfect indoor environment.",
     ],
     relatedServices: [
       { label: "AC Maintenance", href: "/services/ac-maintenance" },
@@ -212,7 +212,7 @@ const hvacTips: HVACTip[] = [
       "Listen for a hissing or bubbling sound near your indoor or outdoor unit. Refrigerant escaping through a crack or hole in the copper lines often produces these distinctive noises.",
       "Higher-than-normal energy bills combined with reduced cooling performance strongly suggest a refrigerant issue. Your system runs longer and harder trying to reach the set temperature.",
       "Never attempt to recharge refrigerant yourself. It requires EPA certification, specialized equipment, and the leak must be found and repaired first, or you'll just lose the new refrigerant too.",
-      "Emmons Air's certified technicians use electronic leak detectors and nitrogen pressure tests to locate leaks accurately. We serve Bradenton, Ellenton, Palma Sola, and throughout Manatee County.",
+      "Our certified technicians use electronic leak detectors and nitrogen pressure tests to locate leaks accurately. We serve communities throughout our service area.",
     ],
     relatedServices: [
       { label: "AC Repair", href: "/services/ac-repair" },
@@ -236,7 +236,7 @@ const hvacTips: HVACTip[] = [
       "An oversized AC is surprisingly common and problematic. It cools quickly but short-cycles, failing to remove adequate humidity, causing uneven temperatures, and accelerating wear on the compressor.",
       "An undersized system runs constantly, driving up energy bills and leaving your home uncomfortable on the hottest days.",
       "In Florida's climate, slightly undersized is actually preferable to oversized. A system that runs longer cycles dehumidifies better and provides more consistent comfort.",
-      "At Emmons Air, every installation begins with a thorough load calculation. We assess your Palmetto, Bradenton, or Manatee County home to recommend the exact right system.",
+      "Every installation we perform begins with a thorough load calculation. We assess your home to recommend the exact right system.",
     ],
     relatedServices: [
       { label: "AC Installation", href: "/services/ac-installation" },
@@ -260,7 +260,7 @@ const hvacTips: HVACTip[] = [
       "Dirty ducts reduce system efficiency. A buildup of just 0.042 inches of dust on a coil can decrease efficiency by 21%. Clean ducts mean your system works less and lasts longer.",
       "The NADCA recommends cleaning every 3-5 years, but Florida homes may benefit from more frequent cleaning due to our extended cooling season and high humidity.",
       "Professional duct cleaning involves powerful vacuum systems that create negative pressure while specialized tools dislodge and remove debris. It's not a DIY job.",
-      "Emmons Air provides thorough duct cleaning services throughout Palmetto, Ellenton, Memphis, and Manatee County. We also inspect for leaks, damage, and insulation issues while we clean.",
+      "We provide thorough duct cleaning services throughout our service area. We also inspect for leaks, damage, and insulation issues while we clean.",
     ],
     relatedServices: [
       { label: "Duct Cleaning", href: "/services/duct-cleaning" },
@@ -284,7 +284,7 @@ const hvacTips: HVACTip[] = [
       "Check your outdoor unit. Make sure it's running, clear of debris, and has at least 2 feet of clearance on all sides. If the fan isn't spinning, try resetting the circuit breaker.",
       "Look at your circuit breakers. Your AC typically has two breakers. If either has tripped, reset it once. If it trips again immediately, call a professional.",
       "Check your vents. Make sure supply and return vents are open and unobstructed by furniture, rugs, or curtains.",
-      "If none of these steps work, you need professional diagnosis. Emmons Air offers same-day AC repair throughout Palmetto, Bradenton, and Manatee County.",
+      "If none of these steps work, you need professional diagnosis. We offer same-day AC repair throughout our service area.",
     ],
     relatedServices: [
       { label: "AC Repair", href: "/services/ac-repair" },
@@ -308,7 +308,7 @@ const hvacTips: HVACTip[] = [
       "Upgrading from a 10 SEER system to a 16 SEER can reduce cooling costs by nearly 40%. In Florida, where AC accounts for 50-60% of your electric bill, that's substantial.",
       "However, the highest SEER isn't always the best choice. A 25 SEER system costs significantly more than a 16 SEER, and incremental savings may not justify the price difference.",
       "For most Florida homes, 16-20 SEER offers the best balance of cost and savings. Our technicians can calculate your expected payback period.",
-      "Emmons Air installs high-efficiency systems from trusted brands. We help homeowners in Palmetto, Bradenton, Ellenton, and Palma Sola find the right SEER rating for their needs.",
+      "We install high-efficiency systems from trusted brands. We help homeowners find the right SEER rating for their needs.",
     ],
     relatedServices: [
       { label: "AC Installation", href: "/services/ac-installation" },
@@ -332,7 +332,7 @@ const hvacTips: HVACTip[] = [
       "Never run your AC during the storm, even with power. Debris can damage fan blades and the compressor.",
       "After the storm: Inspect your outdoor unit before turning it on. Look for damage, debris, standing water, and shifted positioning. Remove branches and leaves.",
       "Wait at least 24 hours after power is restored before turning your system on. If your unit was submerged in floodwater, do NOT turn it on — call for professional inspection.",
-      "Emmons Air provides post-storm AC inspections and repairs throughout Palmetto, Bradenton, Memphis, and all of Manatee County.",
+      "We provide post-storm AC inspections and repairs throughout our service area.",
     ],
     relatedServices: [
       { label: "AC Repair", href: "/services/ac-repair" },
@@ -357,7 +357,7 @@ const hvacTips: HVACTip[] = [
       "Mini-splits avoid the 20-30% energy loss in ductwork and only cool occupied rooms. A multi-zone system can be significantly more efficient than central AC.",
       "Central AC has advantages for large, open-concept homes. It's also typically less expensive per ton when ductwork already exists.",
       "Cost comparison: Central AC runs $4,000-$8,000 installed. Multi-zone mini-splits cost $3,000-$10,000+. Single-zone mini-splits start around $2,000-$4,000.",
-      "Emmons Air installs both systems throughout Palmetto, Bradenton, Palma Sola, and Manatee County. We'll recommend the best fit for your home.",
+      "We install both systems throughout our service area. We'll recommend the best fit for your home.",
     ],
     relatedServices: [
       { label: "AC Installation", href: "/services/ac-installation" },
@@ -382,7 +382,7 @@ const hvacTips: HVACTip[] = [
       "Clicking: Constant clicking from the outdoor unit usually signals a failing relay or contactor. Occasional clicking during startup is normal.",
       "Buzzing: Electrical buzzing from a failing contactor, loose wiring, or malfunctioning compressor. Potential safety issue requiring prompt inspection.",
       "Bubbling or gurgling: Air has entered your refrigerant lines, often due to a leak. Your system can't cool properly and the leak will worsen.",
-      "When in doubt, turn off your system and contact Emmons Air. We diagnose AC noise issues throughout Palmetto, Ellenton, Memphis, and Manatee County.",
+      "When in doubt, turn off your system and contact us. We diagnose AC noise issues throughout our service area.",
     ],
     relatedServices: [
       { label: "AC Repair", href: "/services/ac-repair" },
@@ -407,7 +407,7 @@ const hvacTips: HVACTip[] = [
       "Seasonally: Before summer, replace your filter, clear the outdoor unit, and test your system on a mild day.",
       "Check accessible ductwork for visible damage, disconnections, or signs of moisture and mold.",
       "What NOT to do: Never attempt refrigerant work, electrical repairs, or deep coil cleaning. These require professional training and equipment.",
-      "Emmons Air offers thorough tune-ups throughout Palmetto, Bradenton, Palma Sola, and Manatee County. We recommend at least one professional visit per year.",
+      "We offer thorough tune-ups throughout our service area. We recommend at least one professional visit per year.",
     ],
     relatedServices: [
       { label: "AC Maintenance", href: "/services/ac-maintenance" },
@@ -432,7 +432,7 @@ const hvacTips: HVACTip[] = [
       "For room additions, your existing AC may or may not handle the extra load. Options include upgrading your system, extending ductwork, or installing a ductless mini-split.",
       "Don't overlook ventilation. An energy recovery ventilator (ERV) brings in fresh air while capturing energy from conditioned indoor air — ideal for Florida.",
       "Placement of your outdoor condenser matters. Choose a shaded location with good airflow clearance. Proper placement improves efficiency by 5-10%.",
-      "Emmons Air works with builders throughout Palmetto, Memphis, Ellenton, and Manatee County on new construction HVAC installations.",
+      "We work with builders throughout our service area on new construction HVAC installations.",
     ],
     relatedServices: [
       { label: "AC Installation", href: "/services/ac-installation" },

@@ -3,98 +3,53 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import useSEO from "@/hooks/useSEO";
+import { Image } from "lucide-react";
 
-import galleryTrailer from "@/assets/gallery/emmons-trailer.png";
-import galleryWork from "@/assets/gallery/emmons-work.png";
-import galleryFamily from "@/assets/gallery/emmons-family.png";
-import galleryAmericanStandard from "@/assets/gallery/american-standard-units.png";
-import galleryInstall1 from "@/assets/gallery/ac-unit-install-1.jpg";
-import galleryInstall2 from "@/assets/gallery/ac-unit-install-2.jpg";
-import galleryInstall3 from "@/assets/gallery/ac-unit-install-3.jpg";
-import galleryAirHandler from "@/assets/gallery/air-handler-install.jpg";
-import galleryFleet from "@/assets/gallery/fleet-trucks.png";
-import galleryDaikin from "@/assets/gallery/daikin-rooftop.png";
-import galleryCeilingHandler from "@/assets/gallery/ceiling-air-handler.jpg";
-import galleryOwner from "@/assets/gallery/owner-selfie.jpg";
-import galleryGoodmanDual from "@/assets/gallery/goodman-dual-units.jpg";
-import galleryAirHandler2 from "@/assets/gallery/air-handler-install-2.jpg";
-import galleryMiniSplit from "@/assets/gallery/aciq-mini-split.jpg";
-import galleryCondenserStand from "@/assets/gallery/goodman-condenser-stand.jpg";
-import galleryCloset from "@/assets/gallery/air-handler-closet.jpg";
-import galleryCloset2 from "@/assets/gallery/air-handler-closet-2.jpg";
-import galleryGoodmanPad from "@/assets/gallery/goodman-pad.jpg";
-import galleryEnergyGuide from "@/assets/gallery/energy-guide-unit.jpg";
-import galleryGreeMini from "@/assets/gallery/gree-mini-split.jpg";
-import galleryGoodmanBracket from "@/assets/gallery/goodman-wall-bracket.jpg";
-import galleryPackageCommercial from "@/assets/gallery/goodman-package-commercial.jpg";
-import galleryCloset3 from "@/assets/gallery/air-handler-closet-3.jpg";
-import galleryNewInstall from "@/assets/gallery/goodman-new-install.jpg";
-import galleryTestimony from "@/assets/gallery/testimony-promo.png";
-import galleryOwnerUnits from "@/assets/gallery/owner-with-units.png";
-import galleryEventBooth from "@/assets/gallery/event-booth.png";
-import galleryOwnerThumbsup from "@/assets/gallery/owner-thumbsup.jpg";
-import galleryServiceTruck from "@/assets/gallery/service-truck.jpg";
-import galleryPalmettoTrailer from "@/assets/gallery/palmetto-point-trailer.png";
-import galleryOwnerGoodmanDisplay from "@/assets/gallery/owner-goodman-display.png";
-import galleryHorizontalHandler from "@/assets/gallery/horizontal-handler-garage.jpg";
-import galleryAmericanStandardPromo from "@/assets/gallery/american-standard-promo.png";
-import galleryAmericanStandardRoof from "@/assets/gallery/american-standard-rooftop.jpg";
-import galleryMitsubishiIndoor from "@/assets/gallery/mitsubishi-indoor.jpg";
-import galleryMitsubishiOutdoor from "@/assets/gallery/mitsubishi-outdoor.jpg";
-import galleryPackageStand from "@/assets/gallery/goodman-package-stand.jpg";
-import galleryCondenserWallMount from "@/assets/gallery/condenser-wall-mount.jpg";
-import galleryDualOpen from "@/assets/gallery/goodman-dual-open.jpg";
-import galleryPackageTrailer from "@/assets/gallery/goodman-package-trailer.jpg";
-
-const images = [
-  { src: galleryFleet, alt: "Emmons Air fleet of trucks and trailer" },
-  { src: galleryOwnerUnits, alt: "Owner with Goodman AC units display" },
-  { src: galleryOwnerGoodmanDisplay, alt: "Owner with Goodman units and fans", portrait: true },
-  { src: galleryTrailer, alt: "Emmons Air company trailer" },
-  { src: galleryPalmettoTrailer, alt: "Emmons Air at Palmetto Point" },
-  { src: galleryServiceTruck, alt: "Emmons Air service truck" },
-  { src: galleryOwner, alt: "Emmons Air owner", portrait: true },
-  { src: galleryOwnerThumbsup, alt: "Owner on rooftop with commercial units", portrait: true },
-  { src: galleryTestimony, alt: "Customer testimonial graphic", portrait: true },
-  { src: galleryEventBooth, alt: "Emmons Air community event booth" },
-  { src: galleryWork, alt: "Technician performing AC diagnostics" },
-  { src: galleryDaikin, alt: "Daikin rooftop unit installation" },
-  { src: galleryFamily, alt: "The Emmons family" },
-  { src: galleryAmericanStandard, alt: "American Standard AC units" },
-  { src: galleryAmericanStandardPromo, alt: "American Standard units promotional photo" },
-  { src: galleryAmericanStandardRoof, alt: "American Standard rooftop units" },
-  { src: galleryGoodmanDual, alt: "Dual Goodman condenser units" },
-  { src: galleryCondenserStand, alt: "Goodman condenser on elevated stand" },
-  { src: galleryGoodmanPad, alt: "Goodman unit on concrete pad" },
-  { src: galleryNewInstall, alt: "New Goodman condenser installation" },
-  { src: galleryEnergyGuide, alt: "AC unit with energy efficiency label" },
-  { src: galleryInstall1, alt: "Residential AC condenser installation" },
-  { src: galleryInstall2, alt: "Goodman package unit on stand" },
-  { src: galleryInstall3, alt: "Wall-mounted condenser unit" },
-  { src: galleryGoodmanBracket, alt: "Goodman unit on wall bracket" },
-  { src: galleryPackageCommercial, alt: "Commercial Goodman package unit" },
-  { src: galleryMiniSplit, alt: "ACiQ mini-split outdoor unit" },
-  { src: galleryGreeMini, alt: "Gree mini-split system" },
-  { src: galleryMitsubishiIndoor, alt: "Mitsubishi mini-split indoor unit" },
-  { src: galleryMitsubishiOutdoor, alt: "Mitsubishi mini-split outdoor unit" },
-  { src: galleryAirHandler, alt: "Indoor air handler installation" },
-  { src: galleryCeilingHandler, alt: "Ceiling-mounted air handler" },
-  { src: galleryHorizontalHandler, alt: "Horizontal air handler in garage" },
-  { src: galleryAirHandler2, alt: "Air handler with ductwork" },
-  { src: galleryCloset, alt: "Air handler in utility closet" },
-  { src: galleryCloset2, alt: "Air handler closet installation" },
-  { src: galleryCloset3, alt: "Vertical air handler in closet" },
-  { src: galleryPackageStand, alt: "Goodman package unit on elevated stand" },
-  { src: galleryCondenserWallMount, alt: "Condenser unit wall-mounted on bracket" },
-  { src: galleryDualOpen, alt: "Dual Goodman condensers with fans open" },
-  { src: galleryPackageTrailer, alt: "Goodman package unit installed at mobile home" },
+const placeholderImages = [
+  "Fleet of service trucks",
+  "Owner with AC units",
+  "Owner portrait",
+  "Company trailer",
+  "Job site photo",
+  "Service truck",
+  "Team photo",
+  "Community event",
+  "AC diagnostics",
+  "Rooftop unit install",
+  "Family photo",
+  "AC units display",
+  "Dual condenser units",
+  "Condenser on stand",
+  "Unit on concrete pad",
+  "New condenser install",
+  "Energy efficiency label",
+  "Residential install",
+  "Package unit on stand",
+  "Wall-mounted condenser",
+  "Wall bracket unit",
+  "Commercial package unit",
+  "Mini-split outdoor unit",
+  "Mini-split system",
+  "Indoor mini-split unit",
+  "Outdoor mini-split unit",
+  "Air handler install",
+  "Ceiling-mounted handler",
+  "Horizontal air handler",
+  "Air handler ductwork",
+  "Utility closet install",
+  "Closet air handler",
+  "Vertical air handler",
+  "Elevated package unit",
+  "Condenser wall mount",
+  "Dual condensers open",
+  "Mobile home install",
 ];
 
 const GalleryPage = () => {
   useSEO({
-    title: "HVAC Project Gallery | Emmons Air | Palmetto FL",
-    description: "Browse photos of AC installations, repairs & maintenance by Emmons Air in Palmetto, Bradenton & Manatee County. See our quality work firsthand.",
-    canonical: "https://emmonsair.com/gallery",
+    title: "HVAC Project Gallery | Our Work",
+    description: "Browse photos of AC installations, repairs & maintenance projects. See our quality work firsthand.",
+    canonical: "https://example.com/gallery",
   });
 
   return (
@@ -113,26 +68,22 @@ const GalleryPage = () => {
               Project Gallery
             </h1>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Browse photos from our recent HVAC installations, repairs, and maintenance projects across Manatee County.
+              Browse photos from our recent HVAC installations, repairs, and maintenance projects.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {images.map((img, i) => (
+            {placeholderImages.map((label, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.06 }}
-                className={`rounded-xl overflow-hidden group cursor-pointer ${img.portrait ? 'aspect-[3/4]' : 'aspect-[4/3]'}`}
+                transition={{ delay: i * 0.03 }}
+                className="rounded-xl overflow-hidden aspect-[4/3] bg-muted flex flex-col items-center justify-center gap-3 border border-border"
               >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  loading="lazy"
-                  className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ${img.portrait ? 'object-top' : ''}`}
-                />
+                <Image className="w-10 h-10 text-muted-foreground/30" />
+                <span className="text-xs text-muted-foreground/50 font-medium px-4 text-center">{label}</span>
               </motion.div>
             ))}
           </div>

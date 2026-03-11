@@ -4,8 +4,6 @@ import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
 import { Check, Phone, ArrowRight, MapPin } from "lucide-react";
 import { useQuoteModal } from "@/components/QuoteModal";
-import familyImg from "@/assets/gallery/emmons-family.png";
-import ownerImg from "@/assets/gallery/daikin-rooftop.png";
 import heroServices from "@/assets/hero-services.jpg";
 import useSEO from "@/hooks/useSEO";
 
@@ -13,9 +11,9 @@ const AboutPage = () => {
   const { openQuoteModal } = useQuoteModal();
 
   useSEO({
-    title: "About Emmons Air | Family-Owned HVAC Palmetto FL",
-    description: "Meet David Emmons — over 12 years of HVAC experience serving Palmetto, Bradenton & Manatee County. Family-owned, licensed & insured. Call (844) 520-1313.",
-    canonical: "https://emmonsair.com/about",
+    title: "About Us | Family-Owned HVAC Services",
+    description: "Learn about our family-owned HVAC company with over 10 years of experience. Licensed & insured. Call (555) 123-4567.",
+    canonical: "https://example.com/about",
   });
 
   return (
@@ -34,7 +32,7 @@ const AboutPage = () => {
           <div className="container mx-auto px-4 lg:px-8 py-20 lg:py-32 relative z-10 text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
               <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Who We Are</span>
-              <h1 className="font-heading text-4xl lg:text-6xl font-bold text-primary-foreground mt-3">About Emmons Air</h1>
+              <h1 className="font-heading text-4xl lg:text-6xl font-bold text-primary-foreground mt-3">About Our Company</h1>
               <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mt-6 leading-relaxed">
                 Family-owned, community-driven HVAC services you can count on.
               </p>
@@ -42,7 +40,7 @@ const AboutPage = () => {
           </div>
         </section>
 
-        {/* Meet David */}
+        {/* Meet the Owner */}
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -51,11 +49,12 @@ const AboutPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <img
-                  src={familyImg}
-                  alt="David Emmons and family"
-                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                />
+                <div className="rounded-2xl shadow-xl w-full aspect-[4/3] bg-muted flex items-center justify-center">
+                  <div className="text-center text-muted-foreground">
+                    <div className="w-20 h-20 rounded-full bg-muted-foreground/10 mx-auto mb-4 flex items-center justify-center text-3xl font-bold">👤</div>
+                    <p className="font-semibold">Your Photo Here</p>
+                  </div>
+                </div>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 30 }}
@@ -64,12 +63,12 @@ const AboutPage = () => {
                 className="space-y-6"
               >
                 <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Meet the Owner</span>
-                <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground">Hey, I'm David!</h2>
+                <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground">Hey, I'm [Your Name]!</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm David Emmons, a licensed Air Conditioning contractor with over 12 years of experience serving the Palmetto, Bradenton, and Sarasota areas. As a family-owned and operated business, I take pride in treating every home like my own.
+                  I'm a licensed Air Conditioning contractor with over 10 years of experience. As a family-owned and operated business, I take pride in treating every home like my own.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  My commitment is simple: honest work, fair prices, and making sure you're completely satisfied. When you call Emmons Air, you're not just getting a technician — you're getting a neighbor who cares about your comfort.
+                  My commitment is simple: honest work, fair prices, and making sure you're completely satisfied. When you call us, you're not just getting a technician — you're getting a neighbor who cares about your comfort.
                 </p>
               </motion.div>
             </div>
@@ -91,12 +90,12 @@ const AboutPage = () => {
                   Top-Quality Products & Exceptional Service
                 </h2>
                 <p className="text-primary-foreground/70 leading-relaxed">
-                  At Emmons Air, we only use industry-leading products and materials. Our professional HVAC contractors are committed to providing our customers with fast, reliable and affordable services.
+                  We only use industry-leading products and materials. Our professional HVAC contractors are committed to providing our customers with fast, reliable and affordable services.
                 </p>
                 <ul className="space-y-3">
                   {[
                     "Licensed & insured technicians",
-                    "Over 12 years of industry experience",
+                    "Over 10 years of industry experience",
                     "Family-owned and locally operated",
                     "24/7 emergency service available",
                     "Upfront pricing with no hidden fees",
@@ -115,11 +114,11 @@ const AboutPage = () => {
                 viewport={{ once: true }}
                 className="order-1 lg:order-2"
               >
-                <img
-                  src={ownerImg}
-                  alt="Daikin rooftop HVAC unit installed by Emmons Air"
-                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                />
+                <div className="rounded-2xl shadow-xl w-full aspect-[4/3] bg-white/5 flex items-center justify-center border border-white/10">
+                  <div className="text-center text-primary-foreground/50">
+                    <p className="font-semibold">Your Work Photo Here</p>
+                  </div>
+                </div>
               </motion.div>
             </div>
           </div>
@@ -131,7 +130,7 @@ const AboutPage = () => {
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Our Services</h2>
-                <p className="text-muted-foreground mb-6">We offer comprehensive HVAC solutions for homes across Manatee County.</p>
+                <p className="text-muted-foreground mb-6">We offer comprehensive HVAC solutions for homes in our service area.</p>
                 <ul className="space-y-3">
                   {[
                     { label: "AC Repair — fast, same-day service", href: "/services/ac-repair" },

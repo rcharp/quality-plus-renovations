@@ -7,17 +7,12 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import icon from "@/assets/icon.png";
 
-const WEBHOOK_URL =
-  "https://services.leadconnectorhq.com/hooks/7IdpxAjxnevjhuMotlbS/webhook-trigger/15fdedb0-33ba-4fd1-97d7-bbaaf08d87ed";
+const WEBHOOK_URL = "https://example.com/webhook-placeholder";
 
 interface QuoteFormProps {
-  /** Show the icon + heading at the top */
   showHeader?: boolean;
-  /** Use compact layout (less padding/spacing) for modals */
   compact?: boolean;
-  /** Extra className on the outer wrapper */
   className?: string;
-  /** Override inline styles (bg, border, opacity, etc.) */
   style?: React.CSSProperties;
 }
 
@@ -99,14 +94,13 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
     >
       {showHeader && (
         <div className={`text-center ${compact ? 'space-y-2 pb-1' : 'space-y-3 pb-2'}`}>
-          <img src={icon} alt="Emmons Air" className="w-16 h-16 mx-auto" />
+          <img src={icon} alt="Company Logo" className="w-16 h-16 mx-auto" />
           <h2 className={`font-heading font-bold text-white ${compact ? 'text-2xl mt-1' : 'text-2xl'}`}>
             Get a Free Quote
           </h2>
         </div>
       )}
 
-      {/* Full Name */}
       <div className={compact ? "space-y-1" : "space-y-2"}>
         <Label htmlFor="fullName" className="text-white font-semibold">
           Full Name <span className="text-secondary">*</span>
@@ -122,7 +116,6 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
         />
       </div>
 
-      {/* Phone */}
       <div className={compact ? "space-y-1" : "space-y-2"}>
         <Label htmlFor="phone" className="text-white font-semibold">
           Phone <span className="text-secondary">*</span>
@@ -142,14 +135,13 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
         />
       </div>
 
-      {/* What do you need help with? */}
       <div className={compact ? "space-y-1" : "space-y-2"}>
         <Label htmlFor="helpWith" className="text-white font-semibold">
           What do you need help with? <span className="text-secondary">*</span>
         </Label>
         <Textarea
           id="helpWith"
-          placeholder="Your message goes straight to my phone, so I'll be able to get back to you ASAP!"
+          placeholder="Describe your HVAC needs and we'll get back to you ASAP!"
           required
           maxLength={1000}
           rows={compact ? 2 : 4}
@@ -159,7 +151,6 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
         />
       </div>
 
-      {/* Marketing Consent */}
       <div className="flex items-start gap-3">
         <Checkbox
           id="consentMarketing"
@@ -173,14 +164,13 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
           htmlFor="consentMarketing"
           className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
         >
-          I consent to receive marketing text messages from Emmons Air LLC at the
+          I consent to receive marketing text messages from [Your Company] at the
           phone number provided. Consent is not a condition of purchase. Message
           frequency may vary. Message &amp; data rates may apply. Text HELP for
           assistance, reply STOP to opt out.
         </Label>
       </div>
 
-      {/* Non-Marketing Consent */}
       <div className="flex items-start gap-3">
         <Checkbox
           id="consentNonMarketing"
@@ -194,7 +184,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
           htmlFor="consentNonMarketing"
           className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
         >
-          I consent to receive non-marketing text messages from Emmons Air LLC
+          I consent to receive non-marketing text messages from [Your Company]
           regarding appointment confirmations and reminders, customer support
           updates, and service-related follow-ups at the phone number provided.
           Consent is not a condition of purchase. Message frequency may vary.

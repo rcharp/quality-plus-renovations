@@ -45,7 +45,7 @@ const useSEO = ({ title, description, canonical }: SEOProps) => {
     }
 
     return () => {
-      document.title = "Emmons Air | HVAC Services Palmetto FL";
+      document.title = "CoolBreeze HVAC | HVAC Services";
     };
   }, [title, description, canonical]);
 };
