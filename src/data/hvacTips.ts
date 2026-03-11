@@ -382,7 +382,7 @@ const hvacTips: HVACTip[] = [
       "Clicking: Constant clicking from the outdoor unit usually signals a failing relay or contactor. Occasional clicking during startup is normal.",
       "Buzzing: Electrical buzzing from a failing contactor, loose wiring, or malfunctioning compressor. Potential safety issue requiring prompt inspection.",
       "Bubbling or gurgling: Air has entered your refrigerant lines, often due to a leak. Your system can't cool properly and the leak will worsen.",
-      "When in doubt, turn off your system and contact Emmons Air. We diagnose AC noise issues throughout Palmetto, Ellenton, Memphis, and Manatee County.",
+      "When in doubt, turn off your system and contact us. We diagnose AC noise issues throughout our service area.",
     ],
     relatedServices: [
       { label: "AC Repair", href: "/services/ac-repair" },
