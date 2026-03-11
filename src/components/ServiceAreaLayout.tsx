@@ -164,12 +164,12 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+18445201313"
+                href="tel:+15551234567"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                 style={{ borderRadius: "10px" }}
               >
                 <Phone className="w-5 h-5" />
-                (844) 520-1313
+                (555) 123-4567
               </a>
               <button
                 onClick={openQuoteModal}
