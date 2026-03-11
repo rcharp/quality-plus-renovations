@@ -140,8 +140,8 @@ const hvacTips: HVACTip[] = [
       "4. Use ceiling fans. Fans create a wind-chill effect that makes a room feel 4-6 degrees cooler, allowing you to raise your thermostat without sacrificing comfort. Remember to set fans to counter-clockwise in summer.",
       "5. Seal air leaks. Check around windows, doors, and ductwork for gaps that let cool air escape and hot air in. Weatherstripping and caulking are cheap, easy fixes that make a big difference.",
       "6. Schedule professional maintenance. A tune-up ensures your system runs at peak efficiency. Our technicians optimize refrigerant levels, clean coils, and check electrical connections — all of which directly impact energy consumption.",
-      "7. Consider upgrading to a high-efficiency system. If your AC is over 10 years old, a new ENERGY STAR-rated system can cut cooling costs by 20-40%. Emmons Air can help you find the right system for your home and budget.",
-      "Serving Palmetto, Bradenton, Ellenton, Memphis, and Palma Sola — contact Emmons Air for energy-saving solutions tailored to your home.",
+      "7. Consider upgrading to a high-efficiency system. If your AC is over 10 years old, a new ENERGY STAR-rated system can cut cooling costs by 20-40%. We can help you find the right system for your home and budget.",
+      "Contact us for energy-saving solutions tailored to your home.",
     ],
     relatedServices: [
       { label: "AC Maintenance", href: "/services/ac-maintenance" },
