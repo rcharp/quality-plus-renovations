@@ -332,7 +332,7 @@ const hvacTips: HVACTip[] = [
       "Never run your AC during the storm, even with power. Debris can damage fan blades and the compressor.",
       "After the storm: Inspect your outdoor unit before turning it on. Look for damage, debris, standing water, and shifted positioning. Remove branches and leaves.",
       "Wait at least 24 hours after power is restored before turning your system on. If your unit was submerged in floodwater, do NOT turn it on — call for professional inspection.",
-      "Emmons Air provides post-storm AC inspections and repairs throughout Palmetto, Bradenton, Memphis, and all of Manatee County.",
+      "We provide post-storm AC inspections and repairs throughout our service area.",
     ],
     relatedServices: [
       { label: "AC Repair", href: "/services/ac-repair" },
