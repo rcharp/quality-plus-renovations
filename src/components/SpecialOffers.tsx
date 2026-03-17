@@ -6,18 +6,18 @@ import offersBg from "@/assets/offers-bg.png";
 const offers = [
   {
     icon: Percent,
-    title: "Up to 20% Off For New Customers",
-    description: "Get 20% off on repairs and 10% off on new installations and replacements.",
+    title: "15% Off First Haul",
+    description: "New customers get 15% off their first junk removal job. No minimum load required.",
   },
   {
     icon: CreditCard,
-    title: "Financing Options Available",
-    description: "Get what you need now, pay over time. Flexible plans, quick approval.",
+    title: "Transparent Pricing",
+    description: "No hidden fees. We quote based on volume — you only pay for the space your junk takes up in our truck.",
   },
   {
     icon: Search,
-    title: "Free HVAC System Inspection",
-    description: "We give a free inspection for new systems. Schedule yours today!",
+    title: "Free On-Site Estimate",
+    description: "Not sure how much it'll cost? We'll come to you and give a free, no-obligation quote on the spot.",
   },
 ];
 

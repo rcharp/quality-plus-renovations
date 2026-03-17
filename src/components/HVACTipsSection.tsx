@@ -19,10 +19,10 @@ const HVACTipsSection = () => {
             <span className="text-base font-semibold text-primary uppercase tracking-wider">Expert Advice</span>
           </div>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
-            HVAC Tips & Guides
+            Junk Removal Tips & Guides
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Helpful articles from our experienced technicians to keep your home comfortable and your system running efficiently.
+            Helpful articles to make decluttering, cleanouts, and junk disposal easier and more eco-friendly.
           </p>
         </motion.div>
 

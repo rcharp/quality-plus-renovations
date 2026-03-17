@@ -16,10 +16,10 @@ const CTASection = () => {
         >
           <span className="text-base font-semibold text-primary uppercase tracking-wider">Get Started</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground">
-            Ready to get started?
+            Ready to Clear the Clutter?
           </h2>
           <p className="text-lg text-muted-foreground">
-            We're Here When You Need Us. Call us or request a free quote today.
+            Call us or request a free quote today. We'll haul it away so you don't have to.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
