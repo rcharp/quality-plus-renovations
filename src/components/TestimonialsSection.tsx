@@ -71,7 +71,6 @@ const TestimonialsSection = () => {
 
           <div className="flex-1 relative">
           <div className="overflow-hidden">
-          <div className="overflow-hidden">
             <motion.div
               key={current}
               initial={{ opacity: 0, y: 20 }}
