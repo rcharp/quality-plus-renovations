@@ -14,8 +14,8 @@ import useSEO from "@/hooks/useSEO";
 
 const Index = () => {
   useSEO({
-    title: "CoolBreeze HVAC | HVAC Services",
-    description: "CoolBreeze HVAC provides expert AC repair, installation, maintenance and duct cleaning. Family owned. Call (555) 123-4567.",
+    title: "Junk Hauling & Removal Services | Your Company Name",
+    description: "Fast, affordable junk removal for homes and businesses. Furniture, appliances, construction debris, yard waste — we haul it all. Call (555) 123-4567.",
     canonical: "https://example.com/",
   });
 

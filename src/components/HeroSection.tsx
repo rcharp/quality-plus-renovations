@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import QuoteForm from "./QuoteForm";
 import heroBg from "@/assets/hero-bg.png";
+import reviewer1 from "@/assets/reviewers/reviewer-1.jpg";
+import reviewer2 from "@/assets/reviewers/reviewer-2.jpg";
+import reviewer3 from "@/assets/reviewers/reviewer-3.jpg";
+import reviewer4 from "@/assets/reviewers/reviewer-4.jpg";
+
+const reviewerImages = [reviewer1, reviewer2, reviewer3, reviewer4];
 
 const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
@@ -29,8 +35,8 @@ const HeroSection = () => {
               transition={{ duration: 0.6 }}
             >
               <h1 className="font-heading text-[2.6rem] lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight text-primary-foreground text-center lg:text-left">
-                Comfort You Can{" "}
-                <span className="text-secondary-color">Count On.</span>
+                Your Junk,{" "}
+                <span className="text-secondary-color">Gone Fast.</span>
                 <br />
                 <span className="block mt-5 lg:mt-0">Service You Can{" "}
                 <span className="text-secondary-color">Trust.</span></span>
@@ -43,9 +49,9 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-lg text-primary-foreground/70 max-w-lg leading-relaxed break-words"
             >
-              When your AC breaks down in July or your furnace fails in January, you need someone who shows up—fast. We're your neighbors, and we treat your home like our own.
+              Got clutter, old furniture, or construction debris piling up? We handle the heavy lifting so you don't have to. Fast, affordable, and eco-friendly junk removal.
               <br /><br />
-              <strong>Your Company Name</strong> has been providing high-quality heating and AC installation and repair services for hundreds of families and businesses in your area.
+              <strong>Your Company Name</strong> has been providing reliable junk hauling and removal services for hundreds of homes and businesses in your area.
             </motion.p>
 
             {/* Social Proof */}
@@ -56,13 +62,13 @@ const HeroSection = () => {
               className="flex flex-wrap items-center gap-3"
             >
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
+                {reviewerImages.map((img, i) => (
+                  <img
                     key={i}
-                    className="w-9 h-9 rounded-full border-2 border-primary bg-muted flex items-center justify-center text-xs font-bold text-muted-foreground"
-                  >
-                    {String.fromCharCode(64 + i)}
-                  </div>
+                    src={img}
+                    alt={`Happy customer ${i + 1}`}
+                    className="w-9 h-9 rounded-full border-2 border-primary object-cover"
+                  />
                 ))}
               </div>
               <div className="flex items-center gap-2">
