@@ -8,28 +8,28 @@ import {
 
 const faqs = [
   {
-    q: "How quickly can you respond to an emergency AC repair?",
-    a: "We offer same-day service for emergency air conditioning repairs throughout our service area. When your AC breaks down during the heat, we understand it's urgent. Call us and we'll get a certified technician to your home as quickly as possible.",
+    q: "How quickly can you come pick up my junk?",
+    a: "We offer same-day and next-day junk removal service in most areas. Just give us a call or submit a quote request, and we'll schedule a pickup at a time that works for you — often within a few hours.",
   },
   {
-    q: "Do you offer financing options for AC installation and repairs?",
-    a: "Yes! We offer flexible financing plans with quick approval to help you get the comfort you need without breaking your budget. Whether you need a major repair or a complete system replacement, our financing options make it affordable.",
+    q: "How is pricing determined?",
+    a: "We price based on the volume of space your items take up in our truck — not by weight or item count. We'll give you an upfront quote before we start, so there are never any surprises. No hidden fees, no hourly charges.",
   },
   {
-    q: "Do you provide free estimates for AC installation?",
-    a: "Yes! We provide free, no-obligation estimates for all air conditioning installations and system replacements. We'll assess your home's cooling needs, discuss your options, and provide upfront, transparent pricing with no hidden fees.",
+    q: "What items do you accept?",
+    a: "We haul just about anything — old furniture, appliances, electronics, mattresses, yard waste, construction debris, and general household clutter. The only items we can't take are hazardous materials like paint, chemicals, and certain batteries.",
   },
   {
-    q: "Are your technicians licensed and insured?",
-    a: "All of our technicians are fully licensed, certified, and insured to protect you and your property. Our team undergoes continuous training to stay current with the latest HVAC technology and best practices.",
+    q: "Do I need to be home during the pickup?",
+    a: "It's helpful if you're there to point out what needs to go, but it's not required. If the items are accessible (e.g., in the driveway or garage), we can handle the pickup while you're away — just let us know ahead of time.",
   },
   {
-    q: "What areas do you service?",
-    a: "We proudly serve Palmetto, Bradenton, and surrounding areas. As a locally owned and operated family business, we're invested in our community.",
+    q: "Do you recycle or donate items?",
+    a: "Absolutely! We're committed to eco-friendly disposal. Whenever possible, we donate usable items to local charities and recycle materials like metal, wood, and electronics. We aim to divert as much as possible from landfills.",
   },
   {
-    q: "Do you offer warranties on your work?",
-    a: "Yes, we stand behind all our work with warranties on both parts and labor. New AC installations come with comprehensive manufacturer warranties, and we provide additional warranty coverage on our workmanship.",
+    q: "Are you licensed and insured?",
+    a: "Yes, we are fully licensed and insured. You can rest easy knowing your property is protected during every job. Our team is trained, professional, and respectful of your home or business.",
   },
 ];
 

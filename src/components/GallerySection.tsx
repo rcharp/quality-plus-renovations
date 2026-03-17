@@ -4,12 +4,12 @@ import { ArrowRight, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const placeholders = [
-  "New AC Installation",
+  "Furniture Hauling",
   "Team Photo",
-  "Air Handler Setup",
-  "Service Fleet",
-  "Dual Unit Install",
-  "Completed Project",
+  "Truck Loaded Up",
+  "Garage Cleanout",
+  "Construction Debris",
+  "Happy Customer",
 ];
 
 const GallerySection = () => (

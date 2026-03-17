@@ -16,10 +16,10 @@ const AboutSection = () => (
             Family Owned. Locally Operated.
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            We've proudly served our local community for over a decade. As a locally owned and operated family business, we treat every home like it's our own. No corporate runaround. No strangers at your door. Just honest service from people who live and work right here in your community.
+            We've proudly served our local community for years, providing fast, affordable, and reliable junk removal services. As a locally owned and operated family business, we treat every property with respect. No corporate runaround — just honest, hardworking people who show up on time and get the job done.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            When you choose us, you're getting more than just HVAC service—you're getting a partner who's invested in your comfort and satisfaction. We answer our phones, show up on time, and stand behind every job we complete.
+            Whether it's a single piece of furniture or a full estate cleanout, our crew handles the heavy lifting so you don't have to. We recycle and donate whenever possible because we care about our community and the environment.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 pt-4">
             <div className="flex items-center gap-3">
