@@ -1,9 +1,9 @@
 import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import serviceResidential from "@/assets/service-residential-junk.jpg";
-import serviceCommercial from "@/assets/service-commercial-junk.jpg";
+import serviceCommercial from "@/assets/service-yard-waste.jpg";
 import serviceConstruction from "@/assets/service-construction-debris.jpg";
-import serviceYard from "@/assets/service-yard-waste.jpg";
+import serviceYard from "@/assets/service-commercial-junk.jpg";
 
 const services = [
   {
