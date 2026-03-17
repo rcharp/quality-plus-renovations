@@ -4,22 +4,22 @@ import { useState, useCallback, useEffect } from "react";
 
 const testimonials = [
   {
-    text: "The owner came out to our house and diagnosed the issue quickly. He was professional, honest, and had our AC running again the same day. We won't call anyone else for our HVAC needs.",
+    text: "They showed up on time, loaded everything in under an hour, and left my garage spotless. Best junk removal service I've ever used. Will definitely call again!",
     name: "Sarah M.",
     rating: 5,
   },
   {
-    text: "Excellent service from start to finish. They discovered our fan motor was failing and had replacement parts the same day. Very thorough and knowledgeable. Highly recommend!",
+    text: "We had a full basement of old furniture and boxes after downsizing. The crew was fast, respectful, and incredibly affordable. Highly recommend to anyone needing a cleanout!",
     name: "James R.",
     rating: 5,
   },
   {
-    text: "I've had many different HVAC companies over the years, and this is by far the best. The team exhibits the highest level of customer service I've ever experienced. You'd be making a great decision to give them a call.",
+    text: "After our kitchen renovation, we had piles of construction debris everywhere. They came same-day and hauled it all away. Professional, friendly, and great pricing.",
     name: "Patricia K.",
     rating: 5,
   },
   {
-    text: "A friend recommended them when my AC went out. They were quick to come out, diagnose the problem, and get it fixed. Very professional and accommodating. Would highly recommend to anyone!",
+    text: "I called on a Saturday morning and they were at my house by noon. Took away an old hot tub, broken appliances, and yard waste. Couldn't be happier with the service!",
     name: "Robert P.",
     rating: 5,
   },

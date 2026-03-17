@@ -1,53 +1,53 @@
 import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
-import heroRepair from "@/assets/service-repair-stock.jpg";
-import heroInstall from "@/assets/service-install-stock.jpg";
-import serviceMaintenance from "@/assets/service-maintenance-stock.jpg";
-import serviceDuct from "@/assets/service-duct-stock.jpg";
+import serviceResidential from "@/assets/service-residential-junk.jpg";
+import serviceCommercial from "@/assets/service-commercial-junk.jpg";
+import serviceConstruction from "@/assets/service-construction-debris.jpg";
+import serviceYard from "@/assets/service-yard-waste.jpg";
 
 const services = [
   {
-    image: heroRepair,
-    title: "AC Repair",
-    href: "/services/ac-repair",
+    image: serviceResidential,
+    title: "Residential Junk Removal",
+    href: "#",
     features: [
-      "Fast response for quick repairs",
-      "Expert diagnosis of any issue",
-      "Upfront pricing—no surprises",
-      "Same-day emergency service available",
+      "Old furniture & appliance hauling",
+      "Garage, attic & basement cleanouts",
+      "Estate & foreclosure cleanups",
+      "Same-day pickup available",
     ],
   },
   {
-    image: heroInstall,
-    title: "AC Installation",
-    href: "/services/ac-installation",
+    image: serviceCommercial,
+    title: "Commercial Junk Removal",
+    href: "#",
     features: [
-      "Residential AC Installation",
-      "Energy-efficient systems to reduce costs",
-      "Proper sizing for optimal performance",
-      "Replacements and Upgrades",
+      "Office furniture & equipment removal",
+      "Retail & warehouse cleanouts",
+      "Bulk item disposal",
+      "Scheduled recurring pickups",
     ],
   },
   {
-    image: serviceMaintenance,
-    title: "AC Maintenance",
-    href: "/services/ac-maintenance",
+    image: serviceConstruction,
+    title: "Construction Debris Removal",
+    href: "#",
     features: [
-      "Prevent costly breakdowns",
-      "Lower your utility bills",
-      "Extend system lifespan",
-      "Priority scheduling available",
+      "Lumber, drywall & concrete hauling",
+      "Renovation & remodel cleanup",
+      "Job site debris removal",
+      "Responsible disposal & recycling",
     ],
   },
   {
-    image: serviceDuct,
-    title: "Duct Cleaning",
-    href: "/services/duct-cleaning",
+    image: serviceYard,
+    title: "Yard Waste Removal",
+    href: "#",
     features: [
-      "Remove dust, allergens, and contaminants",
-      "Improve airflow and efficiency",
-      "Reduce allergy and respiratory issues",
-      "Complete vent and ductwork cleaning",
+      "Tree branch & brush removal",
+      "Storm debris cleanup",
+      "Landscaping waste hauling",
+      "Green waste recycling",
     ],
   },
 ];
@@ -63,10 +63,10 @@ const ServicesSection = () => (
       >
         <span className="text-base font-semibold text-primary uppercase tracking-wider">What We Do</span>
         <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
-          Homeowners in Palmetto, Bradenton and Sarasota Trust Us
+          Junk Removal Services You Can Count On
         </h2>
         <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-          Complete HVAC solutions for your home comfort needs.
+          From single-item pickups to full property cleanouts, we handle it all with speed and care.
         </p>
       </motion.div>
 
@@ -81,13 +81,13 @@ const ServicesSection = () => (
             className="rounded-2xl overflow-hidden card-elevated border border-secondary/30 group"
             style={{ backgroundColor: "#0f172a" }}
           >
-            <a href={service.href} className="block aspect-[16/9] overflow-hidden cursor-pointer">
+            <div className="block aspect-[16/9] overflow-hidden">
               <img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-            </a>
+            </div>
             <div className="p-8">
               <h3 className="font-heading text-2xl font-bold text-primary-foreground mb-4">{service.title}</h3>
               <ul className="space-y-3 mb-6">

@@ -1,10 +1,10 @@
-import { Shield, Clock, Phone, Star, ThumbsUp } from "lucide-react";
+import { Shield, Clock, Recycle, Star, ThumbsUp } from "lucide-react";
 import { motion } from "framer-motion";
 
 const badges = [
   { icon: Shield, label: "Licensed & Insured" },
-  { icon: Clock, label: "12+ Years of Experience" },
-  { icon: Phone, label: "24/7 Availability" },
+  { icon: Clock, label: "Same-Day Service" },
+  { icon: Recycle, label: "Eco-Friendly Disposal" },
   { icon: Star, label: "5-Star Google Rating" },
   { icon: ThumbsUp, label: "Satisfaction Guaranteed" },
 ];
