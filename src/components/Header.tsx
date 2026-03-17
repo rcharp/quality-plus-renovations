@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Phone, Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
-import logoPlaceholder from "@/assets/logo-placeholder.png";
+import logo from "@/assets/one-haul-away-logo.jpg";
 const navLinks = [
   { label: "Home", href: "/" },
   {
@@ -46,7 +46,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0 mr-2 lg:mr-4">
-          <img src={logoPlaceholder} alt="Company Logo" className="h-10 sm:h-12 lg:h-14 w-auto" />
+          <img src={logo} alt="One Haul Away Logo" className="h-10 sm:h-12 lg:h-14 w-auto" />
         </a>
 
         {/* Desktop Nav */}
