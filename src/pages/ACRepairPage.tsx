@@ -3,8 +3,8 @@ import useSEO from "@/hooks/useSEO";
 
 const ACRepairPage = () => {
   useSEO({
-    title: "AC Repair | Same-Day Service | CoolBreeze HVAC",
-    description: "Fast, reliable AC repair. 24/7 emergency service, upfront pricing. Licensed & insured. Call (555) 123-4567.",
+    title: "AC Repair | Same-Day Service | One Haul Away",
+    description: "Fast, reliable AC repair. 24/7 emergency service, upfront pricing. Licensed & insured. Call (941) 313-2326.",
     canonical: "https://example.com/services/ac-repair",
   });
 

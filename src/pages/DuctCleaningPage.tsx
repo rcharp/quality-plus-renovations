@@ -3,8 +3,8 @@ import useSEO from "@/hooks/useSEO";
 
 const DuctCleaningPage = () => {
   useSEO({
-    title: "Duct Cleaning | Air Quality | CoolBreeze HVAC",
-    description: "Professional duct cleaning. Remove dust, allergens & mold for healthier indoor air. Licensed & insured. Call (555) 123-4567.",
+    title: "Duct Cleaning | Air Quality | One Haul Away",
+    description: "Professional duct cleaning. Remove dust, allergens & mold for healthier indoor air. Licensed & insured. Call (941) 313-2326.",
     canonical: "https://example.com/services/duct-cleaning",
   });
 

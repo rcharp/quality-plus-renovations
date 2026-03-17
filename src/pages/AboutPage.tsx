@@ -12,7 +12,7 @@ const AboutPage = () => {
 
   useSEO({
     title: "About Us | Family-Owned HVAC Services",
-    description: "Learn about our family-owned HVAC company with over 10 years of experience. Licensed & insured. Call (555) 123-4567.",
+    description: "Learn about our family-owned HVAC company with over 10 years of experience. Licensed & insured. Call (941) 313-2326.",
     canonical: "https://example.com/about",
   });
 
