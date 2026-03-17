@@ -70,7 +70,7 @@ const Footer = () => (
 
       <div className="mt-16 pt-8 border-t border-card/10 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-base opacity-60">
-          © 2026 CoolBreeze HVAC. All rights reserved.
+          © 2026 One Haul Away. All rights reserved.
         </p>
       </div>
     </div>

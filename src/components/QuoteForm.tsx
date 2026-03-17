@@ -182,7 +182,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
           htmlFor="consentNonMarketing"
           className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
         >
-          I consent to receive non-marketing text messages from [Your Company]
+          I consent to receive non-marketing text messages from One Haul Away
           regarding appointment confirmations and reminders, customer support
           updates, and service-related follow-ups at the phone number provided.
           Consent is not a condition of purchase. Message frequency may vary.

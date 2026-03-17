@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
         >
           <span className="text-base font-semibold text-secondary uppercase tracking-wider">Testimonials</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
-            Why Our Customers Love [Company Name]
+            Why Our Customers Love One Haul Away
           </h2>
           <div className="flex items-center justify-center gap-2 mt-4">
             <div className="flex gap-0.5">
