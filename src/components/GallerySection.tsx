@@ -3,13 +3,20 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import garageBefore1 from "@/assets/gallery/garage-before-1.jpg";
+import garageAfter1 from "@/assets/gallery/garage-after-1.jpg";
+import garageBefore2 from "@/assets/gallery/garage-before-2.jpg";
+import garageAfter2 from "@/assets/gallery/garage-after-2.jpg";
+import commercialBefore from "@/assets/gallery/commercial-before.jpg";
+import commercialAfter from "@/assets/gallery/commercial-after.jpg";
+
 const galleryItems = [
-  { src: "/placeholder.svg", label: "Furniture Hauling" },
-  { src: "/placeholder.svg", label: "Loading the Truck" },
-  { src: "/placeholder.svg", label: "Office Cleanout" },
-  { src: "/placeholder.svg", label: "Garage Cleanout" },
-  { src: "/placeholder.svg", label: "Full Truck Load" },
-  { src: "/placeholder.svg", label: "Job Complete" },
+  { src: garageBefore1, label: "Garage Cleanout – Before" },
+  { src: garageAfter1, label: "Garage Cleanout – After" },
+  { src: garageBefore2, label: "Full Garage Removal – Before" },
+  { src: garageAfter2, label: "Full Garage Removal – After" },
+  { src: commercialBefore, label: "Commercial Cleanout – Before" },
+  { src: commercialAfter, label: "Commercial Cleanout – After" },
 ];
 
 const GallerySection = () => (
