@@ -34,12 +34,10 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="font-heading text-[2.6rem] lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight text-primary-foreground text-center lg:text-left">
-                Your Junk,{" "}
-                <span className="text-secondary-color">Gone Fast.</span>
+              <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-primary-foreground text-center lg:text-left">
+                Your Junk,
                 <br />
-                <span className="block mt-5 lg:mt-0">Service You Can{" "}
-                <span className="text-secondary-color">Trust.</span></span>
+                <span className="text-secondary-color">Gone Fast.</span>
               </h1>
             </motion.div>
 
