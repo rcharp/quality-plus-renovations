@@ -63,7 +63,7 @@ const Footer = () => (
           </div>
           <div className="flex items-start gap-3">
             <Facebook className="w-4 h-4 mt-0.5 opacity-60" />
-            <a href="#" className="text-base opacity-80 hover:opacity-100 transition-opacity">Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=61576350927730" target="_blank" rel="noopener noreferrer" className="text-base opacity-80 hover:opacity-100 transition-opacity">Facebook</a>
           </div>
         </div>
       </div>
