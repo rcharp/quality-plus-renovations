@@ -1,5 +1,5 @@
 import { Phone, MapPin, Clock, Facebook } from "lucide-react";
-import logoPlaceholder from "@/assets/logo-placeholder.png";
+import logo from "@/assets/one-haul-away-logo.jpg";
 
 const Footer = () => (
   <footer className="bg-foreground text-card py-16">
