@@ -2,20 +2,14 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import gallery1 from "@/assets/gallery/gallery-1.jpg";
-import gallery2 from "@/assets/gallery/gallery-2.jpg";
-import gallery3 from "@/assets/gallery/gallery-3.jpg";
-import gallery4 from "@/assets/gallery/gallery-4.jpg";
-import gallery5 from "@/assets/gallery/gallery-5.jpg";
-import gallery6 from "@/assets/gallery/gallery-6.jpg";
 
 const galleryItems = [
-  { src: gallery1, label: "Furniture Hauling" },
-  { src: gallery2, label: "Loading the Truck" },
-  { src: gallery3, label: "Office Cleanout" },
-  { src: gallery4, label: "Garage Cleanout" },
-  { src: gallery5, label: "Full Truck Load" },
-  { src: gallery6, label: "Job Complete" },
+  { src: "/placeholder.svg", label: "Furniture Hauling" },
+  { src: "/placeholder.svg", label: "Loading the Truck" },
+  { src: "/placeholder.svg", label: "Office Cleanout" },
+  { src: "/placeholder.svg", label: "Garage Cleanout" },
+  { src: "/placeholder.svg", label: "Full Truck Load" },
+  { src: "/placeholder.svg", label: "Job Complete" },
 ];
 
 const GallerySection = () => (
