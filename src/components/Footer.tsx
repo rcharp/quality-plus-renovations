@@ -8,7 +8,7 @@ const Footer = () => (
         {/* Brand */}
         <div className="space-y-4">
           <img src={logoPlaceholder} alt="Company Logo" className="h-14 w-auto" />
-          <p className="text-sm opacity-60">Your trusted local HVAC experts.</p>
+          <p className="text-sm opacity-60">Your trusted local junk removal experts.</p>
         </div>
 
         {/* Business */}
@@ -51,7 +51,7 @@ const Footer = () => (
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Contact</h4>
           <div className="flex items-start gap-3">
             <Phone className="w-4 h-4 mt-0.5 opacity-60" />
-            <a href="tel:+15551234567" className="text-base opacity-80 hover:opacity-100 transition-opacity">(555) 123-4567</a>
+            <a href="tel:+19413132326" className="text-base opacity-80 hover:opacity-100 transition-opacity">(941) 313-2326</a>
           </div>
           <div className="flex items-start gap-3">
             <MapPin className="w-4 h-4 mt-0.5 opacity-60" />
@@ -63,14 +63,14 @@ const Footer = () => (
           </div>
           <div className="flex items-start gap-3">
             <Facebook className="w-4 h-4 mt-0.5 opacity-60" />
-            <a href="#" className="text-base opacity-80 hover:opacity-100 transition-opacity">Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=61576350927730" target="_blank" rel="noopener noreferrer" className="text-base opacity-80 hover:opacity-100 transition-opacity">Facebook</a>
           </div>
         </div>
       </div>
 
       <div className="mt-16 pt-8 border-t border-card/10 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-base opacity-60">
-          © 2026 CoolBreeze HVAC. All rights reserved.
+          © 2026 One Haul Away. All rights reserved.
         </p>
       </div>
     </div>

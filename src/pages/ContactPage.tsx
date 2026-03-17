@@ -8,8 +8,8 @@ import useSEO from "@/hooks/useSEO";
 
 const ContactPage = () => {
   useSEO({
-    title: "Contact Us | Get a Free Quote | (555) 123-4567",
-    description: "Contact us for HVAC service in your area. Get a free quote, schedule service, or call (555) 123-4567. Open 24/7.",
+    title: "Contact Us | Get a Free Quote | (941) 313-2326",
+    description: "Contact us for HVAC service in your area. Get a free quote, schedule service, or call (941) 313-2326. Open 24/7.",
     canonical: "https://example.com/contact",
   });
 
@@ -64,8 +64,8 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-foreground mb-1">Phone</h3>
-                      <a href="tel:+15551234567" className="text-muted-foreground hover:text-secondary transition-colors">
-                        (555) 123-4567
+                      <a href="tel:+19413132326" className="text-muted-foreground hover:text-secondary transition-colors">
+                        (941) 313-2326
                       </a>
                     </div>
                   </div>

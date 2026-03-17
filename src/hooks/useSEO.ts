@@ -45,7 +45,7 @@ const useSEO = ({ title, description, canonical }: SEOProps) => {
     }
 
     return () => {
-      document.title = "CoolBreeze HVAC | HVAC Services";
+      document.title = "One Haul Away | HVAC Services";
     };
   }, [title, description, canonical]);
 };

@@ -49,7 +49,7 @@ const HeroSection = () => {
             >
               Got clutter, old furniture, or construction debris piling up? We handle the heavy lifting so you don't have to. Fast, affordable, and eco-friendly junk removal.
               <br /><br />
-              <strong>Your Company Name</strong> has been providing reliable junk hauling and removal services for hundreds of homes and businesses in your area.
+              <strong>One Haul Away</strong> has been providing reliable junk hauling and removal services for homes and businesses in the Palmetto, FL area.
             </motion.p>
 
             {/* Social Proof */}
@@ -75,7 +75,7 @@ const HeroSection = () => {
                     <Star key={i} className="w-4 h-4 fill-accent text-accent" />
                   ))}
                 </div>
-                <span className="text-base text-primary-foreground/70">Trusted by 100+ happy customers!</span>
+                <span className="text-base text-primary-foreground/70">Trusted by dozens of happy customers!</span>
               </div>
             </motion.div>
 

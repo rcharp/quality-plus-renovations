@@ -3,8 +3,8 @@ import useSEO from "@/hooks/useSEO";
 
 const ACMaintenancePage = () => {
   useSEO({
-    title: "AC Maintenance | Tune-Ups | CoolBreeze HVAC",
-    description: "Preventive AC maintenance. Keep your system efficient with regular tune-ups. Family owned, licensed & insured. Call (555) 123-4567.",
+    title: "AC Maintenance | Tune-Ups | One Haul Away",
+    description: "Preventive AC maintenance. Keep your system efficient with regular tune-ups. Family owned, licensed & insured. Call (941) 313-2326.",
     canonical: "https://example.com/services/ac-maintenance",
   });
 

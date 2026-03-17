@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
         >
           <span className="text-base font-semibold text-secondary uppercase tracking-wider">Testimonials</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
-            Why Our Customers Love [Company Name]
+            Why Our Customers Love One Haul Away
           </h2>
           <div className="flex items-center justify-center gap-2 mt-4">
             <div className="flex gap-0.5">
@@ -123,9 +123,14 @@ const TestimonialsSection = () => {
               ))}
             </div>
 
-            <span className="text-base font-semibold text-secondary">
+            <a
+              href="https://www.google.com/maps/place/One+Haul+Away:+Junk+Removal+and+Hauling/@27.559317,-82.537276,15z"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base font-semibold text-secondary hover:underline"
+            >
               See All Reviews →
-            </span>
+            </a>
           </div>
         </div>
       </div>

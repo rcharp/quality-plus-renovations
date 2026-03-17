@@ -16,7 +16,7 @@ const categoryColors: Record<string, string> = {
 
 const HVACTipsPage = () => {
   useSEO({
-    title: "HVAC Tips & Guides | CoolBreeze HVAC",
+    title: "HVAC Tips & Guides | One Haul Away",
     description:
       "Expert HVAC tips. Learn about AC maintenance, energy savings, air quality, and when to repair or replace your system.",
     canonical: "https://example.com/tips",

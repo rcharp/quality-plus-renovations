@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const BradentonPage = () => {
   useSEO({
     title: "HVAC Services Bradenton FL | AC Repair & Install",
-    description: "Professional HVAC services in Bradenton FL. AC repair, installation, maintenance & duct cleaning. Family owned, licensed & insured. Call (555) 123-4567.",
+    description: "Professional HVAC services in Bradenton FL. AC repair, installation, maintenance & duct cleaning. Family owned, licensed & insured. Call (941) 313-2326.",
     canonical: "https://example.com/areas/bradenton",
   });
 
