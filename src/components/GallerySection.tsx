@@ -1,15 +1,21 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Image } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import gallery1 from "@/assets/gallery/gallery-1.jpg";
+import gallery2 from "@/assets/gallery/gallery-2.jpg";
+import gallery3 from "@/assets/gallery/gallery-3.jpg";
+import gallery4 from "@/assets/gallery/gallery-4.jpg";
+import gallery5 from "@/assets/gallery/gallery-5.jpg";
+import gallery6 from "@/assets/gallery/gallery-6.jpg";
 
-const placeholders = [
-  "Furniture Hauling",
-  "Team Photo",
-  "Truck Loaded Up",
-  "Garage Cleanout",
-  "Construction Debris",
-  "Happy Customer",
+const galleryItems = [
+  { src: gallery1, label: "Furniture Hauling" },
+  { src: gallery2, label: "Loading the Truck" },
+  { src: gallery3, label: "Office Cleanout" },
+  { src: gallery4, label: "Garage Cleanout" },
+  { src: gallery5, label: "Full Truck Load" },
+  { src: gallery6, label: "Job Complete" },
 ];
 
 const GallerySection = () => (
@@ -28,17 +34,25 @@ const GallerySection = () => (
       </motion.div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {placeholders.map((label, i) => (
+        {galleryItems.map((item, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.08 }}
-            className="rounded-xl overflow-hidden aspect-square bg-muted flex flex-col items-center justify-center gap-3 border border-border"
+            className="rounded-xl overflow-hidden aspect-square relative group border border-border"
           >
-            <Image className="w-10 h-10 text-muted-foreground/40" />
-            <span className="text-sm text-muted-foreground/60 font-medium">{label}</span>
+            <img
+              src={item.src}
+              alt={item.label}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors flex items-end">
+              <span className="text-white font-semibold text-sm p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                {item.label}
+              </span>
+            </div>
           </motion.div>
         ))}
       </div>
