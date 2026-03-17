@@ -63,9 +63,9 @@ const TestimonialsSection = () => {
         </motion.div>
 
         {/* Carousel with logo */}
-        <div className="max-w-4xl mx-auto relative flex items-center gap-8">
+        <div className="max-w-4xl mx-auto relative flex items-start gap-8">
           {/* Logo */}
-          <div className="hidden lg:flex shrink-0 items-center justify-center self-start" style={{ marginTop: '0px' }}>
+          <div className="hidden lg:flex shrink-0 items-center justify-center">
             <img src={logo} alt="One Haul Away Logo" className="w-auto rounded-xl" style={{ height: '300px' }} />
           </div>
 
