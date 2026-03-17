@@ -66,7 +66,7 @@ const TestimonialsSection = () => {
         <div className="max-w-4xl mx-auto relative flex items-start gap-8">
           {/* Logo */}
           <div className="hidden lg:flex shrink-0 items-center justify-center pt-12">
-            <img src={logo} alt="One Haul Away Logo" className="w-28 h-auto rounded-xl" />
+            <img src={logo} alt="One Haul Away Logo" className="w-auto rounded-xl" style={{ height: '200px' }} />
           </div>
 
           <div className="flex-1 relative">
