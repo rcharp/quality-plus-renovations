@@ -140,6 +140,7 @@ const TestimonialsSection = () => {
               See All Reviews →
             </a>
           </div>
+          </div>
         </div>
       </div>
     </section>
