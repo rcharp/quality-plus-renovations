@@ -1,6 +1,7 @@
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useCallback, useEffect } from "react";
+import logo from "@/assets/one-haul-away-logo.jpg";
 
 const testimonials = [
   {
