@@ -2,7 +2,7 @@ import { Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import QuoteForm from "./QuoteForm";
-import heroBg from "@/assets/hero-bg.png";
+import heroBg from "@/assets/service-yard-waste.jpg";
 import reviewer1 from "@/assets/reviewers/reviewer-1.jpg";
 import reviewer2 from "@/assets/reviewers/reviewer-2.jpg";
 import reviewer3 from "@/assets/reviewers/reviewer-3.jpg";
