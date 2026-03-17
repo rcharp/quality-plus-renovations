@@ -8,7 +8,7 @@ const Footer = () => (
         {/* Brand */}
         <div className="space-y-4">
           <img src={logoPlaceholder} alt="Company Logo" className="h-14 w-auto" />
-          <p className="text-sm opacity-60">Your trusted local HVAC experts.</p>
+          <p className="text-sm opacity-60">Your trusted local junk removal experts.</p>
         </div>
 
         {/* Business */}
