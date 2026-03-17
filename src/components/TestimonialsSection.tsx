@@ -62,8 +62,15 @@ const TestimonialsSection = () => {
           </div>
         </motion.div>
 
-        {/* Carousel */}
-        <div className="max-w-3xl mx-auto relative">
+        {/* Carousel with logo */}
+        <div className="max-w-4xl mx-auto relative flex items-start gap-8">
+          {/* Logo */}
+          <div className="hidden lg:flex shrink-0 items-center justify-center pt-12">
+            <img src={logo} alt="One Haul Away Logo" className="w-28 h-auto rounded-xl" />
+          </div>
+
+          <div className="flex-1 relative">
+          <div className="overflow-hidden">
           <div className="overflow-hidden">
             <motion.div
               key={current}
