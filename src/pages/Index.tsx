@@ -15,7 +15,7 @@ import useSEO from "@/hooks/useSEO";
 const Index = () => {
   useSEO({
     title: "Junk Hauling & Removal Services | Nick's Property Services",
-    description: "Fast, affordable junk removal for homes and businesses in Palmetto, FL. Furniture, appliances, construction debris, yard waste — we haul it all. Call (781) 572-6988.",
+    description: "Fast, affordable junk removal for homes and businesses in Apollo Beach, FL. Furniture, appliances, construction debris, yard waste — we haul it all. Call (781) 572-6988.",
     canonical: "https://example.com/",
   });
 
