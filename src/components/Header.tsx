@@ -136,7 +136,7 @@ const Header = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             className="lg:hidden overflow-hidden border-t border-secondary/20"
-            style={{ backgroundColor: "#0f172a" }}
+            style={{ backgroundColor: "#1a1a1a" }}
           >
             <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) =>
