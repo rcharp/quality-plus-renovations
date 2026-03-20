@@ -198,7 +198,7 @@ const Header = () => {
                 <button
                   onClick={() => { setMobileOpen(false); openQuoteModal(); }}
                   className="block w-full text-center px-6 py-3 text-sm font-semibold"
-                  style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+                  style={{ backgroundColor: "hsl(43, 80%, 50%)", color: "#fff", borderRadius: "10px" }}
                 >
                   Get Free Quote
                 </button>
