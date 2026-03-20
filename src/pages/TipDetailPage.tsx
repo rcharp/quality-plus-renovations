@@ -118,7 +118,7 @@ const TipDetailPage = () => {
                   key={t.slug}
                   href={`/tips/${t.slug}`}
                   className="group rounded-xl p-6 border border-secondary/30 hover:border-secondary/60 transition-all"
-                  style={{ backgroundColor: "#0f172a" }}
+                  style={{ backgroundColor: "#1a1a1a" }}
                 >
                   <span className="text-xs font-semibold text-secondary uppercase">{t.category}</span>
                   <h3 className="font-heading text-base font-bold text-primary-foreground mt-2 mb-2 group-hover:text-secondary transition-colors leading-snug">

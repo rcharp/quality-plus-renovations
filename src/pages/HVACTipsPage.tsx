@@ -72,7 +72,7 @@ const HVACTipsPage = () => {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.08 }}
                   className="group rounded-2xl p-8 border border-secondary/30 hover:border-secondary/60 transition-all"
-                  style={{ backgroundColor: "#0f172a" }}
+                  style={{ backgroundColor: "#1a1a1a" }}
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <span
