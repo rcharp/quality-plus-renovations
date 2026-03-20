@@ -88,7 +88,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-foreground mb-1">Address</h3>
-                      <p className="text-muted-foreground">123 Main Street, Anytown, FL 34000</p>
+                      <p className="text-muted-foreground">Apollo Beach, FL</p>
                     </div>
                   </div>
 

@@ -55,7 +55,7 @@ const Footer = () => (
           </div>
           <div className="flex items-start gap-3">
             <MapPin className="w-4 h-4 mt-0.5 opacity-60" />
-            <span className="text-base opacity-80">123 Main Street, Anytown, FL 34000</span>
+            <span className="text-base opacity-80">Apollo Beach, FL</span>
           </div>
           <div className="flex items-start gap-3">
             <Clock className="w-4 h-4 mt-0.5 opacity-60" />
