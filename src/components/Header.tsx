@@ -71,7 +71,7 @@ const Header = () => {
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
                       className="absolute top-full left-0 mt-1 z-50 rounded-xl shadow-lg border border-border py-2 min-w-[200px]"
-                      style={{ backgroundColor: "#0f172a" }}
+                      style={{ backgroundColor: "#1a1a1a" }}
                     >
                       {link.children.map((child) => (
                         <a
