@@ -28,7 +28,7 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Address</div>
-                <div className="text-base font-semibold text-foreground">123 Main Street, Anytown, FL 34000</div>
+                <div className="text-base font-semibold text-foreground">Apollo Beach, FL</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
