@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 
 const ReviewPage = () => {
   useSEO({
-    title: "Leave a Review | One Haul Away",
+    title: "Leave a Review | Nick's Property Services",
     description: "Share your experience with us. Your feedback helps us improve and helps others find quality HVAC service.",
     canonical: "https://example.com/review",
   });

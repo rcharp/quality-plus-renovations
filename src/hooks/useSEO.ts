@@ -45,7 +45,7 @@ const useSEO = ({ title, description, canonical }: SEOProps) => {
     }
 
     return () => {
-      document.title = "One Haul Away | HVAC Services";
+      document.title = "Nick's Property Services | HVAC Services";
     };
   }, [title, description, canonical]);
 };

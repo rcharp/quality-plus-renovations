@@ -1,7 +1,7 @@
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useCallback, useEffect } from "react";
-import logo from "@/assets/one-haul-away-logo.jpg";
+import logo from "@/assets/nps-logo.jpg";
 
 const testimonials = [
   {
@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
         >
           <span className="text-base font-semibold text-secondary uppercase tracking-wider">Testimonials</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
-            Why Our Customers Love One Haul Away
+            Why Our Customers Love Nick's Property Services
           </h2>
           <div className="flex items-center justify-center gap-2 mt-4">
             <div className="flex gap-0.5">
@@ -66,7 +66,7 @@ const TestimonialsSection = () => {
         <div className="max-w-4xl mx-auto relative flex items-start gap-8">
           {/* Logo */}
           <div className="hidden lg:flex shrink-0 items-center justify-center">
-            <img src={logo} alt="One Haul Away Logo" className="w-auto rounded-xl" style={{ height: '300px' }} />
+            <img src={logo} alt="Nick's Property Services Logo" className="w-auto rounded-xl" style={{ height: '300px' }} />
           </div>
 
           <div className="flex-1 relative">

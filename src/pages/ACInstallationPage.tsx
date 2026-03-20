@@ -3,8 +3,8 @@ import useSEO from "@/hooks/useSEO";
 
 const ACInstallationPage = () => {
   useSEO({
-    title: "AC Installation | New System Install | One Haul Away",
-    description: "Professional AC installation. Energy-efficient systems, upfront pricing, manufacturer warranties. Call (941) 313-2326.",
+    title: "AC Installation | New System Install | Nick's Property Services",
+    description: "Professional AC installation. Energy-efficient systems, upfront pricing, manufacturer warranties. Call (781) 572-6988.",
     canonical: "https://example.com/services/ac-installation",
   });
 
