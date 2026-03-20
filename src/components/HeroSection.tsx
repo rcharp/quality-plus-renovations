@@ -113,7 +113,7 @@ const HeroSection = () => {
             id="quote-form"
             className="w-full lg:w-[520px] lg:ml-auto"
           >
-            <QuoteForm style={{ backgroundColor: "rgba(15, 23, 42, 0.6)" }} />
+            <QuoteForm style={{ backgroundColor: "rgba(26, 26, 26, 0.6)" }} />
           </motion.div>
         </div>
 
