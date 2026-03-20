@@ -49,7 +49,7 @@ const HeroSection = () => {
             >
               Got clutter, old furniture, or construction debris piling up? We handle the heavy lifting so you don't have to. Fast, affordable, and eco-friendly junk removal.
               <br /><br />
-              <strong>One Haul Away</strong> has been providing reliable junk hauling and removal services for homes and businesses in the Palmetto, FL area.
+              <strong>Nick's Property Services</strong> has been providing reliable junk hauling and removal services for homes and businesses in the Apollo Beach, FL area.
             </motion.p>
 
             {/* Social Proof */}
@@ -113,7 +113,7 @@ const HeroSection = () => {
             id="quote-form"
             className="w-full lg:w-[520px] lg:ml-auto"
           >
-            <QuoteForm style={{ backgroundColor: "rgba(15, 23, 42, 0.6)" }} />
+            <QuoteForm style={{ backgroundColor: "rgba(26, 26, 26, 0.6)" }} />
           </motion.div>
         </div>
 

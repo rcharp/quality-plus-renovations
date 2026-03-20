@@ -16,7 +16,7 @@ const categoryColors: Record<string, string> = {
 
 const HVACTipsPage = () => {
   useSEO({
-    title: "HVAC Tips & Guides | One Haul Away",
+    title: "HVAC Tips & Guides | Nick's Property Services",
     description:
       "Expert HVAC tips. Learn about AC maintenance, energy savings, air quality, and when to repair or replace your system.",
     canonical: "https://example.com/tips",
@@ -72,7 +72,7 @@ const HVACTipsPage = () => {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.08 }}
                   className="group rounded-2xl p-8 border border-secondary/30 hover:border-secondary/60 transition-all"
-                  style={{ backgroundColor: "#0f172a" }}
+                  style={{ backgroundColor: "#1a1a1a" }}
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <span

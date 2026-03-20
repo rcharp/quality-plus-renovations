@@ -12,7 +12,7 @@ const AboutPage = () => {
 
   useSEO({
     title: "About Us | Family-Owned HVAC Services",
-    description: "Learn about our family-owned HVAC company with over 10 years of experience. Licensed & insured. Call (941) 313-2326.",
+    description: "Learn about our family-owned HVAC company with over 10 years of experience. Licensed & insured. Call (781) 572-6988.",
     canonical: "https://example.com/about",
   });
 
@@ -76,7 +76,7 @@ const AboutPage = () => {
         </section>
 
         {/* What We Do */}
-        <section className="py-16 lg:py-24" style={{ backgroundColor: "#0f172a" }}>
+        <section className="py-16 lg:py-24" style={{ backgroundColor: "#1a1a1a" }}>
           <div className="container mx-auto px-4 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <motion.div

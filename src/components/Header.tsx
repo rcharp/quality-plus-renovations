@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Phone, Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
-import logo from "@/assets/one-haul-away-logo.jpg";
+import logo from "@/assets/nps-logo.jpg";
 const navLinks = [
   { label: "Home", href: "/" },
   {
@@ -42,11 +42,11 @@ const Header = () => {
   const { openQuoteModal } = useQuoteModal();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-secondary/20 max-w-[100vw]" style={{ backgroundColor: "#0f172a" }}>
+    <header className="sticky top-0 z-50 border-b border-secondary/20 max-w-[100vw]" style={{ backgroundColor: "#1a1a1a" }}>
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0 mr-2 lg:mr-4">
-          <img src={logo} alt="One Haul Away Logo" className="w-auto" style={{ height: '200px' }} />
+          <img src={logo} alt="Nick's Property Services Logo" className="w-auto" style={{ height: '200px' }} />
         </a>
 
         {/* Desktop Nav */}
@@ -71,7 +71,7 @@ const Header = () => {
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
                       className="absolute top-full left-0 mt-1 z-50 rounded-xl shadow-lg border border-border py-2 min-w-[200px]"
-                      style={{ backgroundColor: "#0f172a" }}
+                      style={{ backgroundColor: "#1a1a1a" }}
                     >
                       {link.children.map((child) => (
                         <a
@@ -102,17 +102,17 @@ const Header = () => {
         <div className="flex items-center flex-1 lg:flex-none min-w-0">
           <div className="flex items-center justify-center gap-3 flex-1 lg:flex-none lg:justify-end">
             <a
-              href="tel:+19413132326"
+              href="tel:+17815726988"
               className="flex items-center gap-1 sm:gap-1.5 lg:gap-2 px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors whitespace-nowrap"
               style={{ borderRadius: "10px" }}
             >
               <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 shrink-0" />
-              (941) 313-2326
+              (781) 572-6988
             </a>
             <button
               onClick={openQuoteModal}
               className="px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold hover:opacity-90 transition-opacity whitespace-nowrap"
-              style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+              style={{ backgroundColor: "hsl(43, 80%, 50%)", color: "#fff", borderRadius: "10px" }}
             >
               Get Free Quote
             </button>
@@ -136,7 +136,7 @@ const Header = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             className="lg:hidden overflow-hidden border-t border-secondary/20"
-            style={{ backgroundColor: "#0f172a" }}
+            style={{ backgroundColor: "#1a1a1a" }}
           >
             <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) =>
@@ -189,16 +189,16 @@ const Header = () => {
               )}
               <div className="pt-4 space-y-3 border-t border-secondary/20">
                 <a
-                  href="tel:+19413132326"
+                  href="tel:+17815726988"
                   className="flex items-center justify-center gap-2 w-full text-center px-6 py-3 text-sm font-semibold border border-secondary text-secondary"
                   style={{ borderRadius: "10px" }}
                 >
-                  <Phone className="w-5 h-5" /> (941) 313-2326
+                  <Phone className="w-5 h-5" /> (781) 572-6988
                 </a>
                 <button
                   onClick={() => { setMobileOpen(false); openQuoteModal(); }}
                   className="block w-full text-center px-6 py-3 text-sm font-semibold"
-                  style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+                  style={{ backgroundColor: "hsl(43, 80%, 50%)", color: "#fff", borderRadius: "10px" }}
                 >
                   Get Free Quote
                 </button>

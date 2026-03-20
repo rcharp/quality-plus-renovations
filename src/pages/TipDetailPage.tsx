@@ -16,7 +16,7 @@ const TipDetailPage = () => {
   const otherTips = hvacTips.filter((t) => t.slug !== slug).slice(0, 3);
 
   useSEO({
-    title: `${tip.title} | One Haul Away`,
+    title: `${tip.title} | Nick's Property Services`,
     description: tip.excerpt,
     canonical: `https://example.com/tips/${tip.slug}`,
   });
@@ -118,7 +118,7 @@ const TipDetailPage = () => {
                   key={t.slug}
                   href={`/tips/${t.slug}`}
                   className="group rounded-xl p-6 border border-secondary/30 hover:border-secondary/60 transition-all"
-                  style={{ backgroundColor: "#0f172a" }}
+                  style={{ backgroundColor: "#1a1a1a" }}
                 >
                   <span className="text-xs font-semibold text-secondary uppercase">{t.category}</span>
                   <h3 className="font-heading text-base font-bold text-primary-foreground mt-2 mb-2 group-hover:text-secondary transition-colors leading-snug">
@@ -143,7 +143,7 @@ const TipDetailPage = () => {
           <div className="container mx-auto px-4 lg:px-8 max-w-2xl">
             <p className="text-muted-foreground text-lg">
               Have questions? <a href="/contact" className="text-secondary font-semibold hover:underline">Contact our team</a> or call{" "}
-              <a href="tel:+19413132326" className="text-secondary font-semibold hover:underline">(941) 313-2326</a> for expert advice.
+              <a href="tel:+17815726988" className="text-secondary font-semibold hover:underline">(781) 572-6988</a> for expert advice.
             </p>
           </div>
         </section>

@@ -3,20 +3,26 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import garageBefore1 from "@/assets/gallery/garage-before-1.jpg";
-import garageAfter1 from "@/assets/gallery/garage-after-1.jpg";
-import garageBefore2 from "@/assets/gallery/garage-before-2.jpg";
-import garageAfter2 from "@/assets/gallery/garage-after-2.jpg";
-import commercialBefore from "@/assets/gallery/commercial-before.jpg";
-import commercialAfter from "@/assets/gallery/commercial-after.jpg";
+import furnitureBefore from "@/assets/gallery/furniture-before.jpg";
+import furnitureAfter from "@/assets/gallery/furniture-after.jpg";
+import garageCleanoutBefore from "@/assets/gallery/garage-cleanout-before.jpg";
+import garageCleanoutAfter from "@/assets/gallery/garage-cleanout-after.jpg";
+import junkPileBefore from "@/assets/gallery/junk-pile-before.jpg";
+import junkPileBefore2 from "@/assets/gallery/junk-pile-before-2.jpg";
+import emptyTrailer from "@/assets/gallery/empty-trailer.jpg";
+import loadedTrailer from "@/assets/gallery/loaded-trailer.jpg";
+import boxesBefore from "@/assets/gallery/boxes-before.jpg";
 
 const galleryItems = [
-  { src: garageBefore1, label: "Garage Cleanout – Before" },
-  { src: garageAfter1, label: "Garage Cleanout – After" },
-  { src: garageBefore2, label: "Full Garage Removal – Before" },
-  { src: garageAfter2, label: "Full Garage Removal – After" },
-  { src: commercialBefore, label: "Commercial Cleanout – Before" },
-  { src: commercialAfter, label: "Commercial Cleanout – After" },
+  { src: furnitureBefore, label: "Furniture Removal – Before" },
+  { src: furnitureAfter, label: "Furniture Removal – After" },
+  { src: garageCleanoutBefore, label: "Garage Cleanout – Before" },
+  { src: garageCleanoutAfter, label: "Garage Cleanout – After" },
+  { src: junkPileBefore, label: "Junk Pile Removal" },
+  { src: loadedTrailer, label: "Loaded & Ready to Haul" },
+  { src: junkPileBefore2, label: "Residential Cleanout" },
+  { src: emptyTrailer, label: "Clean Trailer – Ready to Go" },
+  { src: boxesBefore, label: "Box & Storage Cleanout" },
 ];
 
 const GallerySection = () => (

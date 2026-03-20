@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const PalmaSolaPage = () => {
   useSEO({
     title: "HVAC Services Palma Sola FL | AC Repair & Install",
-    description: "Professional HVAC services in Palma Sola FL. AC repair, installation, maintenance & duct cleaning. Family owned, licensed & insured. Call (941) 313-2326.",
+    description: "Professional HVAC services in Palma Sola FL. AC repair, installation, maintenance & duct cleaning. Family owned, licensed & insured. Call (781) 572-6988.",
     canonical: "https://example.com/areas/palma-sola",
   });
 

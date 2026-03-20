@@ -37,8 +37,8 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Phone</div>
-                <a href="tel:+19413132326" className="text-base font-semibold text-foreground hover:text-primary transition-colors">
-                  (941) 313-2326
+                <a href="tel:+17815726988" className="text-base font-semibold text-foreground hover:text-primary transition-colors">
+                  (781) 572-6988
                 </a>
               </div>
            </div>
@@ -63,7 +63,7 @@ const AboutSection = () => (
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="One Haul Away location on Google Maps"
+              title="Nick's Property Services location on Google Maps"
             />
           </div>
         </motion.div>

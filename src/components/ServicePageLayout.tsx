@@ -37,17 +37,17 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
               <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mt-6 leading-relaxed">{intro}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
                 <a
-                   href="tel:+19413132326"
+                   href="tel:+17815726988"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                   style={{ borderRadius: "10px" }}
                 >
                   <Phone className="w-5 h-5" />
-                  (941) 313-2326
+                  (781) 572-6988
                 </a>
                 <button
                   onClick={openQuoteModal}
                   className="px-8 py-3 font-semibold hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+                  style={{ backgroundColor: "hsl(43, 80%, 50%)", color: "#fff", borderRadius: "10px" }}
                 >
                   Get Free Quote
                 </button>
@@ -90,7 +90,7 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 className="rounded-2xl p-8 lg:p-10 border border-secondary/30"
-                style={{ backgroundColor: "#0f172a" }}
+                style={{ backgroundColor: "#1a1a1a" }}
               >
                 <h2 className="font-heading text-2xl lg:text-3xl font-bold text-primary-foreground mb-6">{benefits.heading}</h2>
                 <ul className="space-y-4">
@@ -161,7 +161,7 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
         </section>
 
         {/* CTA */}
-        <section className="py-16 relative overflow-hidden" style={{ backgroundColor: "#0f172a" }}>
+        <section className="py-16 relative overflow-hidden" style={{ backgroundColor: "#1a1a1a" }}>
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">Ready to Get Started?</h2>
             <p className="text-primary-foreground/70 mb-8 max-w-xl mx-auto">
@@ -169,17 +169,17 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+19413132326"
+                href="tel:+17815726988"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                 style={{ borderRadius: "10px" }}
               >
                 <Phone className="w-5 h-5" />
-                (941) 313-2326
+                (781) 572-6988
               </a>
               <button
                 onClick={openQuoteModal}
                 className="px-8 py-3 font-semibold hover:opacity-90 transition-opacity"
-                style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+                style={{ backgroundColor: "hsl(43, 80%, 50%)", color: "#fff", borderRadius: "10px" }}
               >
                 Get Free Quote
               </button>

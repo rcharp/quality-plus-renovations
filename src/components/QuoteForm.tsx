@@ -70,8 +70,8 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       <div
         className={`rounded-2xl border-2 ${compact ? 'p-5' : 'p-8'} shadow-2xl flex flex-col items-center justify-center text-center ${compact ? 'min-h-[300px]' : 'min-h-[400px]'} ${className}`}
         style={{
-          backgroundColor: "#0f172a",
-          borderColor: "#3b82f6",
+          backgroundColor: "#1a1a1a",
+          borderColor: "hsl(43, 80%, 50%)",
           ...style,
         }}
       >
@@ -86,8 +86,8 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       onSubmit={handleSubmit}
       className={`rounded-2xl border-2 ${compact ? 'p-5 space-y-3' : 'p-8 space-y-6'} shadow-2xl ${className}`}
       style={{
-        backgroundColor: "#0f172a",
-        borderColor: "#3b82f6",
+        backgroundColor: "#1a1a1a",
+        borderColor: "hsl(43, 80%, 50%)",
         ...style,
       }}
     >
@@ -162,7 +162,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
           htmlFor="consentMarketing"
           className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
         >
-          I consent to receive marketing text messages from One Haul Away at the
+          I consent to receive marketing text messages from Nick's Property Services at the
           phone number provided. Consent is not a condition of purchase. Message
           frequency may vary. Message &amp; data rates may apply. Text HELP for
           assistance, reply STOP to opt out.
@@ -182,7 +182,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
           htmlFor="consentNonMarketing"
           className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
         >
-          I consent to receive non-marketing text messages from One Haul Away
+          I consent to receive non-marketing text messages from Nick's Property Services
           regarding appointment confirmations and reminders, customer support
           updates, and service-related follow-ups at the phone number provided.
           Consent is not a condition of purchase. Message frequency may vary.
@@ -195,7 +195,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
         type="submit"
         disabled={isSubmitting}
         className={`w-full font-bold ${compact ? 'text-base py-4' : 'text-lg py-6'} hover:opacity-90 transition-opacity`}
-        style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+        style={{ backgroundColor: "hsl(43, 80%, 50%)", color: "#fff", borderRadius: "10px" }}
       >
         {isSubmitting ? "Sending..." : "Get Free Quote"}
       </Button>

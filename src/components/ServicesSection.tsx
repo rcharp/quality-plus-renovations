@@ -79,7 +79,7 @@ const ServicesSection = () => (
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
             className="rounded-2xl overflow-hidden card-elevated border border-secondary/30 group"
-            style={{ backgroundColor: "#0f172a" }}
+            style={{ backgroundColor: "#1a1a1a" }}
           >
             <div className="block aspect-[16/9] overflow-hidden">
               <img

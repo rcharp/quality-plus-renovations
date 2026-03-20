@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const PalmettoPage = () => {
   useSEO({
     title: "HVAC Services Palmetto FL | AC Repair & Install",
-    description: "Trusted HVAC services in Palmetto FL. AC repair, installation, maintenance & duct cleaning. Family owned, licensed & insured. Call (941) 313-2326.",
+    description: "Trusted HVAC services in Palmetto FL. AC repair, installation, maintenance & duct cleaning. Family owned, licensed & insured. Call (781) 572-6988.",
     canonical: "https://example.com/areas/palmetto",
   });
 
