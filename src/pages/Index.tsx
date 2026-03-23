@@ -30,7 +30,7 @@ const Index = () => {
         <ServicesSection />
         <AboutSection />
         <GallerySection />
-        <HVACTipsSection />
+        
         <FAQSection />
         <CTASection />
       </main>
