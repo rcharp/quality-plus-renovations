@@ -6,7 +6,7 @@ import ServicesSection from "@/components/ServicesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import AboutSection from "@/components/AboutSection";
 import GallerySection from "@/components/GallerySection";
-import HVACTipsSection from "@/components/HVACTipsSection";
+
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
