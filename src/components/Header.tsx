@@ -8,10 +8,10 @@ const navLinks = [
   {
     label: "Services",
     children: [
-      { label: "AC Repair", href: "/services/ac-repair" },
-      { label: "AC Installation", href: "/services/ac-installation" },
-      { label: "AC Maintenance", href: "/services/ac-maintenance" },
-      { label: "Duct Cleaning", href: "/services/duct-cleaning" },
+      { label: "Residential Junk Removal", href: "#services" },
+      { label: "Commercial Junk Removal", href: "#services" },
+      { label: "Construction Debris Removal", href: "#services" },
+      { label: "Yard Waste Removal", href: "#services" },
     ],
   },
   {
