@@ -5,24 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QuoteModalProvider } from "./components/QuoteModal";
 import Index from "./pages/Index";
-import ReviewPage from "./pages/ReviewPage";
-import ACRepairPage from "./pages/ACRepairPage";
-import ACInstallationPage from "./pages/ACInstallationPage";
-import ACMaintenancePage from "./pages/ACMaintenancePage";
-import DuctCleaningPage from "./pages/DuctCleaningPage";
-import PalmettoPage from "./pages/areas/PalmettoPage";
-import MemphisPage from "./pages/areas/MemphisPage";
-import BradentonPage from "./pages/areas/BradentonPage";
-import EllentonPage from "./pages/areas/EllentonPage";
-import PalmaSolaPage from "./pages/areas/PalmaSolaPage";
-import GalleryPage from "./pages/GalleryPage";
-import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
-import QuotePage from "./pages/QuotePage";
-import HVACTipsPage from "./pages/HVACTipsPage";
-import TipDetailPage from "./pages/TipDetailPage";
 import NotFound from "./pages/NotFound";
-
 
 const queryClient = new QueryClient();
 
@@ -35,23 +18,6 @@ const App = () => (
         <QuoteModalProvider>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/quote" element={<QuotePage />} />
-            
-            <Route path="/review" element={<ReviewPage />} />
-            <Route path="/services/ac-repair" element={<ACRepairPage />} />
-            <Route path="/services/ac-installation" element={<ACInstallationPage />} />
-            <Route path="/services/ac-maintenance" element={<ACMaintenancePage />} />
-            <Route path="/services/duct-cleaning" element={<DuctCleaningPage />} />
-            <Route path="/areas/palmetto" element={<PalmettoPage />} />
-            <Route path="/areas/memphis" element={<MemphisPage />} />
-            <Route path="/areas/bradenton" element={<BradentonPage />} />
-            <Route path="/areas/ellenton" element={<EllentonPage />} />
-            <Route path="/areas/palma-sola" element={<PalmaSolaPage />} />
-            <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/tips" element={<HVACTipsPage />} />
-            <Route path="/tips/:slug" element={<TipDetailPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </QuoteModalProvider>
