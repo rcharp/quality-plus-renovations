@@ -16,7 +16,7 @@ interface QuoteFormProps {
   id?: string;
 }
 
-const QuoteForm = ({ showHeader = true, compact = false, className = "", style }: QuoteFormProps) => {
+const QuoteForm = ({ showHeader = true, compact = false, className = "", style, id }: QuoteFormProps) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
