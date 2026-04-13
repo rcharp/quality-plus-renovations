@@ -42,7 +42,7 @@ const Header = () => {
   const { openQuoteModal } = useQuoteModal();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-secondary/20 secondary-color max-w-[100vw]" style={{ backgroundColor: "#1a1a1a" }}>
+    <header id="main-navbar" className="sticky top-0 z-50 border-b border-secondary/20 secondary-color max-w-[100vw]" style={{ backgroundColor: "#1a1a1a" }}>
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0 mr-2 lg:mr-4">
@@ -102,6 +102,7 @@ const Header = () => {
         <div className="flex items-center flex-1 lg:flex-none min-w-0">
           <div className="flex items-center justify-center gap-3 flex-1 lg:flex-none lg:justify-end">
             <a
+              id="nav-phone-btn"
               href="tel:+17815726988"
               className="flex items-center gap-1 sm:gap-1.5 lg:gap-2 px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 secondary-color transition-colors whitespace-nowrap"
               style={{ borderRadius: "10px" }}
@@ -110,6 +111,7 @@ const Header = () => {
               (781) 572-6988
             </a>
             <button
+              id="nav-quote-btn"
               onClick={openQuoteModal}
               className="px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold hover:opacity-90 secondary-color transition-opacity whitespace-nowrap"
               style={{ backgroundColor: "hsl(43, 80%, 50%)", color: "#fff", borderRadius: "10px" }}

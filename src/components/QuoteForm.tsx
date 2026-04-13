@@ -13,9 +13,10 @@ interface QuoteFormProps {
   compact?: boolean;
   className?: string;
   style?: React.CSSProperties;
+  id?: string;
 }
 
-const QuoteForm = ({ showHeader = true, compact = false, className = "", style }: QuoteFormProps) => {
+const QuoteForm = ({ showHeader = true, compact = false, className = "", style, id }: QuoteFormProps) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -83,6 +84,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
 
   return (
     <form
+      id={id}
       onSubmit={handleSubmit}
       className={`rounded-2xl border-2 ${compact ? 'p-5 space-y-3' : 'p-8 space-y-6'} shadow-2xl ${className}`}
       style={{
