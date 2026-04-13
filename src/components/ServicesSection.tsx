@@ -61,7 +61,7 @@ const ServicesSection = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <span className="text-base font-semibold text-primary uppercase tracking-wider">What We Do</span>
+        <span className="text-base font-semibold text-primary uppercase tracking-wider primary-color">What We Do</span>
         <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
           Junk Removal Services You Can Count On
         </h2>
@@ -78,7 +78,7 @@ const ServicesSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="rounded-2xl overflow-hidden card-elevated border border-secondary/30 group"
+            className="rounded-2xl overflow-hidden card-elevated border border-secondary/30 secondary-color group"
             style={{ backgroundColor: "#1a1a1a" }}
           >
             <div className="block aspect-[16/9] overflow-hidden">
@@ -89,10 +89,10 @@ const ServicesSection = () => (
               />
             </div>
             <div className="p-8">
-              <h3 className="font-heading text-2xl font-bold text-primary-foreground mb-4">{service.title}</h3>
+              <h3 className="font-heading text-2xl font-bold text-primary-foreground primary-color mb-4">{service.title}</h3>
               <ul className="space-y-3 mb-6">
                 {service.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3 text-base text-primary-foreground/80">
+                  <li key={feature} className="flex items-start gap-3 text-base text-primary-foreground/80 primary-color">
                     <Check className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
                     {feature}
                   </li>
@@ -100,7 +100,7 @@ const ServicesSection = () => (
               </ul>
               <a
                 href={service.href}
-                className="inline-flex items-center gap-2 text-base font-semibold text-secondary hover:gap-3 transition-all"
+                className="inline-flex items-center gap-2 text-base font-semibold text-secondary secondary-color hover:gap-3 transition-all"
               >
                 Learn More <ArrowRight className="w-4 h-4" />
               </a>

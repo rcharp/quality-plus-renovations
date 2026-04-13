@@ -42,11 +42,11 @@ const FAQSection = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <span className="text-base font-semibold text-secondary uppercase tracking-wider">Still Not Sure?</span>
-        <h2 className="font-heading text-4xl lg:text-5xl font-bold text-primary-foreground mt-3">
+        <span className="text-base font-semibold text-secondary uppercase tracking-wider secondary-color">Still Not Sure?</span>
+        <h2 className="font-heading text-4xl lg:text-5xl font-bold text-primary-foreground primary-color mt-3">
           Frequently Asked Questions
         </h2>
-        <p className="text-primary-foreground/70 mt-4">What else would you like to know?</p>
+        <p className="text-primary-foreground/70 primary-color mt-4">What else would you like to know?</p>
       </motion.div>
 
       <motion.div
@@ -59,12 +59,12 @@ const FAQSection = () => (
             <AccordionItem
               key={i}
               value={`faq-${i}`}
-              className="bg-primary-foreground/5 border border-primary-foreground/10 rounded-xl px-6 data-[state=open]:shadow-md transition-shadow"
+              className="bg-primary-foreground/5 border border-primary-foreground/10 primary-color rounded-xl px-6 data-[state=open]:shadow-md transition-shadow"
             >
-              <AccordionTrigger className="text-left font-heading font-semibold text-primary-foreground py-5 hover:no-underline">
+              <AccordionTrigger className="text-left font-heading font-semibold text-primary-foreground primary-color py-5 hover:no-underline">
                 {faq.q}
               </AccordionTrigger>
-              <AccordionContent className="text-primary-foreground/70 leading-relaxed pb-5">
+              <AccordionContent className="text-primary-foreground/70 primary-color leading-relaxed pb-5">
                 {faq.a}
               </AccordionContent>
             </AccordionItem>

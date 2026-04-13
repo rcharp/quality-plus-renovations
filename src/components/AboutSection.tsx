@@ -11,7 +11,7 @@ const AboutSection = () => (
           viewport={{ once: true }}
           className="space-y-6"
         >
-          <span className="text-base font-semibold text-primary uppercase tracking-wider">About Us</span>
+          <span className="text-base font-semibold text-primary uppercase tracking-wider primary-color">About Us</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground">
             Family Owned. Locally Operated.
           </h2>
@@ -23,8 +23,8 @@ const AboutSection = () => (
           </p>
           <div className="flex flex-col sm:flex-row gap-6 pt-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                <MapPin className="w-5 h-5 text-primary" />
+              <div className="w-10 h-10 rounded-xl bg-primary/10 primary-color flex items-center justify-center">
+                <MapPin className="w-5 h-5 text-primary primary-color" />
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Address</div>
@@ -32,18 +32,18 @@ const AboutSection = () => (
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                <Phone className="w-5 h-5 text-primary" />
+              <div className="w-10 h-10 rounded-xl bg-primary/10 primary-color flex items-center justify-center">
+                <Phone className="w-5 h-5 text-primary primary-color" />
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Phone</div>
-                <a href="tel:+17815726988" className="text-base font-semibold text-foreground hover:text-primary transition-colors">
+                <a href="tel:+17815726988" className="text-base font-semibold text-foreground hover:text-primary primary-color transition-colors">
                   (781) 572-6988
                 </a>
               </div>
            </div>
           </div>
-          <a href="/about" className="inline-flex items-center gap-2 text-secondary font-semibold hover:gap-3 transition-all mt-2">
+          <a href="/about" className="inline-flex items-center gap-2 text-secondary secondary-color font-semibold hover:gap-3 transition-all mt-2">
             Learn More About Us <ArrowRight className="w-4 h-4" />
           </a>
         </motion.div>
