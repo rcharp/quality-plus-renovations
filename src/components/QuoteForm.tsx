@@ -84,6 +84,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style, 
 
   return (
     <form
+      id={id}
       onSubmit={handleSubmit}
       className={`rounded-2xl border-2 ${compact ? 'p-5 space-y-3' : 'p-8 space-y-6'} shadow-2xl ${className}`}
       style={{
