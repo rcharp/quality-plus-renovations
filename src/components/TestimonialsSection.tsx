@@ -48,14 +48,14 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-base font-semibold text-secondary uppercase tracking-wider">Testimonials</span>
+          <span className="text-base font-semibold text-secondary uppercase tracking-wider secondary-color">Testimonials</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
             Why Our Customers Love Nick's Property Services
           </h2>
           <div className="flex items-center justify-center gap-2 mt-4">
             <div className="flex gap-0.5">
               {[1, 2, 3, 4, 5].map((s) => (
-                <Star key={s} className="w-4 h-4 fill-accent text-accent" />
+                <Star key={s} className="w-4 h-4 fill-accent text-accent secondary-color" />
               ))}
             </div>
             <span className="text-base text-muted-foreground font-medium">5.0 Rating</span>
@@ -79,17 +79,17 @@ const TestimonialsSection = () => {
               transition={{ duration: 0.4 }}
               className="bg-card rounded-2xl p-10 card-elevated border border-border relative"
             >
-              <Quote className="w-10 h-10 text-secondary/15 absolute top-8 right-8" />
+              <Quote className="w-10 h-10 text-secondary/15 secondary-color absolute top-8 right-8" />
               <div className="flex gap-0.5 mb-5">
                 {Array.from({ length: testimonials[current].rating }).map((_, s) => (
-                  <Star key={s} className="w-5 h-5 fill-accent text-accent" />
+                  <Star key={s} className="w-5 h-5 fill-accent text-accent secondary-color" />
                 ))}
               </div>
               <p className="text-foreground text-lg leading-relaxed mb-8">
                 "{testimonials[current].text}"
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-11 h-11 rounded-full bg-secondary/15 flex items-center justify-center font-heading font-bold text-secondary text-base">
+                <div className="w-11 h-11 rounded-full bg-secondary/15 flex items-center justify-center font-heading font-bold text-secondary secondary-color text-base">
                   {testimonials[current].name.charAt(0)}
                 </div>
                 <div>
@@ -124,7 +124,7 @@ const TestimonialsSection = () => {
                   key={i}
                   onClick={() => setCurrent(i)}
                   className={`w-2.5 h-2.5 rounded-full transition-colors ${
-                    i === current ? "bg-secondary" : "bg-border"
+                    i === current ? "bg-secondary secondary-color" : "bg-border"
                   }`}
                 />
               ))}
@@ -134,7 +134,7 @@ const TestimonialsSection = () => {
               href="https://www.google.com/maps/place/One+Haul+Away:+Junk+Removal+and+Hauling/@27.559317,-82.537276,15z"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-base font-semibold text-secondary hover:underline"
+              className="text-base font-semibold text-secondary secondary-color hover:underline"
             >
               See All Reviews →
             </a>

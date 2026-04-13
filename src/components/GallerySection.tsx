@@ -34,7 +34,7 @@ const GallerySection = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <span className="text-base font-semibold text-primary uppercase tracking-wider">Our Work</span>
+        <span className="text-base font-semibold text-primary uppercase tracking-wider primary-color">Our Work</span>
         <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
           See Us In Action
         </h2>
@@ -72,7 +72,7 @@ const GallerySection = () => (
         className="text-center mt-12"
       >
         <Link to="/gallery">
-          <Button variant="secondary" size="lg" className="group text-lg px-10 py-6 h-auto">
+          <Button variant="secondary" size="lg" className="group text-lg px-10 py-6 h-auto secondary-color">
             View Full Gallery
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>

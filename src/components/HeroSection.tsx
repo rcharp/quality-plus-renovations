@@ -34,10 +34,10 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-primary-foreground text-center lg:text-left">
+              <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-primary-foreground primary-color text-center lg:text-left">
                 Your Junk,
                 <br />
-                <span className="text-secondary-color">Gone Fast.</span>
+                <span className="text-secondary-color secondary-color">Gone Fast.</span>
               </h1>
             </motion.div>
 
@@ -45,7 +45,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-lg text-primary-foreground/70 max-w-lg leading-relaxed break-words"
+              className="text-lg text-primary-foreground/70 primary-color max-w-lg leading-relaxed break-words"
             >
               Got clutter, old furniture, or construction debris piling up? We handle the heavy lifting so you don't have to. Fast, affordable, and eco-friendly junk removal.
               <br /><br />
@@ -65,17 +65,17 @@ const HeroSection = () => {
                     key={i}
                     src={img}
                     alt={`Happy customer ${i + 1}`}
-                    className="w-9 h-9 rounded-full border-2 border-primary object-cover"
+                    className="w-9 h-9 rounded-full border-2 border-primary primary-color object-cover"
                   />
                 ))}
               </div>
               <div className="flex items-center gap-2">
                 <div className="flex items-center gap-0.5">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-4 h-4 fill-accent text-accent" />
+                    <Star key={i} className="w-4 h-4 fill-accent text-accent secondary-color" />
                   ))}
                 </div>
-                <span className="text-base text-primary-foreground/70">Trusted by dozens of happy customers!</span>
+                <span className="text-base text-primary-foreground/70 primary-color">Trusted by dozens of happy customers!</span>
               </div>
             </motion.div>
 
@@ -87,18 +87,18 @@ const HeroSection = () => {
               className="flex items-center gap-6 pt-2"
             >
               <div className="flex items-center gap-2">
-                <span className="text-base font-semibold text-primary-foreground">Google</span>
+                <span className="text-base font-semibold text-primary-foreground primary-color">Google</span>
                 <div className="flex gap-0.5">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
+                    <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent secondary-color" />
                   ))}
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-base font-semibold text-primary-foreground">Facebook</span>
+                <span className="text-base font-semibold text-primary-foreground primary-color">Facebook</span>
                 <div className="flex gap-0.5">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
+                    <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent secondary-color" />
                   ))}
                 </div>
               </div>
