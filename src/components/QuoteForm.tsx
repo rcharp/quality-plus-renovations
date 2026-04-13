@@ -69,10 +69,9 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style, 
   if (isSubmitted) {
     return (
       <div
-        className={`rounded-2xl border-2 ${compact ? 'p-5' : 'p-8'} shadow-2xl flex flex-col items-center justify-center text-center ${compact ? 'min-h-[300px]' : 'min-h-[400px]'} ${className}`}
+        className={`rounded-2xl ${compact ? 'p-5' : 'p-8'} shadow-2xl flex flex-col items-center justify-center text-center ${compact ? 'min-h-[300px]' : 'min-h-[400px]'} ${className}`}
         style={{
           backgroundColor: "#1a1a1a",
-          borderColor: "hsl(43, 80%, 50%)",
           ...style,
         }}
       >
@@ -86,10 +85,9 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style, 
     <form
       id={id}
       onSubmit={handleSubmit}
-      className={`rounded-2xl border-2 ${compact ? 'p-5 space-y-3' : 'p-8 space-y-6'} shadow-2xl ${className}`}
+      className={`rounded-2xl ${compact ? 'p-5 space-y-3' : 'p-8 space-y-6'} shadow-2xl ${className}`}
       style={{
         backgroundColor: "#1a1a1a",
-        borderColor: "hsl(43, 80%, 50%)",
         ...style,
       }}
     >
