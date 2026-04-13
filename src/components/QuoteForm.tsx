@@ -13,6 +13,7 @@ interface QuoteFormProps {
   compact?: boolean;
   className?: string;
   style?: React.CSSProperties;
+  id?: string;
 }
 
 const QuoteForm = ({ showHeader = true, compact = false, className = "", style }: QuoteFormProps) => {
