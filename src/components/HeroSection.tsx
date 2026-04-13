@@ -37,7 +37,7 @@ const HeroSection = () => {
               <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-primary-foreground primary-color text-center lg:text-left">
                 Your Junk,
                 <br />
-                <span id="hero-highlighted" className="text-secondary-color secondary-color">Gone Fast.</span>
+                <span id="hero-highlighted" className="text-primary-foreground primary-color">Gone Fast.</span>
               </h1>
             </motion.div>
 
