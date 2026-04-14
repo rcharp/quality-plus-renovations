@@ -42,7 +42,7 @@ const Header = () => {
   const { openQuoteModal } = useQuoteModal();
 
   return (
-    <header id="main-navbar" className="sticky top-0 z-50 border-b border-secondary/20 secondary-color max-w-[100vw]" style={{ backgroundColor: "#1a1a1a" }}>
+    <header id="main-navbar" className="absolute top-0 left-0 right-0 z-50 max-w-[100vw]">
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0 mr-2 lg:mr-4">
