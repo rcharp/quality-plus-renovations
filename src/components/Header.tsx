@@ -43,10 +43,10 @@ const Header = () => {
 
   return (
     <header id="main-navbar" className="absolute top-0 left-0 right-0 z-50 max-w-[100vw]">
-      <div className="container mx-auto flex items-center justify-between py-3 lg:py-4 px-4 lg:px-8 max-w-[100vw]">
+      <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0 mr-2 lg:mr-4">
-          <img src={logo} alt="Nick's Property Services Logo" className="w-auto h-12 sm:h-14 lg:h-16" />
+          <img src={logo} alt="Nick's Property Services Logo" className="w-auto h-16 sm:h-20 lg:h-24" />
         </a>
 
         {/* Desktop Nav */}
@@ -59,7 +59,7 @@ const Header = () => {
                 onMouseEnter={() => setOpenDropdown(link.label)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-               <button className="flex items-center gap-1 px-4 py-2 text-base font-medium text-white hover:text-white/80 transition-colors rounded-lg">
+                <button className="flex items-center gap-1 px-4 py-2 text-base font-medium text-white hover:text-white/80 transition-colors rounded-lg">
                   {link.label}
                   <ChevronDown className="w-3.5 h-3.5" />
                 </button>
@@ -104,7 +104,7 @@ const Header = () => {
             <a
               id="nav-phone-btn"
               href="tel:+17815726988"
-              className="hidden sm:flex items-center gap-1.5 lg:gap-2 px-3 lg:px-6 py-2.5 lg:py-3 text-sm lg:text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 secondary-color transition-colors whitespace-nowrap"
+              className="flex items-center gap-1 sm:gap-1.5 lg:gap-2 px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 secondary-color transition-colors whitespace-nowrap"
               style={{ borderRadius: "10px" }}
             >
               <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 shrink-0" />
@@ -113,7 +113,7 @@ const Header = () => {
             <button
               id="nav-quote-btn"
               onClick={openQuoteModal}
-              className="px-3 sm:px-4 lg:px-6 py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold hover:opacity-90 secondary-color transition-opacity whitespace-nowrap"
+              className="px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold hover:opacity-90 secondary-color transition-opacity whitespace-nowrap"
               style={{ backgroundColor: "hsl(43, 80%, 50%)", color: "#fff", borderRadius: "10px" }}
             >
               Get Free Quote
