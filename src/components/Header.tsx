@@ -42,7 +42,7 @@ const Header = () => {
   const { openQuoteModal } = useQuoteModal();
 
   return (
-    <header id="main-navbar" className="sticky top-0 z-50 border-b border-secondary/20 secondary-color max-w-[100vw]" style={{ backgroundColor: "#1a1a1a" }}>
+    <header id="main-navbar" className="absolute top-0 left-0 right-0 z-50 max-w-[100vw]">
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0 mr-2 lg:mr-4">
@@ -59,7 +59,7 @@ const Header = () => {
                 onMouseEnter={() => setOpenDropdown(link.label)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-                <button className="flex items-center gap-1 px-4 py-2 text-base font-medium text-primary-foreground/70 hover:text-primary-foreground primary-color transition-colors rounded-lg">
+                <button className="flex items-center gap-1 px-4 py-2 text-base font-medium text-white hover:text-white/80 transition-colors rounded-lg">
                   {link.label}
                   <ChevronDown className="w-3.5 h-3.5" />
                 </button>
@@ -70,14 +70,14 @@ const Header = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute top-full left-0 mt-1 z-50 rounded-xl shadow-lg border border-border py-2 min-w-[200px]"
-                      style={{ backgroundColor: "#1a1a1a" }}
+                      className="absolute top-full left-0 mt-1 z-50 rounded-xl shadow-lg border border-white/10 py-2 min-w-[200px]"
+                      style={{ backgroundColor: "rgba(0, 0, 0, 0.85)" }}
                     >
                       {link.children.map((child) => (
                         <a
                           key={child.label}
                           href={child.href}
-                          className="block px-4 py-2.5 text-base text-primary-foreground/70 hover:text-primary-foreground hover:bg-secondary/10 primary-color secondary-color transition-colors"
+                          className="block px-4 py-2.5 text-base text-white/70 hover:text-white hover:bg-white/10 transition-colors"
                         >
                           {child.label}
                         </a>
@@ -90,7 +90,7 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="px-4 py-2 text-base font-medium text-primary-foreground/70 hover:text-primary-foreground primary-color transition-colors rounded-lg"
+                className="px-4 py-2 text-base font-medium text-white hover:text-white/80 transition-colors rounded-lg"
               >
                 {link.label}
               </a>
@@ -123,7 +123,7 @@ const Header = () => {
           {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-primary-foreground primary-color ml-2"
+            className="lg:hidden p-2 text-white ml-2"
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -137,8 +137,8 @@ const Header = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="lg:hidden overflow-hidden border-t border-secondary/20 secondary-color"
-            style={{ backgroundColor: "#1a1a1a" }}
+            className="lg:hidden overflow-hidden border-t border-white/10"
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.9)" }}
           >
             <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) =>
@@ -146,13 +146,13 @@ const Header = () => {
                   <div key={link.label}>
                     <button
                       onClick={() => setMobileDropdown(mobileDropdown === link.label ? null : link.label)}
-                      className="flex items-center justify-between w-full py-2 text-base font-medium text-primary-foreground primary-color"
+                      className="flex items-center justify-between w-full py-2 text-base font-medium text-white"
                     >
                       {link.label}
                       {mobileDropdown === link.label ? (
-                        <ChevronUp className="w-4 h-4 text-primary-foreground/50 primary-color" />
+                        <ChevronUp className="w-4 h-4 text-white/50" />
                       ) : (
-                        <ChevronDown className="w-4 h-4 text-primary-foreground/50 primary-color" />
+                        <ChevronDown className="w-4 h-4 text-white/50" />
                       )}
                     </button>
                     <AnimatePresence>
@@ -169,7 +169,7 @@ const Header = () => {
                               key={child.label}
                               href={child.href}
                               onClick={() => { setMobileOpen(false); setMobileDropdown(null); }}
-                              className="block pl-4 py-2 text-base text-primary-foreground/70 hover:text-primary-foreground primary-color transition-colors"
+                              className="block pl-4 py-2 text-base text-white/70 hover:text-white transition-colors"
                             >
                               {child.label}
                             </a>
@@ -183,13 +183,13 @@ const Header = () => {
                     key={link.label}
                     href={link.href}
                     onClick={() => { setMobileOpen(false); setMobileDropdown(null); }}
-                    className="block py-2 text-base font-medium text-primary-foreground primary-color"
+                    className="block py-2 text-base font-medium text-white"
                   >
                     {link.label}
                   </a>
                 )
               )}
-              <div className="pt-4 space-y-3 border-t border-secondary/20 secondary-color">
+              <div className="pt-4 space-y-3 border-t border-white/10">
                 <a
                   href="tel:+17815726988"
                   className="flex items-center justify-center gap-2 w-full text-center px-6 py-3 text-sm font-semibold border border-secondary text-secondary secondary-color"
