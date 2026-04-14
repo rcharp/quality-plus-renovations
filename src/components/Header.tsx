@@ -46,7 +46,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0 mr-2 lg:mr-4">
-          <img src={logo} alt="Nick's Property Services Logo" className="w-auto h-20 sm:h-28 lg:h-[200px]" />
+          <img src={logo} alt="Nick's Property Services Logo" className="w-auto h-16 sm:h-20 lg:h-24" />
         </a>
 
         {/* Desktop Nav */}
