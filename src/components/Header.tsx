@@ -49,7 +49,7 @@ const Header = () => {
           <img 
             src={logo} 
             alt="Nick's Property Services Logo" 
-            className="h-[60px] w-auto lg:h-[200px] lg:w-auto" 
+            className="h-[60px] w-auto lg:max-h-[200px] lg:w-auto"
           />
         </a>
 
