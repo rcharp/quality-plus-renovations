@@ -1,13 +1,13 @@
 import { Phone, MapPin, Clock, Facebook } from "lucide-react";
-import logo from "@/assets/nps-logo.jpg";
+import logo from "@/assets/bush-boys-logo.png";
 
 const Footer = () => (
-  <footer className="bg-foreground text-card py-16">
+  <footer className="text-card py-16" style={{ backgroundColor: "hsl(225, 55%, 14%)" }}>
     <div className="container mx-auto px-4 lg:px-8">
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
         {/* Brand */}
         <div className="space-y-4">
-          <img src={logo} alt="Nick's Property Services Logo" className="w-auto" style={{ height: '200px' }} />
+          <img src={logo} alt="Bush Boys Hauling Logo" className="h-auto rounded-lg" style={{ width: '240px' }} />
           <p className="text-sm opacity-60">Your trusted local junk removal experts.</p>
         </div>
 
@@ -38,11 +38,11 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Service Areas</h4>
           <nav className="space-y-3">
-            <a href="/areas/palmetto" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Palmetto, FL</a>
-            <a href="/areas/bradenton" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Bradenton, FL</a>
-            <a href="/areas/memphis" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Memphis, FL</a>
-            <a href="/areas/ellenton" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Ellenton, FL</a>
-            <a href="/areas/palma-sola" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Palma Sola, FL</a>
+            <a href="#" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Garfield Heights, OH</a>
+            <a href="#" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Cleveland, OH</a>
+            <a href="#" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Maple Heights, OH</a>
+            <a href="#" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Parma, OH</a>
+            <a href="#" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Brooklyn Heights, OH</a>
           </nav>
         </div>
 
@@ -51,11 +51,11 @@ const Footer = () => (
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Contact</h4>
           <div className="flex items-start gap-3">
             <Phone className="w-4 h-4 mt-0.5 opacity-60" />
-            <a href="tel:+17815726988" className="text-base opacity-80 hover:opacity-100 transition-opacity">(781) 572-6988</a>
+            <a href="tel:+12162709992" className="text-base opacity-80 hover:opacity-100 transition-opacity">(216) 270-9992</a>
           </div>
           <div className="flex items-start gap-3">
             <MapPin className="w-4 h-4 mt-0.5 opacity-60" />
-            <span className="text-base opacity-80">Apollo Beach, FL</span>
+            <span className="text-base opacity-80">Garfield Heights, OH</span>
           </div>
           <div className="flex items-start gap-3">
             <Clock className="w-4 h-4 mt-0.5 opacity-60" />
@@ -63,14 +63,14 @@ const Footer = () => (
           </div>
           <div className="flex items-start gap-3">
             <Facebook className="w-4 h-4 mt-0.5 opacity-60" />
-            <a href="https://www.facebook.com/profile.php?id=61576350927730" target="_blank" rel="noopener noreferrer" className="text-base opacity-80 hover:opacity-100 transition-opacity">Facebook</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-base opacity-80 hover:opacity-100 transition-opacity">Facebook</a>
           </div>
         </div>
       </div>
 
       <div className="mt-16 pt-8 border-t border-card/10 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-base opacity-60">
-          © 2026 Nick's Property Services. All rights reserved.
+          © 2026 Bush Boys Hauling. All rights reserved.
         </p>
       </div>
     </div>

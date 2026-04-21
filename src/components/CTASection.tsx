@@ -23,17 +23,17 @@ const CTASection = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="tel:+17815726988"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-secondary text-secondary-foreground secondary-color font-semibold hover:opacity-90 transition-opacity"
-              style={{ borderRadius: "10px" }}
+              href="tel:+12162709992"
+              className="inline-flex items-center gap-2 px-8 py-4 font-semibold hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: "hsl(225, 55%, 22%)", color: "#fff", borderRadius: "10px" }}
             >
               <Phone className="w-5 h-5" />
-              (781) 572-6988
+              (216) 270-9992
             </a>
             <button
               onClick={openQuoteModal}
-              className="inline-flex items-center gap-2 px-8 py-4 font-semibold hover:opacity-90 secondary-color transition-opacity"
-              style={{ backgroundColor: "hsl(43, 80%, 50%)", color: "#fff", borderRadius: "10px" }}
+              className="inline-flex items-center gap-2 px-8 py-4 font-semibold hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: "hsl(225, 55%, 35%)", color: "#fff", borderRadius: "10px" }}
             >
               Get Free Quote
             </button>
