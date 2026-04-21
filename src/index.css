@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    --primary: 0 0% 8%;
+    --primary: 225 55% 22%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 43 80% 50%;
+    --secondary: 225 55% 22%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 40 14% 93%;
     --muted-foreground: 40 10% 46%;
 
-    --accent: 43 80% 50%;
+    --accent: 225 55% 22%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -32,7 +32,7 @@
 
     --border: 40 13% 88%;
     --input: 40 13% 88%;
-    --ring: 43 80% 50%;
+    --ring: 225 55% 22%;
 
     --radius: 0.75rem;
 
@@ -43,12 +43,12 @@
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 0 0% 8%;
+    --sidebar-primary: 225 55% 22%;
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-accent-foreground: 225 55% 22%;
     --sidebar-border: 40 13% 88%;
-    --sidebar-ring: 43 80% 50%;
+    --sidebar-ring: 225 55% 22%;
 
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Montserrat', sans-serif;
@@ -80,16 +80,16 @@
 @layer utilities {
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(43 80% 50%), hsl(43 80% 40%));
+    background-image: linear-gradient(135deg, hsl(225 55% 22%), hsl(225 55% 14%));
   }
 
   .text-secondary-color {
-    color: hsl(43 80% 50%);
+    color: hsl(225 55% 22%);
   }
 
   .text-accent-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(43 80% 50%), hsl(38 80% 42%));
+    background-image: linear-gradient(135deg, hsl(225 55% 22%), hsl(225 60% 14%));
   }
 
   .section-gradient {
