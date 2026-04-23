@@ -34,10 +34,10 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-white text-center lg:text-left">
+              <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-primary-foreground primary-color text-center lg:text-left">
                 <span className="relative z-10">Your Junk,</span>
                 <br />
-                <span id="hero-highlighted" className="relative z-0 text-white px-[5px]" style={{ backgroundColor: "hsl(225, 55%, 22%)" }}>Gone Fast.</span>
+                <span id="hero-highlighted" className="relative z-0 text-primary-foreground primary-color bg-accent px-[5px]">Gone Fast.</span>
               </h1>
             </motion.div>
 
@@ -49,7 +49,7 @@ const HeroSection = () => {
             >
               Got clutter, old furniture, or construction debris piling up? We handle the heavy lifting so you don't have to. Fast, affordable, and eco-friendly junk removal.
               <br /><br />
-              <strong>Bush Boys Hauling</strong> has provided reliable junk hauling and removal services for dozens of satisfied homes and businesses in Garfield Heights, OH.
+              <strong>Nick's Property Services</strong> has provided reliable junk hauling and removal services for dozens of satisfied homes and businesses.
             </motion.p>
 
             {/* Social Proof */}
@@ -113,7 +113,7 @@ const HeroSection = () => {
             id="quote-form"
             className="w-full lg:w-[520px] lg:ml-auto"
           >
-            <QuoteForm id="hero-quote-form" style={{ backgroundColor: "rgba(20, 30, 60, 0.85)", border: "2px solid hsl(225, 55%, 22%)" }} />
+            <QuoteForm id="hero-quote-form" style={{ backgroundColor: "rgba(26, 26, 26, 0.6)", border: "2px solid hsl(43, 80%, 50%)" }} />
           </motion.div>
         </div>
 

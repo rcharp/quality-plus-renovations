@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Phone, Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
-import logo from "@/assets/bush-boys-logo.png";
+import logo from "@/assets/nps-logo.jpg";
 const navLinks = [
   { label: "Home", href: "/" },
   {
@@ -48,8 +48,8 @@ const Header = () => {
         <a href="/" className="flex items-center shrink-0 mr-2 lg:mr-4">
           <img 
             src={logo} 
-            alt="Bush Boys Hauling Logo" 
-            className="h-[60px] w-auto lg:w-[300px] lg:h-auto lg:max-h-none lg:max-w-none"
+            alt="Nick's Property Services Logo" 
+            className="h-[60px] w-auto lg:h-[250px] lg:w-auto lg:max-h-none lg:max-w-none"
           />
         </a>
 
@@ -107,18 +107,18 @@ const Header = () => {
           <div className="flex items-center justify-center gap-3 flex-1 lg:flex-none lg:justify-end">
             <a
               id="nav-phone-btn"
-              href="tel:+12162709992"
-              className="flex items-center gap-1 sm:gap-1.5 lg:gap-2 px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold text-white border border-white hover:bg-white/10 transition-colors whitespace-nowrap"
+              href="tel:+17815726988"
+              className="flex items-center gap-1 sm:gap-1.5 lg:gap-2 px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 secondary-color transition-colors whitespace-nowrap"
               style={{ borderRadius: "10px" }}
             >
               <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 shrink-0" />
-              (216) 270-9992
+              (781) 572-6988
             </a>
             <button
               id="nav-quote-btn"
               onClick={openQuoteModal}
-              className="px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold hover:opacity-90 transition-opacity whitespace-nowrap"
-              style={{ backgroundColor: "hsl(225, 55%, 22%)", color: "#fff", borderRadius: "10px" }}
+              className="px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold hover:opacity-90 secondary-color transition-opacity whitespace-nowrap"
+              style={{ backgroundColor: "hsl(43, 80%, 50%)", color: "#fff", borderRadius: "10px" }}
             >
               Get Free Quote
             </button>
@@ -195,16 +195,16 @@ const Header = () => {
               )}
               <div className="pt-4 space-y-3 border-t border-white/10">
                 <a
-                  href="tel:+12162709992"
-                  className="flex items-center justify-center gap-2 w-full text-center px-6 py-3 text-sm font-semibold border border-white text-white"
+                  href="tel:+17815726988"
+                  className="flex items-center justify-center gap-2 w-full text-center px-6 py-3 text-sm font-semibold border border-secondary text-secondary secondary-color"
                   style={{ borderRadius: "10px" }}
                 >
-                  <Phone className="w-5 h-5" /> (216) 270-9992
+                  <Phone className="w-5 h-5" /> (781) 572-6988
                 </a>
                 <button
                   onClick={() => { setMobileOpen(false); openQuoteModal(); }}
-                  className="block w-full text-center px-6 py-3 text-sm font-semibold"
-                  style={{ backgroundColor: "hsl(225, 55%, 22%)", color: "#fff", borderRadius: "10px" }}
+                  className="block w-full text-center px-6 py-3 text-sm font-semibold secondary-color"
+                  style={{ backgroundColor: "hsl(43, 80%, 50%)", color: "#fff", borderRadius: "10px" }}
                 >
                   Get Free Quote
                 </button>

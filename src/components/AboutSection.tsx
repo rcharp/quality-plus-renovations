@@ -28,7 +28,7 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Address</div>
-                <div className="text-base font-semibold text-foreground">Garfield Heights, OH</div>
+                <div className="text-base font-semibold text-foreground">Apollo Beach, FL</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -37,8 +37,8 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Phone</div>
-                <a href="tel:+12162709992" className="text-base font-semibold text-foreground hover:text-primary primary-color transition-colors">
-                  (216) 270-9992
+                <a href="tel:+17815726988" className="text-base font-semibold text-foreground hover:text-primary primary-color transition-colors">
+                  (781) 572-6988
                 </a>
               </div>
            </div>
@@ -56,14 +56,14 @@ const AboutSection = () => (
         >
           <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ height: 450 }}>
             <iframe
-              src="https://www.google.com/maps?q=Garfield+Heights,+OH&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56406.09752389026!2d-82.44!3d27.77!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2d0e3de539b6f%3A0x82cd1b5f753c4e8!2sApollo%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1710000000000"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Bush Boys Hauling location on Google Maps"
+              title="Nick's Property Services location on Google Maps"
             />
           </div>
         </motion.div>

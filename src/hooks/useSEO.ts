@@ -45,7 +45,7 @@ const useSEO = ({ title, description, canonical }: SEOProps) => {
     }
 
     return () => {
-      document.title = "Bush Boys Hauling | Junk Removal";
+      document.title = "Nick's Property Services | HVAC Services";
     };
   }, [title, description, canonical]);
 };
