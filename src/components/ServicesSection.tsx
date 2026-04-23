@@ -1,13 +1,8 @@
 import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
-import serviceResidential from "@/assets/service-residential-junk.jpg";
-import serviceCommercial from "@/assets/service-yard-waste.jpg";
-import serviceConstruction from "@/assets/service-construction-debris.jpg";
-import serviceYard from "@/assets/service-commercial-junk.jpg";
 
 const services = [
   {
-    image: serviceResidential,
     title: "Residential Junk Removal",
     href: "#",
     features: [
@@ -18,7 +13,6 @@ const services = [
     ],
   },
   {
-    image: serviceCommercial,
     title: "Commercial Junk Removal",
     href: "#",
     features: [
@@ -29,7 +23,6 @@ const services = [
     ],
   },
   {
-    image: serviceConstruction,
     title: "Construction Debris Removal",
     href: "#",
     features: [
@@ -40,7 +33,6 @@ const services = [
     ],
   },
   {
-    image: serviceYard,
     title: "Yard Waste Removal",
     href: "#",
     features: [
@@ -81,13 +73,6 @@ const ServicesSection = () => (
             className="rounded-2xl overflow-hidden card-elevated border border-secondary/30 secondary-color group"
             style={{ backgroundColor: "#1a1a1a" }}
           >
-            <div className="block aspect-[16/9] overflow-hidden">
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
             <div className="p-8">
               <h3 className="font-heading text-2xl font-bold text-primary-foreground primary-color mb-4">{service.title}</h3>
               <ul className="space-y-3 mb-6">
