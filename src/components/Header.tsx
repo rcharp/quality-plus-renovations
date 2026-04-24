@@ -43,9 +43,9 @@ const Header = () => {
 
   return (
     <header id="main-navbar" className="absolute top-0 left-0 right-0 z-50 max-w-[100vw]">
-      <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8 max-w-[100vw]">
+      <div className="container mx-auto flex flex-col items-center gap-3 lg:flex-row lg:items-center lg:justify-between lg:gap-0 py-4 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
-        <a href="/" className="flex items-center shrink-0 mr-2 lg:mr-4">
+        <a href="/" className="flex items-center justify-center shrink-0 lg:mr-4">
           <img 
             src={logo} 
             alt="Nick's Property Services Logo" 
@@ -103,7 +103,7 @@ const Header = () => {
         </nav>
 
         {/* CTA - always visible */}
-        <div className="flex items-center flex-1 lg:flex-none min-w-0">
+        <div className="flex items-center justify-center w-full lg:w-auto lg:flex-none min-w-0">
           <div className="flex items-center justify-center gap-3 flex-1 lg:flex-none lg:justify-end">
             <a
               id="nav-phone-btn"
