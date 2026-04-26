@@ -78,7 +78,6 @@ const Review = () => {
                   transition={{ duration: 0.25 }}
                 >
                   <div className="text-center mb-10">
-                    <img src={logo} alt="Nick's Property Services" className="h-20 w-auto mx-auto mb-6 rounded-lg" />
                     <h1 className="font-heading text-4xl lg:text-5xl font-bold text-foreground">
                       How was your experience?
                     </h1>
@@ -119,7 +118,6 @@ const Review = () => {
                   transition={{ duration: 0.25 }}
                 >
                   <div className="text-center mb-8">
-                    <img src={logo} alt="Nick's Property Services" className="h-20 w-auto mx-auto mb-6 rounded-lg" />
                     <h1 className="font-heading text-4xl lg:text-5xl font-bold text-foreground">Tell us more</h1>
                     <p className="text-lg text-muted-foreground mt-3">
                       We're sorry to hear that. Please let us know how we can improve.
@@ -189,7 +187,6 @@ const Review = () => {
                   transition={{ duration: 0.25 }}
                   className="text-center"
                 >
-                  <img src={logo} alt="Nick's Property Services" className="h-20 w-auto mx-auto mb-6 rounded-lg" />
                   <h1 className="font-heading text-4xl lg:text-5xl font-bold text-foreground">Thank You!</h1>
                   <p className="text-lg text-muted-foreground mt-4 max-w-lg mx-auto">
                     We appreciate your feedback and will use it to improve our service.
