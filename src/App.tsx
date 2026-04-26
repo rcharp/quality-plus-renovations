@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QuoteModalProvider } from "./components/QuoteModal";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import Review from "./pages/Review";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
         <QuoteModalProvider>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/review" element={<Review />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </QuoteModalProvider>
