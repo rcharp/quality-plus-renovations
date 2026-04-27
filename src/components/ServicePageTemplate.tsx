@@ -17,6 +17,7 @@ import {
 import useSEO from "@/hooks/useSEO";
 import { ServiceData, services } from "@/data/services";
 import { useQuoteModal } from "@/components/QuoteModal";
+import heroBg from "@/assets/qpr/hero-bg.jpg";
 
 interface ServicePageTemplateProps {
   service: ServiceData;
@@ -45,7 +46,7 @@ const ServicePageTemplate = ({ service }: ServicePageTemplateProps) => {
           eyebrow="Our Services"
           title={service.shortTitle}
           tagline={service.heroTagline}
-          backgroundImage={service.image}
+          backgroundImage={heroBg}
         />
 
         <TrustBadges />
