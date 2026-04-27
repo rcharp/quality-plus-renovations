@@ -9,6 +9,7 @@ import GallerySection from "@/components/GallerySection";
 
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
+import BlogSection from "@/components/BlogSection";
 import Footer from "@/components/Footer";
 import useSEO from "@/hooks/useSEO";
 
@@ -32,6 +33,7 @@ const Index = () => {
         <GallerySection />
         
         <FAQSection />
+        <BlogSection limit={3} />
         <CTASection />
       </main>
       <Footer />
