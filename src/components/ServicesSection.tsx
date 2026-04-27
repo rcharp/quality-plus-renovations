@@ -3,23 +3,22 @@ import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 
 const services = [
-  { title: "Finish Carpentry", features: ["Custom interior carpentry", "Cabinetry & millwork", "Hand-crafted detail", "Generations of experience"] },
-  { title: "Built-ins", features: ["Custom shelving & cabinets", "Entertainment centers", "Mudrooms & closets", "Fully tailored to your space"] },
-  { title: "Trim Work", features: ["Baseboards & crown molding", "Window & door casings", "Wainscoting & chair rails", "Clean, precise installs"] },
-  { title: "Faux Beams", features: ["Custom wood-look beams", "Lightweight & easy to install", "Stained or painted finishes", "Adds warmth & character"] },
-  { title: "Coffered Ceilings", features: ["Custom designs to your taste", "Adds elegance & depth", "Built to spec", "Premium materials"] },
-  { title: "Custom Built Barn Doors", features: ["Hand-built to your dimensions", "Premium hardware included", "Modern & rustic styles", "Smooth, quiet operation"] },
-  { title: "Full Interior Painting", features: ["Walls, ceilings & trim", "Premium low-VOC paints", "Clean prep & cleanup", "Crisp, lasting finish"] },
-  { title: "Exterior Painting", features: ["Whole-home exteriors", "Weather-resistant coatings", "Surface prep & priming", "Long-lasting protection"] },
-  { title: "LVP Flooring", features: ["Waterproof luxury vinyl plank", "Wide style selection", "Professional install", "Durable & easy to maintain"] },
-  { title: "Laminate Flooring", features: ["Affordable wood-look floors", "Click-lock installation", "Multiple finishes available", "Great for high-traffic rooms"] },
-  { title: "Glue Down Flooring", features: ["Solid, stable installs", "Vinyl, hardwood & more", "Subfloor prep included", "Minimal expansion gaps"] },
-  { title: "Drywall Work", features: ["New construction & remodels", "Hanging & finishing", "Smooth & textured finishes", "Paint-ready results"] },
-  { title: "Drywall Repair", features: ["Holes, cracks & water damage", "Texture matching", "Patch & repaint ready", "Fast turnarounds"] },
+  { title: "Finish Carpentry", slug: "finish-carpentry", features: ["Custom interior carpentry", "Cabinetry & millwork", "Hand-crafted detail", "Generations of experience"] },
+  { title: "Built-ins", slug: "built-ins", features: ["Custom shelving & cabinets", "Entertainment centers", "Mudrooms & closets", "Fully tailored to your space"] },
+  { title: "Trim Work", slug: "trim-work", features: ["Baseboards & crown molding", "Window & door casings", "Wainscoting & chair rails", "Clean, precise installs"] },
+  { title: "Faux Beams", slug: "faux-beams", features: ["Custom wood-look beams", "Lightweight & easy to install", "Stained or painted finishes", "Adds warmth & character"] },
+  { title: "Coffered Ceilings", slug: "coffered-ceilings", features: ["Custom designs to your taste", "Adds elegance & depth", "Built to spec", "Premium materials"] },
+  { title: "Custom Built Barn Doors", slug: "custom-barn-doors", features: ["Hand-built to your dimensions", "Premium hardware included", "Modern & rustic styles", "Smooth, quiet operation"] },
+  { title: "Full Interior Painting", slug: "interior-painting", features: ["Walls, ceilings & trim", "Premium low-VOC paints", "Clean prep & cleanup", "Crisp, lasting finish"] },
+  { title: "Exterior Painting", slug: "exterior-painting", features: ["Whole-home exteriors", "Weather-resistant coatings", "Surface prep & priming", "Long-lasting protection"] },
+  { title: "LVP Flooring", slug: "lvp-flooring", features: ["Waterproof luxury vinyl plank", "Wide style selection", "Professional install", "Durable & easy to maintain"] },
+  { title: "Laminate Flooring", slug: "laminate-flooring", features: ["Affordable wood-look floors", "Click-lock installation", "Multiple finishes available", "Great for high-traffic rooms"] },
+  { title: "Glue Down Flooring", slug: "glue-down-flooring", features: ["Solid, stable installs", "Vinyl, hardwood & more", "Subfloor prep included", "Minimal expansion gaps"] },
+  { title: "Drywall Work", slug: "drywall-work", features: ["New construction & remodels", "Hanging & finishing", "Smooth & textured finishes", "Paint-ready results"] },
+  { title: "Drywall Repair", slug: "drywall-repair", features: ["Holes, cracks & water damage", "Texture matching", "Patch & repaint ready", "Fast turnarounds"] },
 ];
 
 const ServicesSection = () => {
-  const { openQuoteModal } = useQuoteModal();
   return (
   <section id="services" className="py-20 lg:py-28">
     <div className="container mx-auto px-4 lg:px-8">
@@ -59,12 +58,12 @@ const ServicesSection = () => {
                   </li>
                 ))}
               </ul>
-              <button
-                onClick={openQuoteModal}
+              <a
+                href={`/services/${service.slug}`}
                 className="inline-flex items-center gap-2 text-base font-semibold text-secondary secondary-color hover:gap-3 transition-all"
               >
-                Get a Quote <ArrowRight className="w-4 h-4" />
-              </button>
+                Learn More <ArrowRight className="w-4 h-4" />
+              </a>
             </div>
           </motion.div>
         ))}
