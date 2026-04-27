@@ -139,7 +139,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style, 
         </Label>
         <Textarea
           id="helpWith"
-          placeholder="Tell us what you need hauled away and we'll get back to you ASAP!"
+          placeholder="Tell us about your carpentry, built-in, trim, flooring, or renovation project and we'll get back to you ASAP!"
           required
           maxLength={1000}
           rows={compact ? 2 : 4}
