@@ -1,7 +1,7 @@
 import { Hammer, CreditCard, Search } from "lucide-react";
 import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
-import offersBg from "@/assets/qpr/offers-bg.jpg";
+import offersBg from "@/assets/qpr/offers-bg.webp";
 
 const offers = [
   {
