@@ -57,7 +57,7 @@ const SpecialOffers = () => {
               whileHover={{ scale: 1.05, transition: { duration: 0.15 } }}
               onClick={openQuoteModal}
               className="rounded-2xl p-8 card-elevated border border-secondary/30 secondary-color text-center backdrop-blur-sm cursor-pointer transition-shadow hover:shadow-xl"
-              style={{ backgroundColor: "rgba(15, 23, 42, 0.8)" }}
+              style={{ backgroundColor: "rgba(26, 26, 26, 0.6)" }}
             >
               <div className="w-14 h-14 rounded-2xl bg-secondary/20 secondary-color flex items-center justify-center mx-auto mb-6">
                 <offer.icon className="w-7 h-7 text-secondary secondary-color" />
