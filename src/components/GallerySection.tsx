@@ -137,11 +137,8 @@ const GallerySection = ({ preview = true, showHeader = true }: GallerySectionPro
           viewport={{ once: true }}
           className="text-center mt-20 mb-10"
         >
-          <span className="text-base font-semibold text-primary uppercase tracking-wider primary-color">
+          <h3 className="font-heading text-3xl lg:text-4xl font-bold text-foreground">
             Before &amp; After
-          </span>
-          <h3 className="font-heading text-3xl lg:text-4xl font-bold text-foreground mt-3">
-            Drag to See the Transformation
           </h3>
         </motion.div>
 
