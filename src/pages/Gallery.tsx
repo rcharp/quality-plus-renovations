@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GallerySection from "@/components/GallerySection";
-import BeforeAfterSection from "@/components/BeforeAfterSection";
 import useSEO from "@/hooks/useSEO";
 
 const Gallery = () => {
@@ -34,7 +33,6 @@ const Gallery = () => {
           </div>
         </div>
         <GallerySection />
-        <BeforeAfterSection />
       </main>
       <Footer />
     </div>
