@@ -1,7 +1,6 @@
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useCallback, useEffect } from "react";
-import logo from "@/assets/qpr-logo.jpeg";
 
 const testimonials = [
   {
@@ -62,14 +61,9 @@ const TestimonialsSection = () => {
           </div>
         </motion.div>
 
-        {/* Carousel with logo */}
-        <div className="max-w-4xl mx-auto relative flex items-start gap-8">
-          {/* Logo */}
-          <div className="hidden lg:flex shrink-0 items-center justify-center">
-            <img src={logo} alt="Quality Plus Renovations Logo" className="w-auto rounded-xl" style={{ height: '240px' }} />
-          </div>
-
-          <div className="flex-1 relative">
+        {/* Carousel */}
+        <div className="max-w-4xl mx-auto relative">
+          <div className="relative">
           <div className="overflow-hidden">
             <motion.div
               key={current}
