@@ -10,6 +10,7 @@ import Review from "./pages/Review";
 import ServicePage from "./pages/ServicePage";
 import ServiceAreaPage from "./pages/ServiceAreaPage";
 import GetYourDiscount from "./pages/GetYourDiscount";
+import Blog from "./pages/Blog";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/services/:slug" element={<ServicePage />} />
             <Route path="/service-areas/:slug" element={<ServiceAreaPage />} />
             <Route path="/get-your-discount" element={<GetYourDiscount />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </QuoteModalProvider>
