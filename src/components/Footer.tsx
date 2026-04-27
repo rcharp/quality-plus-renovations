@@ -1,5 +1,5 @@
 import { Phone, MapPin, Clock, Instagram, Mail } from "lucide-react";
-import logo from "@/assets/qpr-logo.jpeg";
+import logo from "@/assets/qpr-logo.png";
 
 const Footer = () => (
   <footer className="bg-foreground text-card py-16">
