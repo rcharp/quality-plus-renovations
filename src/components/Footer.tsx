@@ -27,11 +27,12 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Services</h4>
           <nav className="space-y-3">
-            <a href="/#services" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Finish Carpentry</a>
-            <a href="/#services" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Built-ins & Trim</a>
-            <a href="/#services" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Flooring</a>
-            <a href="/#services" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Painting</a>
-            <a href="/#services" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Drywall</a>
+            <a href="/services/finish-carpentry" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Finish Carpentry</a>
+            <a href="/services/built-ins" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Built-Ins</a>
+            <a href="/services/lvp-flooring" className="block text-base opacity-80 hover:opacity-100 transition-opacity">LVP Flooring</a>
+            <a href="/services/interior-painting" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Interior Painting</a>
+            <a href="/services/drywall-work" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Drywall Work</a>
+            <a href="/get-your-discount" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Get 10% Off</a>
           </nav>
         </div>
 
@@ -39,10 +40,10 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Service Areas</h4>
           <nav className="space-y-3">
-            <a href="/#about" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Lakewood Ranch, FL</a>
-            <a href="/#about" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Sarasota, FL</a>
-            <a href="/#about" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Bradenton, FL</a>
-            <a href="/#about" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Manatee County, FL</a>
+            <a href="/service-areas/bradenton-fl" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Bradenton, FL</a>
+            <a href="/service-areas/sarasota-fl" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Sarasota, FL</a>
+            <a href="/service-areas/lakewood-ranch-fl" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Lakewood Ranch, FL</a>
+            <a href="/service-areas/manatee-county-fl" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Manatee County, FL</a>
           </nav>
         </div>
 
