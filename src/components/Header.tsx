@@ -36,7 +36,7 @@ const navLinks = [
   {
     label: "Contact",
     children: [
-      { label: "About Us", href: "/#about" },
+      { label: "About Us", href: "/about" },
       { label: "Get in Contact", href: "/#contact" },
       { label: "Blog", href: "/blog" },
     ],
