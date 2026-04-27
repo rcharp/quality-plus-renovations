@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Phone, Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
-import logo from "@/assets/qpr-logo.jpeg";
+import logo from "@/assets/qpr-logo.png";
 const navLinks = [
   { label: "Home", href: "/" },
   {
@@ -57,7 +57,7 @@ const Header = () => {
           <img
             src={logo}
             alt="Quality Plus Renovations Logo"
-            className="w-16 h-auto lg:w-auto lg:h-[150px]"
+            className="w-24 h-auto lg:w-auto lg:h-[250px]"
           />
         </a>
 
