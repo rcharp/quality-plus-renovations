@@ -1,27 +1,27 @@
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useCallback, useEffect } from "react";
-import logo from "@/assets/nps-logo.jpg";
+import logo from "@/assets/qpr-logo.jpeg";
 
 const testimonials = [
   {
-    text: "They showed up on time, loaded everything in under an hour, and left my garage spotless. Best junk removal service I've ever used. Will definitely call again!",
-    name: "Sarah M.",
+    text: "Yevgeniy and his team built custom built-ins for our living room and the craftsmanship is incredible. Every detail was perfect — clean lines, smooth finish, and they left the space spotless. Highly recommend!",
+    name: "Jessica T.",
     rating: 5,
   },
   {
-    text: "We had a full basement of old furniture and boxes after downsizing. The crew was fast, respectful, and incredibly affordable. Highly recommend to anyone needing a cleanout!",
-    name: "James R.",
+    text: "We hired Quality Plus to install LVP flooring throughout our home and add new baseboards. The work is flawless and they finished ahead of schedule. Honest, professional, and truly skilled.",
+    name: "Michael B.",
     rating: 5,
   },
   {
-    text: "After our kitchen renovation, we had piles of construction debris everywhere. They came same-day and hauled it all away. Professional, friendly, and great pricing.",
-    name: "Patricia K.",
+    text: "Coffered ceiling and faux beams in our great room — absolutely stunning. The attention to detail is on another level. You can tell this is a family business that takes real pride in their work.",
+    name: "Amanda K.",
     rating: 5,
   },
   {
-    text: "I called on a Saturday morning and they were at my house by noon. Took away an old hot tub, broken appliances, and yard waste. Couldn't be happier with the service!",
-    name: "Robert P.",
+    text: "Custom barn door for our master bedroom turned out beautifully. Yevgeniy was easy to work with, transparent on pricing, and the install was quick and clean. Will definitely hire again for our next project.",
+    name: "David R.",
     rating: 5,
   },
 ];
@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
         >
           <span className="text-base font-semibold text-secondary uppercase tracking-wider secondary-color">Testimonials</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
-            Why Our Customers Love Nick's Property Services
+            Customers across the Bradenton Metro trust Quality Plus Renovations
           </h2>
           <div className="flex items-center justify-center gap-2 mt-4">
             <div className="flex gap-0.5">
@@ -66,7 +66,7 @@ const TestimonialsSection = () => {
         <div className="max-w-4xl mx-auto relative flex items-start gap-8">
           {/* Logo */}
           <div className="hidden lg:flex shrink-0 items-center justify-center">
-            <img src={logo} alt="Nick's Property Services Logo" className="w-auto rounded-xl" style={{ height: '300px' }} />
+            <img src={logo} alt="Quality Plus Renovations Logo" className="w-auto rounded-xl" style={{ height: '240px' }} />
           </div>
 
           <div className="flex-1 relative">
@@ -131,7 +131,7 @@ const TestimonialsSection = () => {
             </div>
 
             <a
-              href="https://www.google.com/maps/place/One+Haul+Away:+Junk+Removal+and+Hauling/@27.559317,-82.537276,15z"
+              href="https://search.google.com/local/writereview?placeid=ChIJ9TFpKko5w4gRF3KmhlNgx_o"
               target="_blank"
               rel="noopener noreferrer"
               className="text-base font-semibold text-secondary secondary-color hover:underline"

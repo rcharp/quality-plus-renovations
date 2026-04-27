@@ -1,23 +1,23 @@
-import { Percent, CreditCard, Search } from "lucide-react";
+import { Hammer, CreditCard, Search } from "lucide-react";
 import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
-import offersBg from "@/assets/service-construction-debris.jpg";
+import offersBg from "@/assets/qpr/offers-bg.jpg";
 
 const offers = [
   {
-    icon: Percent,
-    title: "15% Off First Haul",
-    description: "New customers get 15% off their first junk removal job. No minimum load required.",
+    icon: Hammer,
+    title: "Owner On Every Job",
+    description: "Yevgeniy is on-site for every project. No subcontractors — just hands-on craftsmanship from start to finish.",
   },
   {
     icon: CreditCard,
     title: "Transparent Pricing",
-    description: "No hidden fees. We quote based on volume — you only pay for the space your junk takes up in our truck.",
+    description: "Detailed, no-surprise quotes. You'll know exactly what your project costs before we pick up a single tool.",
   },
   {
     icon: Search,
-    title: "Free On-Site Estimate",
-    description: "Not sure how much it'll cost? We'll come to you and give a free, no-obligation quote on the spot.",
+    title: "Free In-Home Estimate",
+    description: "We come out, walk the project with you, and provide a free, no-obligation quote tailored to your home.",
   },
 ];
 
