@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import BeforeAfterSlider from "./BeforeAfterSlider";
 
 import cofferedFinished from "@/assets/qpr/gallery/coffered-finished.webp";
 import cofferedMaster from "@/assets/qpr/gallery/coffered-master.webp";
@@ -11,6 +14,7 @@ import tvNiche from "@/assets/qpr/gallery/tv-niche-floating-shelf.webp";
 import barnDoorsTriple from "@/assets/qpr/gallery/barn-doors-triple.webp";
 import barnDoorBlue from "@/assets/qpr/gallery/barn-door-blue.webp";
 import barnDoorChevron from "@/assets/qpr/gallery/barn-door-chevron.webp";
+import barnDoorFraming from "@/assets/qpr/gallery/barn-door-framing.webp";
 import mirroredBarnDoor from "@/assets/qpr/gallery/mirrored-barn-door.webp";
 import hallwayShiplapBarn from "@/assets/qpr/gallery/hallway-shiplap-barn.webp";
 import stoneFireplaceTv from "@/assets/qpr/gallery/stone-fireplace-tv.webp";
@@ -56,47 +60,119 @@ const galleryItems: { src: string; label: string; span?: string }[] = [
   { src: garageFinished, label: "Finished Garage Interior" },
 ];
 
-const GallerySection = () => (
-  <section id="gallery" className="py-20 lg:py-28 section-gradient">
-    <div className="container mx-auto px-4 lg:px-8">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="text-center mb-16"
-      >
-        <span className="text-base font-semibold text-primary uppercase tracking-wider primary-color">Our Work</span>
-        <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
-          See Us In Action
-        </h2>
-      </motion.div>
+interface GallerySectionProps {
+  /** When true (default), only show a preview + "see all our work" link. Set false for the full /gallery page. */
+  preview?: boolean;
+  /** When true, show the section heading. */
+  showHeader?: boolean;
+}
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[180px] sm:auto-rows-[220px] lg:auto-rows-[240px] gap-4">
-        {galleryItems.map((item, i) => (
+const GallerySection = ({ preview = true, showHeader = true }: GallerySectionProps) => {
+  const items = preview ? galleryItems.slice(0, 6) : galleryItems;
+
+  const beforeAfters = [
+    {
+      before: cofferedInProgress,
+      after: cofferedFinished,
+      caption: "Coffered Ceiling — framing to finished great room",
+    },
+    {
+      before: entertainmentProgress,
+      after: entertainmentLed,
+      caption: "Entertainment Center — rough build to LED-lit reveal",
+    },
+    {
+      before: barnDoorFraming,
+      after: barnDoorsTriple,
+      caption: "Custom Barn Doors — opening framed to triple-door install",
+    },
+  ];
+
+  return (
+    <section id="gallery" className="py-20 lg:py-28 section-gradient">
+      <div className="container mx-auto px-4 lg:px-8">
+        {showHeader && (
           <motion.div
-            key={i}
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.08 }}
-            className={`rounded-xl overflow-hidden relative group border border-border ${item.span ?? ""}`}
+            className="text-center mb-16"
           >
-            <img
-              src={item.src}
-              alt={item.label}
-              loading="lazy"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors flex items-end">
-              <span className="text-white font-semibold text-sm p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                {item.label}
-              </span>
-            </div>
+            <span className="text-base font-semibold text-primary uppercase tracking-wider primary-color">Our Work</span>
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
+              See Us In Action
+            </h2>
           </motion.div>
-        ))}
+        )}
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[180px] sm:auto-rows-[220px] lg:auto-rows-[240px] gap-4">
+          {items.map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.05 }}
+              className={`rounded-xl overflow-hidden relative group border border-border ${item.span ?? ""}`}
+            >
+              <img
+                src={item.src}
+                alt={item.label}
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors flex items-end">
+                <span className="text-white font-semibold text-sm p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                  {item.label}
+                </span>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Before / After sliders */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mt-20 mb-10"
+        >
+          <span className="text-base font-semibold text-primary uppercase tracking-wider primary-color">
+            Before &amp; After
+          </span>
+          <h3 className="font-heading text-3xl lg:text-4xl font-bold text-foreground mt-3">
+            Drag to See the Transformation
+          </h3>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {beforeAfters.map((ba, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+            >
+              <BeforeAfterSlider {...ba} />
+            </motion.div>
+          ))}
+        </div>
+
+        {preview && (
+          <div className="flex justify-center mt-14">
+            <Link
+              to="/gallery"
+              className="inline-flex items-center gap-2 px-6 py-3 text-base font-semibold border border-secondary text-secondary secondary-color hover:bg-secondary/10 transition-colors"
+              style={{ borderRadius: "10px" }}
+            >
+              See All Our Work <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        )}
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default GallerySection;

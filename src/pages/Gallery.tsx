@@ -40,7 +40,7 @@ const Gallery = () => {
             </div>
           </div>
         </section>
-        <GallerySection />
+        <GallerySection preview={false} showHeader={false} />
       </main>
       <Footer />
     </div>
