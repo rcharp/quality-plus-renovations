@@ -12,6 +12,7 @@ import ServiceAreaPage from "./pages/ServiceAreaPage";
 import GetYourDiscount from "./pages/GetYourDiscount";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/get-your-discount" element={<GetYourDiscount />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </QuoteModalProvider>
