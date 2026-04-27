@@ -13,13 +13,13 @@ const AboutSection = () => (
         >
           <span className="text-base font-semibold text-primary uppercase tracking-wider primary-color">About Us</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground">
-            Family Owned. Locally Operated.
+            A Family Legacy of Craftsmanship.
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            We've proudly served our local community for years, providing fast, affordable, and reliable junk removal services. As a locally owned and operated family business, we treat every property with respect. No corporate runaround — just honest, hardworking people who show up on time and get the job done.
+            Quality Plus Renovations is a family-owned business specializing in finish carpentry, with a passion for craftsmanship inherited through generations. We're committed to working our hardest and delivering exceptional results, inspired by a legacy of skilled workmanship and dedication.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Whether it's a single piece of furniture or a full estate cleanout, our crew handles the heavy lifting so you don't have to. We recycle and donate whenever possible because we care about our community and the environment.
+            Our owner, <strong>Yevgeniy Turko</strong>, upholds values of honesty, integrity, and commitment, ensuring every project reflects our high standards. We take pride in creating beautiful, lasting solutions for your home, treating each client with the respect and professionalism they deserve.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 pt-4">
             <div className="flex items-center gap-3">
@@ -28,7 +28,7 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Address</div>
-                <div className="text-base font-semibold text-foreground">Apollo Beach, FL</div>
+                <div className="text-base font-semibold text-foreground">Bradenton, FL</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -37,14 +37,14 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Phone</div>
-                <a href="tel:+17815726988" className="text-base font-semibold text-foreground hover:text-primary primary-color transition-colors">
-                  (781) 572-6988
+                <a href="tel:+19414059695" className="text-base font-semibold text-foreground hover:text-primary primary-color transition-colors">
+                  (941) 405-9695
                 </a>
               </div>
            </div>
           </div>
-          <a href="/about" className="inline-flex items-center gap-2 text-secondary secondary-color font-semibold hover:gap-3 transition-all mt-2">
-            Learn More About Us <ArrowRight className="w-4 h-4" />
+          <a href="#contact" className="inline-flex items-center gap-2 text-secondary secondary-color font-semibold hover:gap-3 transition-all mt-2">
+            Get In Touch <ArrowRight className="w-4 h-4" />
           </a>
         </motion.div>
 
@@ -56,14 +56,14 @@ const AboutSection = () => (
         >
           <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ height: 450 }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56406.09752389026!2d-82.44!3d27.77!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2d0e3de539b6f%3A0x82cd1b5f753c4e8!2sApollo%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1710000000000"
+              src="https://www.google.com/maps?q=14254+59th+Cir+E,+Bradenton,+FL+34211&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Nick's Property Services location on Google Maps"
+              title="Quality Plus Renovations location on Google Maps"
             />
           </div>
         </motion.div>

@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
-const WEBHOOK_URL = "https://example.com/webhook-placeholder";
+const WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/ozMipTj6FwiZJoUxZ2DF/webhook-trigger/MWKDpYUHkV9PO9bdy3ag";
 
 interface QuoteFormProps {
   showHeader?: boolean;
@@ -162,7 +162,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style, 
           htmlFor="consentMarketing"
           className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
         >
-          I consent to receive marketing text messages from Nick's Property Services at the
+          I consent to receive marketing text messages from Quality Plus Renovations at the
           phone number provided. Consent is not a condition of purchase. Message
           frequency may vary. Message &amp; data rates may apply. Text HELP for
           assistance, reply STOP to opt out.
@@ -182,7 +182,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style, 
           htmlFor="consentNonMarketing"
           className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
         >
-          I consent to receive non-marketing text messages from Nick's Property Services
+          I consent to receive non-marketing text messages from Quality Plus Renovations
           regarding appointment confirmations and reminders, customer support
           updates, and service-related follow-ups at the phone number provided.
           Consent is not a condition of purchase. Message frequency may vary.

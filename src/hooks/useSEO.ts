@@ -45,7 +45,7 @@ const useSEO = ({ title, description, canonical }: SEOProps) => {
     }
 
     return () => {
-      document.title = "Nick's Property Services | HVAC Services";
+      document.title = "Quality Plus Renovations | Finish Carpentry & Home Renovations";
     };
   }, [title, description, canonical]);
 };

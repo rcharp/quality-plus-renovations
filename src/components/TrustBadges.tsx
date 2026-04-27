@@ -1,12 +1,12 @@
-import { Shield, Clock, Recycle, Star, ThumbsUp } from "lucide-react";
+import { User, Hammer, Award, Eye, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 const badges = [
-  { icon: Shield, label: "Licensed & Insured" },
-  { icon: Clock, label: "Same-Day Service" },
-  { icon: Recycle, label: "Eco-Friendly Disposal" },
-  { icon: Star, label: "5-Star Google Rating" },
-  { icon: ThumbsUp, label: "Satisfaction Guaranteed" },
+  { icon: User, label: "Owner-Operated" },
+  { icon: Hammer, label: "No Subcontracting" },
+  { icon: Award, label: "High-Quality Products" },
+  { icon: Eye, label: "Attention To Detail" },
+  { icon: Zap, label: "Unmatched Work Ethic" },
 ];
 
 const TrustBadges = () => (

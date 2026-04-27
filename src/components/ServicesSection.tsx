@@ -1,50 +1,26 @@
 import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
+import { useQuoteModal } from "./QuoteModal";
 
 const services = [
-  {
-    title: "Residential Junk Removal",
-    href: "#",
-    features: [
-      "Old furniture & appliance hauling",
-      "Garage, attic & basement cleanouts",
-      "Estate & foreclosure cleanups",
-      "Same-day pickup available",
-    ],
-  },
-  {
-    title: "Commercial Junk Removal",
-    href: "#",
-    features: [
-      "Office furniture & equipment removal",
-      "Retail & warehouse cleanouts",
-      "Bulk item disposal",
-      "Scheduled recurring pickups",
-    ],
-  },
-  {
-    title: "Construction Debris Removal",
-    href: "#",
-    features: [
-      "Lumber, drywall & concrete hauling",
-      "Renovation & remodel cleanup",
-      "Job site debris removal",
-      "Responsible disposal & recycling",
-    ],
-  },
-  {
-    title: "Yard Waste Removal",
-    href: "#",
-    features: [
-      "Tree branch & brush removal",
-      "Storm debris cleanup",
-      "Landscaping waste hauling",
-      "Green waste recycling",
-    ],
-  },
+  { title: "Finish Carpentry", features: ["Custom interior carpentry", "Cabinetry & millwork", "Hand-crafted detail", "Generations of experience"] },
+  { title: "Built-ins", features: ["Custom shelving & cabinets", "Entertainment centers", "Mudrooms & closets", "Fully tailored to your space"] },
+  { title: "Trim Work", features: ["Baseboards & crown molding", "Window & door casings", "Wainscoting & chair rails", "Clean, precise installs"] },
+  { title: "Faux Beams", features: ["Custom wood-look beams", "Lightweight & easy to install", "Stained or painted finishes", "Adds warmth & character"] },
+  { title: "Coffered Ceilings", features: ["Custom designs to your taste", "Adds elegance & depth", "Built to spec", "Premium materials"] },
+  { title: "Custom Built Barn Doors", features: ["Hand-built to your dimensions", "Premium hardware included", "Modern & rustic styles", "Smooth, quiet operation"] },
+  { title: "Full Interior Painting", features: ["Walls, ceilings & trim", "Premium low-VOC paints", "Clean prep & cleanup", "Crisp, lasting finish"] },
+  { title: "Exterior Painting", features: ["Whole-home exteriors", "Weather-resistant coatings", "Surface prep & priming", "Long-lasting protection"] },
+  { title: "LVP Flooring", features: ["Waterproof luxury vinyl plank", "Wide style selection", "Professional install", "Durable & easy to maintain"] },
+  { title: "Laminate Flooring", features: ["Affordable wood-look floors", "Click-lock installation", "Multiple finishes available", "Great for high-traffic rooms"] },
+  { title: "Glue Down Flooring", features: ["Solid, stable installs", "Vinyl, hardwood & more", "Subfloor prep included", "Minimal expansion gaps"] },
+  { title: "Drywall Work", features: ["New construction & remodels", "Hanging & finishing", "Smooth & textured finishes", "Paint-ready results"] },
+  { title: "Drywall Repair", features: ["Holes, cracks & water damage", "Texture matching", "Patch & repaint ready", "Fast turnarounds"] },
 ];
 
-const ServicesSection = () => (
+const ServicesSection = () => {
+  const { openQuoteModal } = useQuoteModal();
+  return (
   <section id="services" className="py-20 lg:py-28">
     <div className="container mx-auto px-4 lg:px-8">
       <motion.div
@@ -55,21 +31,21 @@ const ServicesSection = () => (
       >
         <span className="text-base font-semibold text-primary uppercase tracking-wider primary-color">What We Do</span>
         <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
-          Junk Removal Services You Can Count On
+          Renovation Services You Can Count On
         </h2>
         <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-          From single-item pickups to full property cleanouts, we handle it all with speed and care.
+          From finish carpentry to flooring, paint, and drywall — we deliver craftsmanship-level work on every project.
         </p>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, i) => (
           <motion.div
             key={service.title}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.1 }}
+            transition={{ delay: (i % 3) * 0.1 }}
             className="rounded-2xl overflow-hidden card-elevated border border-secondary/30 secondary-color group"
             style={{ backgroundColor: "#1a1a1a" }}
           >
@@ -83,18 +59,19 @@ const ServicesSection = () => (
                   </li>
                 ))}
               </ul>
-              <a
-                href={service.href}
+              <button
+                onClick={openQuoteModal}
                 className="inline-flex items-center gap-2 text-base font-semibold text-secondary secondary-color hover:gap-3 transition-all"
               >
-                Learn More <ArrowRight className="w-4 h-4" />
-              </a>
+                Get a Quote <ArrowRight className="w-4 h-4" />
+              </button>
             </div>
           </motion.div>
         ))}
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default ServicesSection;

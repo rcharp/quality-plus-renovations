@@ -6,9 +6,8 @@ import { toast } from "sonner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import useSEO from "@/hooks/useSEO";
-import logo from "@/assets/nps-logo.jpg";
-
-const GOOGLE_REVIEW_URL = "https://maps.app.goo.gl/NYqV3qbKRZ7MSA6w7";
+const GOOGLE_REVIEW_URL = "https://search.google.com/local/writereview?placeid=ChIJ9TFpKko5w4gRF3KmhlNgx_o";
+const REVIEW_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/ozMipTj6FwiZJoUxZ2DF/webhook-trigger/ED6blx5rE66aRUYq4Scj";
 
 const ratings = [
   { value: 5, label: "Excellent" },
@@ -28,9 +27,9 @@ type Step = "rate" | "feedback" | "thanks";
 
 const Review = () => {
   useSEO({
-    title: "Leave a Review | Nick's Property Services",
-    description: "We'd love to hear about your experience with Nick's Property Services junk hauling and removal.",
-    canonical: "https://example.com/review",
+    title: "Leave a Review | Quality Plus Renovations",
+    description: "We'd love to hear about your experience with Quality Plus Renovations finish carpentry and home improvement services.",
+    canonical: "https://qualityplusrenovations.com/review",
   });
 
   const [step, setStep] = useState<Step>("rate");
@@ -47,7 +46,7 @@ const Review = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = feedbackSchema.safeParse(form);
     if (!result.success) {
@@ -55,11 +54,23 @@ const Review = () => {
       return;
     }
     setSubmitting(true);
-    // Simulate submission – no backend wired up
-    setTimeout(() => {
-      setSubmitting(false);
+    try {
+      await fetch(REVIEW_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name.trim(),
+          phone: form.phone.trim(),
+          message: form.message.trim(),
+          rating,
+        }),
+      });
       setStep("thanks");
-    }, 600);
+    } catch {
+      toast.error("Something went wrong. Please try again or call us.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (

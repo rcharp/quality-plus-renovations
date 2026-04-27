@@ -2,7 +2,7 @@ import { Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import QuoteForm from "./QuoteForm";
-import heroBg from "@/assets/service-yard-waste.jpg";
+import heroBg from "@/assets/qpr/hero-bg.jpg";
 import reviewer1 from "@/assets/reviewers/reviewer-1.jpg";
 import reviewer2 from "@/assets/reviewers/reviewer-2.jpg";
 import reviewer3 from "@/assets/reviewers/reviewer-3.jpg";
@@ -35,9 +35,9 @@ const HeroSection = () => {
               transition={{ duration: 0.6 }}
             >
               <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-primary-foreground primary-color text-center lg:text-left">
-                <span className="relative z-10">Your Junk,</span>
+                <span className="relative z-10">Built with</span>
                 <br />
-                <span id="hero-highlighted" className="relative z-0 text-primary-foreground primary-color bg-accent px-[5px]">Gone Fast.</span>
+                <span id="hero-highlighted" className="hero-highlighted relative z-0 text-primary-foreground primary-color bg-accent px-[5px]">Craftsmanship.</span>
               </h1>
             </motion.div>
 
@@ -47,9 +47,9 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-lg text-primary-foreground/70 primary-color max-w-lg leading-relaxed break-words"
             >
-              Got clutter, old furniture, or construction debris piling up? We handle the heavy lifting so you don't have to. Fast, affordable, and eco-friendly junk removal.
+              From finish carpentry and custom built-ins to trim, flooring, paint, and drywall — we treat every home like our own. Owner-operated, no subcontracting, and honest work from start to finish.
               <br /><br />
-              <strong>Nick's Property Services</strong> has provided reliable junk hauling and removal services for dozens of satisfied homes and businesses.
+              <strong>Quality Plus Renovations</strong> is a family-owned home improvement specialist proudly serving Bradenton, Sarasota, Lakewood Ranch, and Manatee County, FL.
             </motion.p>
 
             {/* Social Proof */}
