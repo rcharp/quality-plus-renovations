@@ -57,7 +57,7 @@ const Header = () => {
           <img
             src={logo}
             alt="Quality Plus Renovations Logo"
-            className="w-24 h-auto lg:w-auto lg:h-[250px]"
+            className="h-[140px] w-auto lg:h-[250px]"
           />
         </a>
 
