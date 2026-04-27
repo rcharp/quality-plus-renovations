@@ -1,45 +1,21 @@
-import { useEffect } from "react";
-import { motion } from "framer-motion";
-import { Check, Phone, Tag, Clock, ShieldCheck } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Ticket } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PageHero from "@/components/PageHero";
-import QuoteForm from "@/components/QuoteForm";
-import TrustBadges from "@/components/TrustBadges";
-import TestimonialsSection from "@/components/TestimonialsSection";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 import useSEO from "@/hooks/useSEO";
-import offersBg from "@/assets/qpr/offers-bg.jpg";
 
-const perks = [
-  {
-    icon: Tag,
-    title: "10% Off Your First Project",
-    description: "Save 10% on any service — finish carpentry, built-ins, flooring, paint, or drywall. Applies to your first project with us.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Free In-Home Estimate",
-    description: "We come to you, walk the project, and provide a clear, no-obligation written quote.",
-  },
-  {
-    icon: Clock,
-    title: "Limited Time",
-    description: "Lock in your discount by submitting the form below. We'll honor your rate when you book.",
-  },
-];
-
-const terms = [
-  "Valid for new customers only",
-  "Applies to your first project booked with Quality Plus Renovations",
-  "Cannot be combined with other promotions",
-  "Available across Bradenton, Sarasota, Lakewood Ranch, and Manatee County, FL",
-  "Must mention this offer when scheduling your in-home estimate",
-];
+const WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/ozMipTj6FwiZJoUxZ2DF/webhook-trigger/MWKDpYUHkV9PO9bdy3ag";
 
 const GetYourDiscount = () => {
   useSEO({
-    title: "Get 10% Off Your First Project | Quality Plus Renovations",
-    description: "New customers save 10% on finish carpentry, built-ins, flooring, paint, and drywall projects in Bradenton, Sarasota & Lakewood Ranch, FL.",
+    title: "Get Your Discount | Quality Plus Renovations",
+    description: "Claim your discount on finish carpentry, built-ins, flooring, paint & drywall in Bradenton, Sarasota & Lakewood Ranch, FL.",
     canonical: "https://qualityplusrenovations.com/get-your-discount",
   });
 
@@ -47,94 +23,164 @@ const GetYourDiscount = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phone: "",
+    summary: "",
+    consent: false,
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!formData.fullName.trim() || !formData.phone.trim() || !formData.summary.trim()) {
+      toast.error("Please fill in all required fields.");
+      return;
+    }
+    if (formData.phone.length < 10) {
+      toast.error("Please enter a valid 10-digit phone number.");
+      return;
+    }
+    if (!formData.consent) {
+      toast.error("Please accept the terms to continue.");
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          full_name: formData.fullName.trim(),
+          phone: formData.phone.trim(),
+          help_with: formData.summary.trim(),
+          source: "get-your-discount",
+          consent_marketing: formData.consent,
+          consent_non_marketing: formData.consent,
+        }),
+      });
+      setIsSubmitted(true);
+    } catch {
+      toast.error("Something went wrong. Please try again or call us.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-background overflow-x-hidden max-w-[100vw]">
+    <div className="min-h-screen bg-background overflow-x-hidden max-w-[100vw] flex flex-col">
       <Header />
-      <main>
-        <PageHero
-          eyebrow="New Customer Offer"
-          title="Get 10% Off"
-          highlight="Your First Project."
-          tagline="A simple thank-you for choosing Quality Plus Renovations. Submit the form to claim your discount."
-          backgroundImage={offersBg}
-        />
-
-        <TrustBadges />
-
-        {/* Perks + Form */}
-        <section className="py-20 lg:py-28">
-          <div className="container mx-auto px-4 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="space-y-8"
+      <main className="flex-1 bg-muted">
+        <div className="container mx-auto px-4 lg:px-8 pt-[200px] sm:pt-[260px] lg:pt-[280px] pb-20 lg:pb-28">
+          <div className="max-w-2xl mx-auto">
+            {isSubmitted ? (
+              <div
+                className="rounded-2xl p-10 sm:p-14 shadow-2xl text-center min-h-[400px] flex flex-col items-center justify-center"
+                style={{ backgroundColor: "#1a1a1a" }}
               >
-                <div>
-                  <span className="text-base font-semibold text-primary uppercase tracking-wider primary-color">
-                    What You Get
-                  </span>
-                  <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground mt-3">
-                    A Simple Thank-You for Trying Us Out
-                  </h2>
-                  <p className="text-muted-foreground leading-relaxed text-lg mt-4">
-                    We earn most of our work through referrals — so when a new customer takes a chance on us, we want to make it worth it. Get 10% off your first project, no fine print.
+                <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl mb-4">THANK YOU!</h2>
+                <p className="text-white/80 text-lg">
+                  We got your request and will be in touch shortly to lock in your discount!
+                </p>
+              </div>
+            ) : (
+              <form
+                onSubmit={handleSubmit}
+                className="rounded-2xl p-8 sm:p-10 lg:p-12 shadow-2xl space-y-6"
+                style={{ backgroundColor: "#1a1a1a" }}
+              >
+                <div className="text-center space-y-2 pb-2">
+                  <h1 className="font-heading font-bold text-white text-3xl sm:text-4xl">
+                    Quality Plus Renovations
+                  </h1>
+                  <p className="font-heading font-semibold text-secondary secondary-color text-xl sm:text-2xl">
+                    Get Your Discount!
                   </p>
                 </div>
 
-                <div className="space-y-5">
-                  {perks.map((p) => (
-                    <div key={p.title} className="flex gap-4">
-                      <div className="w-12 h-12 rounded-xl bg-secondary/15 secondary-color flex items-center justify-center shrink-0">
-                        <p.icon className="w-6 h-6 text-secondary secondary-color" />
-                      </div>
-                      <div>
-                        <h3 className="font-heading text-lg font-bold text-foreground">{p.title}</h3>
-                        <p className="text-base text-muted-foreground leading-relaxed mt-1">
-                          {p.description}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
+                <div className="space-y-2">
+                  <Label htmlFor="fullName" className="text-white font-semibold">
+                    Full Name <span className="text-secondary">*</span>
+                  </Label>
+                  <Input
+                    id="fullName"
+                    placeholder="John Smith"
+                    required
+                    maxLength={100}
+                    value={formData.fullName}
+                    onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                  />
                 </div>
 
-                <div className="rounded-2xl bg-muted p-6 border border-border">
-                  <h4 className="font-heading text-base font-bold text-foreground uppercase tracking-wider mb-3">
-                    Offer Details
-                  </h4>
-                  <ul className="space-y-2">
-                    {terms.map((t) => (
-                      <li key={t} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <Check className="w-4 h-4 text-secondary secondary-color mt-0.5 shrink-0" />
-                        {t}
-                      </li>
-                    ))}
-                  </ul>
+                <div className="space-y-2">
+                  <Label htmlFor="phone" className="text-white font-semibold">
+                    Phone <span className="text-secondary">*</span>
+                  </Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    inputMode="numeric"
+                    placeholder="(888) 123-4567"
+                    maxLength={10}
+                    value={formData.phone}
+                    onChange={(e) => {
+                      const digits = e.target.value.replace(/\D/g, "").slice(0, 10);
+                      setFormData({ ...formData, phone: digits });
+                    }}
+                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                  />
                 </div>
 
-                <a
-                  href="tel:+19414059695"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold border border-foreground/20 text-foreground hover:bg-foreground hover:text-background transition-colors"
-                  style={{ borderRadius: "10px" }}
+                <div className="space-y-2">
+                  <Label htmlFor="summary" className="text-white font-semibold">
+                    Short summary of the work you need! <span className="text-secondary">*</span>
+                  </Label>
+                  <Textarea
+                    id="summary"
+                    placeholder="**Your message goes straight to my phone, I'll get back to you as soon as I'm available**"
+                    required
+                    maxLength={1000}
+                    rows={4}
+                    value={formData.summary}
+                    onChange={(e) => setFormData({ ...formData, summary: e.target.value })}
+                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50 resize-none"
+                  />
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Checkbox
+                    id="consent"
+                    checked={formData.consent}
+                    onCheckedChange={(checked) =>
+                      setFormData({ ...formData, consent: checked === true })
+                    }
+                    className="mt-1 border-white/30 data-[state=checked]:bg-secondary data-[state=checked]:border-secondary"
+                  />
+                  <Label
+                    htmlFor="consent"
+                    className="text-white/70 text-sm leading-relaxed font-normal cursor-pointer"
+                  >
+                    I agree to the terms &amp; conditions provided by the company. By providing my phone number, I agree to receive text messages from the business.
+                  </Label>
+                </div>
+
+                <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full font-bold text-lg py-6 hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+                  style={{ backgroundColor: "hsl(43, 80%, 50%)", color: "#fff", borderRadius: "10px" }}
                 >
-                  <Phone className="w-4 h-4" /> Or call (941) 405-9695
-                </a>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="lg:sticky lg:top-8"
-              >
-                <QuoteForm />
-              </motion.div>
-            </div>
+                  <Ticket className="w-5 h-5" />
+                  {isSubmitting ? "Sending..." : "GET MY DISCOUNT"}
+                </Button>
+              </form>
+            )}
           </div>
-        </section>
-
-        <TestimonialsSection />
+        </div>
       </main>
       <Footer />
     </div>

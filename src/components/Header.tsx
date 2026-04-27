@@ -33,7 +33,6 @@ const navLinks = [
     ],
   },
   { label: "Gallery", href: "/#gallery" },
-  { label: "Discount", href: "/get-your-discount" },
   { label: "About", href: "/#about" },
   { label: "Contact", href: "/#contact" },
 ];
