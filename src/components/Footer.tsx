@@ -1,5 +1,5 @@
-import { Phone, MapPin, Clock, Facebook } from "lucide-react";
-import logo from "@/assets/nps-logo.jpg";
+import { Phone, MapPin, Clock, Instagram, Mail } from "lucide-react";
+import logo from "@/assets/qpr-logo.jpeg";
 
 const Footer = () => (
   <footer className="bg-foreground text-card py-16">
@@ -7,8 +7,8 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
         {/* Brand */}
         <div className="space-y-4">
-          <img src={logo} alt="Nick's Property Services Logo" className="w-auto" style={{ height: '200px' }} />
-          <p className="text-sm opacity-60">Your trusted local junk removal experts.</p>
+          <img src={logo} alt="Quality Plus Renovations Logo" className="w-auto" style={{ height: '150px' }} />
+          <p className="text-sm opacity-60">Family-owned finish carpentry & home renovation specialists.</p>
         </div>
 
         {/* Business */}
@@ -16,10 +16,10 @@ const Footer = () => (
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Business</h4>
           <nav className="space-y-3">
             <a href="/" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Home</a>
-            <a href="/about" className="block text-base opacity-80 hover:opacity-100 transition-opacity">About Us</a>
-            <a href="/contact" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Contact</a>
-            <a href="/gallery" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Gallery</a>
-            <a href="/tips" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Blog</a>
+            <a href="/#about" className="block text-base opacity-80 hover:opacity-100 transition-opacity">About Us</a>
+            <a href="/#contact" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Contact</a>
+            <a href="/#gallery" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Gallery</a>
+            <a href="/review" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Leave a Review</a>
           </nav>
         </div>
 
@@ -27,10 +27,11 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Services</h4>
           <nav className="space-y-3">
-            <a href="/services/ac-repair" className="block text-base opacity-80 hover:opacity-100 transition-opacity">AC Repair</a>
-            <a href="/services/ac-installation" className="block text-base opacity-80 hover:opacity-100 transition-opacity">AC Installation</a>
-            <a href="/services/ac-maintenance" className="block text-base opacity-80 hover:opacity-100 transition-opacity">AC Maintenance</a>
-            <a href="/services/duct-cleaning" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Duct Cleaning</a>
+            <a href="/#services" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Finish Carpentry</a>
+            <a href="/#services" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Built-ins & Trim</a>
+            <a href="/#services" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Flooring</a>
+            <a href="/#services" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Painting</a>
+            <a href="/#services" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Drywall</a>
           </nav>
         </div>
 
@@ -38,11 +39,10 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Service Areas</h4>
           <nav className="space-y-3">
-            <a href="/areas/palmetto" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Palmetto, FL</a>
-            <a href="/areas/bradenton" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Bradenton, FL</a>
-            <a href="/areas/memphis" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Memphis, FL</a>
-            <a href="/areas/ellenton" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Ellenton, FL</a>
-            <a href="/areas/palma-sola" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Palma Sola, FL</a>
+            <a href="/#about" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Lakewood Ranch, FL</a>
+            <a href="/#about" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Sarasota, FL</a>
+            <a href="/#about" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Bradenton, FL</a>
+            <a href="/#about" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Manatee County, FL</a>
           </nav>
         </div>
 
@@ -51,26 +51,30 @@ const Footer = () => (
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Contact</h4>
           <div className="flex items-start gap-3">
             <Phone className="w-4 h-4 mt-0.5 opacity-60" />
-            <a href="tel:+17815726988" className="text-base opacity-80 hover:opacity-100 transition-opacity">(781) 572-6988</a>
+            <a href="tel:+19414059695" className="text-base opacity-80 hover:opacity-100 transition-opacity">(941) 405-9695</a>
+          </div>
+          <div className="flex items-start gap-3">
+            <Mail className="w-4 h-4 mt-0.5 opacity-60" />
+            <a href="mailto:rs4man@gmail.com" className="text-base opacity-80 hover:opacity-100 transition-opacity break-all">rs4man@gmail.com</a>
           </div>
           <div className="flex items-start gap-3">
             <MapPin className="w-4 h-4 mt-0.5 opacity-60" />
-            <span className="text-base opacity-80">Apollo Beach, FL</span>
+            <span className="text-base opacity-80">14254 59th Cir E, Bradenton, FL 34211</span>
           </div>
           <div className="flex items-start gap-3">
             <Clock className="w-4 h-4 mt-0.5 opacity-60" />
-            <span className="text-base opacity-80">Open 24 hours!</span>
+            <span className="text-base opacity-80">Mon–Fri 8am–5pm<br />Sat 8am–12pm<br />Sun Closed</span>
           </div>
           <div className="flex items-start gap-3">
-            <Facebook className="w-4 h-4 mt-0.5 opacity-60" />
-            <a href="https://www.facebook.com/profile.php?id=61576350927730" target="_blank" rel="noopener noreferrer" className="text-base opacity-80 hover:opacity-100 transition-opacity">Facebook</a>
+            <Instagram className="w-4 h-4 mt-0.5 opacity-60" />
+            <a href="https://www.instagram.com/qualitypls22?igsh=MWZhYnY5amxpYzRsOQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-base opacity-80 hover:opacity-100 transition-opacity">Instagram</a>
           </div>
         </div>
       </div>
 
       <div className="mt-16 pt-8 border-t border-card/10 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-base opacity-60">
-          © 2026 Nick's Property Services. All rights reserved.
+          © 2026 Quality Plus Renovations. All rights reserved.
         </p>
       </div>
     </div>

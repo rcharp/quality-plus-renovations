@@ -2,37 +2,35 @@ import { useState } from "react";
 import { Phone, Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
-import logo from "@/assets/nps-logo.jpg";
+import logo from "@/assets/qpr-logo.jpeg";
 const navLinks = [
   { label: "Home", href: "/" },
   {
     label: "Services",
     children: [
-      { label: "Residential Junk Removal", href: "#services" },
-      { label: "Commercial Junk Removal", href: "#services" },
-      { label: "Construction Debris Removal", href: "#services" },
-      { label: "Yard Waste Removal", href: "#services" },
+      { label: "Finish Carpentry", href: "/#services" },
+      { label: "Built-ins", href: "/#services" },
+      { label: "Trim Work", href: "/#services" },
+      { label: "Faux Beams", href: "/#services" },
+      { label: "Coffered Ceilings", href: "/#services" },
+      { label: "Custom Built Barn Doors", href: "/#services" },
+      { label: "Interior & Exterior Painting", href: "/#services" },
+      { label: "Flooring (LVP, Laminate, Glue Down)", href: "/#services" },
+      { label: "Drywall Work & Repair", href: "/#services" },
     ],
   },
   {
     label: "Service Areas",
     children: [
-      { label: "Palmetto, FL", href: "/areas/palmetto" },
-      { label: "Memphis, FL", href: "/areas/memphis" },
-      { label: "Bradenton, FL", href: "/areas/bradenton" },
-      { label: "Ellenton, FL", href: "/areas/ellenton" },
-      { label: "Palma Sola, FL", href: "/areas/palma-sola" },
+      { label: "Lakewood Ranch, FL", href: "/#about" },
+      { label: "Sarasota, FL", href: "/#about" },
+      { label: "Bradenton, FL", href: "/#about" },
+      { label: "Manatee County, FL", href: "/#about" },
     ],
   },
-  { label: "Gallery", href: "/gallery" },
-  {
-    label: "Contact",
-    children: [
-      { label: "About Us", href: "/about" },
-      { label: "Get In Contact", href: "/contact" },
-      { label: "Blog", href: "/tips" },
-    ],
-  },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "About", href: "/#about" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const Header = () => {
@@ -46,10 +44,10 @@ const Header = () => {
       <div className="container mx-auto flex flex-col items-center gap-3 lg:flex-row lg:items-center lg:justify-between lg:gap-0 py-4 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center justify-center shrink-0 lg:mr-4">
-          <img 
-            src={logo} 
-            alt="Nick's Property Services Logo" 
-            className="h-[90px] w-auto lg:h-[250px] lg:w-auto lg:max-h-none lg:max-w-none"
+          <img
+            src={logo}
+            alt="Quality Plus Renovations Logo"
+            className="w-16 h-auto lg:w-auto lg:h-[150px]"
           />
         </a>
 
@@ -107,12 +105,12 @@ const Header = () => {
           <div className="flex items-center justify-center gap-3 flex-1 lg:flex-none lg:justify-end">
             <a
               id="nav-phone-btn"
-              href="tel:+17815726988"
+              href="tel:+19414059695"
               className="flex items-center gap-1 sm:gap-1.5 lg:gap-2 px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 secondary-color transition-colors whitespace-nowrap"
               style={{ borderRadius: "10px" }}
             >
               <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 shrink-0" />
-              (781) 572-6988
+              (941) 405-9695
             </a>
             <button
               id="nav-quote-btn"
@@ -195,11 +193,11 @@ const Header = () => {
               )}
               <div className="pt-4 space-y-3 border-t border-white/10">
                 <a
-                  href="tel:+17815726988"
+                  href="tel:+19414059695"
                   className="flex items-center justify-center gap-2 w-full text-center px-6 py-3 text-sm font-semibold border border-secondary text-secondary secondary-color"
                   style={{ borderRadius: "10px" }}
                 >
-                  <Phone className="w-5 h-5" /> (781) 572-6988
+                  <Phone className="w-5 h-5" /> (941) 405-9695
                 </a>
                 <button
                   onClick={() => { setMobileOpen(false); openQuoteModal(); }}
