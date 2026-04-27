@@ -1,6 +1,7 @@
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, X, ChevronLeft, ChevronRight } from "lucide-react";
 import BeforeAfterSlider from "./BeforeAfterSlider";
 
 import cofferedFinished from "@/assets/qpr/gallery/coffered-finished.webp";
@@ -69,6 +70,22 @@ interface GallerySectionProps {
 
 const GallerySection = ({ preview = true, showHeader = true }: GallerySectionProps) => {
   const items = preview ? galleryItems.slice(0, 6) : galleryItems;
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (lightboxIndex === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightboxIndex(null);
+      if (e.key === "ArrowRight") setLightboxIndex((i) => (i === null ? null : (i + 1) % items.length));
+      if (e.key === "ArrowLeft") setLightboxIndex((i) => (i === null ? null : (i - 1 + items.length) % items.length));
+    };
+    window.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [lightboxIndex, items.length]);
 
   const beforeAfters = [
     {
@@ -113,7 +130,8 @@ const GallerySection = ({ preview = true, showHeader = true }: GallerySectionPro
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className={`rounded-xl overflow-hidden relative group border border-border ${item.span ?? ""}`}
+              onClick={() => setLightboxIndex(i)}
+              className={`rounded-xl overflow-hidden relative group border border-border cursor-pointer ${item.span ?? ""}`}
             >
               <img
                 src={item.src}
@@ -168,6 +186,67 @@ const GallerySection = ({ preview = true, showHeader = true }: GallerySectionPro
           </div>
         )}
       </div>
+
+      {/* Lightbox overlay */}
+      <AnimatePresence>
+        {lightboxIndex !== null && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8"
+            onClick={() => setLightboxIndex(null)}
+          >
+            <button
+              onClick={(e) => { e.stopPropagation(); setLightboxIndex(null); }}
+              className="absolute top-4 right-4 sm:top-6 sm:right-6 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+              aria-label="Close"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setLightboxIndex((i) => (i === null ? null : (i - 1 + items.length) % items.length));
+              }}
+              className="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+              aria-label="Previous"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setLightboxIndex((i) => (i === null ? null : (i + 1) % items.length));
+              }}
+              className="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+              aria-label="Next"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
+            <motion.div
+              key={lightboxIndex}
+              initial={{ opacity: 0, scale: 0.97 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.97 }}
+              transition={{ duration: 0.18 }}
+              className="relative max-w-6xl w-full max-h-[85vh] flex flex-col items-center gap-4"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={items[lightboxIndex].src}
+                alt={items[lightboxIndex].label}
+                className="max-h-[80vh] w-auto max-w-full object-contain rounded-xl shadow-2xl"
+              />
+              <p className="text-white text-base font-medium text-center">
+                {items[lightboxIndex].label}{" "}
+                <span className="text-white/50">— {lightboxIndex + 1} / {items.length}</span>
+              </p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };
