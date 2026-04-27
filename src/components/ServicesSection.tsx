@@ -1,5 +1,6 @@
-import { ArrowRight, Check } from "lucide-react";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { ArrowRight, Check, ChevronDown, ChevronUp } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 
 const services = [
@@ -19,6 +20,8 @@ const services = [
 ];
 
 const ServicesSection = () => {
+  const [expanded, setExpanded] = useState(false);
+  const visibleServices = expanded ? services : services.slice(0, 6);
   return (
   <section id="services" className="py-20 lg:py-28">
     <div className="container mx-auto px-4 lg:px-8">
@@ -38,7 +41,7 @@ const ServicesSection = () => {
       </motion.div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((service, i) => (
+        {visibleServices.map((service, i) => (
           <motion.div
             key={service.title}
             initial={{ opacity: 0, y: 30 }}
@@ -68,6 +71,22 @@ const ServicesSection = () => {
           </motion.div>
         ))}
       </div>
+
+      {services.length > 6 && (
+        <div className="flex justify-center mt-12">
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="inline-flex items-center gap-2 px-6 py-3 text-base font-semibold border border-secondary text-secondary secondary-color hover:bg-secondary/10 transition-colors"
+            style={{ borderRadius: "10px" }}
+          >
+            {expanded ? (
+              <>Show Less <ChevronUp className="w-5 h-5" /></>
+            ) : (
+              <>Show All Services <ChevronDown className="w-5 h-5" /></>
+            )}
+          </button>
+        </div>
+      )}
     </div>
   </section>
   );
