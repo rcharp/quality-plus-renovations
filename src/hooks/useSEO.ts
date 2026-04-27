@@ -33,8 +33,15 @@ const useSEO = ({ title, description, canonical }: SEOProps) => {
     setMeta("description", description);
     setOG("og:title", title);
     setOG("og:description", description);
+    setOG("og:type", "website");
+
+    // Twitter
+    setMeta("twitter:title", title);
+    setMeta("twitter:description", description);
+    setMeta("twitter:card", "summary_large_image");
 
     if (canonical) {
+      setOG("og:url", canonical);
       let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
       if (!link) {
         link = document.createElement("link");
