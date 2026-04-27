@@ -32,7 +32,7 @@ const navLinks = [
       { label: "Manatee County, FL", href: "/service-areas/manatee-county-fl" },
     ],
   },
-  { label: "Gallery", href: "/#gallery" },
+  { label: "Gallery", href: "/gallery" },
   {
     label: "Contact",
     children: [
