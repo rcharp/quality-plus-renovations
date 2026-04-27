@@ -1,25 +1,59 @@
 import { motion } from "framer-motion";
 
-import imgFinish from "@/assets/qpr/svc-finish-carpentry.jpg";
-import imgBuiltins from "@/assets/qpr/svc-builtins.jpg";
-import imgTrim from "@/assets/qpr/svc-trim.jpg";
-import imgBeams from "@/assets/qpr/svc-beams.jpg";
-import imgCoffered from "@/assets/qpr/svc-coffered.jpg";
-import imgBarn from "@/assets/qpr/svc-barn-door.jpg";
-import imgIntPaint from "@/assets/qpr/svc-int-paint.jpg";
-import imgLvp from "@/assets/qpr/svc-lvp.jpg";
-import imgDrywall from "@/assets/qpr/svc-drywall.jpg";
+import cofferedFinished from "@/assets/qpr/gallery/coffered-finished.webp";
+import cofferedMaster from "@/assets/qpr/gallery/coffered-master.webp";
+import cofferedInProgress from "@/assets/qpr/gallery/coffered-in-progress.webp";
+import builtinNavyLibrary from "@/assets/qpr/gallery/builtin-navy-library.webp";
+import builtinBunkBed from "@/assets/qpr/gallery/builtin-bunk-bed.webp";
+import entertainmentLed from "@/assets/qpr/gallery/entertainment-center-led.webp";
+import entertainmentProgress from "@/assets/qpr/gallery/entertainment-center-progress.webp";
+import tvNiche from "@/assets/qpr/gallery/tv-niche-floating-shelf.webp";
+import barnDoorsTriple from "@/assets/qpr/gallery/barn-doors-triple.webp";
+import barnDoorBlue from "@/assets/qpr/gallery/barn-door-blue.webp";
+import barnDoorChevron from "@/assets/qpr/gallery/barn-door-chevron.webp";
+import mirroredBarnDoor from "@/assets/qpr/gallery/mirrored-barn-door.webp";
+import hallwayShiplapBarn from "@/assets/qpr/gallery/hallway-shiplap-barn.webp";
+import stoneFireplaceTv from "@/assets/qpr/gallery/stone-fireplace-tv.webp";
+import stoneFireplaceMantel from "@/assets/qpr/gallery/stone-fireplace-mantel.webp";
+import fireplaceMantelTv from "@/assets/qpr/gallery/fireplace-mantel-tv.webp";
+import slatFireplaceFinished from "@/assets/qpr/gallery/slat-fireplace-finished.webp";
+import slatRangeHood from "@/assets/qpr/gallery/slat-range-hood.webp";
+import kitchenModernIsland from "@/assets/qpr/gallery/kitchen-modern-island.webp";
+import kitchenWhitePendants from "@/assets/qpr/gallery/kitchen-white-pendants.webp";
+import bedroomWainscoting from "@/assets/qpr/gallery/bedroom-wainscoting.webp";
+import stairWainscoting from "@/assets/qpr/gallery/stair-wainscoting.webp";
+import bedroomChandelier from "@/assets/qpr/gallery/bedroom-chandelier.webp";
+import doorwayTrim from "@/assets/qpr/gallery/doorway-trim.webp";
+import pantryShelving from "@/assets/qpr/gallery/pantry-shelving.webp";
+import garageFinished from "@/assets/qpr/gallery/garage-finished.webp";
 
-const galleryItems = [
-  { src: imgFinish, label: "Finish Carpentry" },
-  { src: imgBuiltins, label: "Custom Built-ins" },
-  { src: imgTrim, label: "Trim & Molding" },
-  { src: imgBeams, label: "Faux Beams" },
-  { src: imgCoffered, label: "Coffered Ceilings" },
-  { src: imgBarn, label: "Custom Barn Doors" },
-  { src: imgIntPaint, label: "Interior Painting" },
-  { src: imgLvp, label: "LVP Flooring" },
-  { src: imgDrywall, label: "Drywall Work" },
+const galleryItems: { src: string; label: string; span?: string }[] = [
+  { src: cofferedFinished, label: "Coffered Ceiling — Great Room", span: "lg:col-span-2 lg:row-span-2" },
+  { src: builtinNavyLibrary, label: "Custom Navy Library Built-in" },
+  { src: barnDoorsTriple, label: "Triple Custom Barn Doors" },
+  { src: stoneFireplaceTv, label: "Stone Fireplace with TV Wall", span: "lg:col-span-2" },
+  { src: slatFireplaceFinished, label: "Slat Wall Fireplace Feature" },
+  { src: kitchenModernIsland, label: "Modern Kitchen Island" },
+  { src: cofferedMaster, label: "Master Bedroom Coffered Ceiling" },
+  { src: entertainmentLed, label: "LED Entertainment Center" },
+  { src: barnDoorBlue, label: "Blue Custom Barn Door" },
+  { src: hallwayShiplapBarn, label: "Shiplap Hallway with Barn Door" },
+  { src: stoneFireplaceMantel, label: "Stone Fireplace & Mantel" },
+  { src: bedroomWainscoting, label: "Bedroom Wainscoting" },
+  { src: builtinBunkBed, label: "Custom Built-in Bunk Bed", span: "lg:col-span-2" },
+  { src: kitchenWhitePendants, label: "White Kitchen with Pendants" },
+  { src: slatRangeHood, label: "Slat Range Hood" },
+  { src: tvNiche, label: "TV Niche with Floating Shelf" },
+  { src: mirroredBarnDoor, label: "Mirrored Barn Door" },
+  { src: barnDoorChevron, label: "Chevron Pattern Barn Door" },
+  { src: stairWainscoting, label: "Stairway Wainscoting" },
+  { src: fireplaceMantelTv, label: "Fireplace Mantel & TV" },
+  { src: cofferedInProgress, label: "Coffered Ceiling Build" },
+  { src: bedroomChandelier, label: "Bedroom Trim & Chandelier" },
+  { src: doorwayTrim, label: "Doorway Trim Detail" },
+  { src: entertainmentProgress, label: "Entertainment Center Build" },
+  { src: pantryShelving, label: "Custom Pantry Shelving" },
+  { src: garageFinished, label: "Finished Garage Interior" },
 ];
 
 const GallerySection = () => (
@@ -37,7 +71,7 @@ const GallerySection = () => (
         </h2>
       </motion.div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[180px] sm:auto-rows-[220px] lg:auto-rows-[240px] gap-4">
         {galleryItems.map((item, i) => (
           <motion.div
             key={i}
@@ -45,11 +79,12 @@ const GallerySection = () => (
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.08 }}
-            className="rounded-xl overflow-hidden aspect-square relative group border border-border"
+            className={`rounded-xl overflow-hidden relative group border border-border ${item.span ?? ""}`}
           >
             <img
               src={item.src}
               alt={item.label}
+              loading="lazy"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors flex items-end">
