@@ -8,28 +8,28 @@ import {
 
 const faqs = [
   {
-    q: "How quickly can you come pick up my junk?",
-    a: "We offer same-day and next-day junk removal service in most areas. Just give us a call or submit a quote request, and we'll schedule a pickup at a time that works for you — often within a few hours.",
+    q: "What services does Quality Plus Renovations offer?",
+    a: "We specialize in finish carpentry — built-ins, trim work, faux beams, coffered ceilings, and custom barn doors — plus interior and exterior painting, LVP/laminate/glue-down flooring, and drywall work and repair.",
   },
   {
-    q: "How is pricing determined?",
-    a: "We price based on the volume of space your items take up in our truck — not by weight or item count. We'll give you an upfront quote before we start, so there are never any surprises. No hidden fees, no hourly charges.",
+    q: "Do you subcontract work out?",
+    a: "Never. Quality Plus Renovations is owner-operated, and Yevgeniy is on every job. You get one consistent crew committed to the same high standard from start to finish.",
   },
   {
-    q: "What items do you accept?",
-    a: "We haul just about anything — old furniture, appliances, electronics, mattresses, yard waste, construction debris, and general household clutter. The only items we can't take are hazardous materials like paint, chemicals, and certain batteries.",
+    q: "What areas do you serve?",
+    a: "We proudly serve Bradenton, Sarasota, Lakewood Ranch, and the rest of Manatee County, FL. If you're nearby and not sure, give us a call — we'll let you know.",
   },
   {
-    q: "Do I need to be home during the pickup?",
-    a: "It's helpful if you're there to point out what needs to go, but it's not required. If the items are accessible (e.g., in the driveway or garage), we can handle the pickup while you're away — just let us know ahead of time.",
+    q: "How does pricing work?",
+    a: "We provide free in-home estimates and detailed, transparent quotes before any work begins. No surprise charges — you know what your project costs up front.",
   },
   {
-    q: "Do you recycle or donate items?",
-    a: "Absolutely! We're committed to eco-friendly disposal. Whenever possible, we donate usable items to local charities and recycle materials like metal, wood, and electronics. We aim to divert as much as possible from landfills.",
+    q: "How long does a typical project take?",
+    a: "It depends on scope. A custom barn door or trim project may take a day or two; full-room paint, flooring, or built-ins typically run several days to a couple weeks. We'll give you a clear timeline with your quote.",
   },
   {
     q: "Are you licensed and insured?",
-    a: "Yes, we are fully licensed and insured. You can rest easy knowing your property is protected during every job. Our team is trained, professional, and respectful of your home or business.",
+    a: "Yes — Quality Plus Renovations is fully licensed and insured. Your home and project are protected on every job.",
   },
 ];
 
