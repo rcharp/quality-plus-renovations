@@ -1,32 +1,29 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
-import furnitureBefore from "@/assets/gallery/furniture-before.jpg";
-import furnitureAfter from "@/assets/gallery/furniture-after.jpg";
-import garageCleanoutBefore from "@/assets/gallery/garage-cleanout-before.jpg";
-import garageCleanoutAfter from "@/assets/gallery/garage-cleanout-after.jpg";
-import junkPileBefore from "@/assets/gallery/junk-pile-before.jpg";
-import junkPileBefore2 from "@/assets/gallery/junk-pile-before-2.jpg";
-import emptyTrailer from "@/assets/gallery/empty-trailer.jpg";
-import loadedTrailer from "@/assets/gallery/loaded-trailer.jpg";
-import boxesBefore from "@/assets/gallery/boxes-before.jpg";
+import imgFinish from "@/assets/qpr/svc-finish-carpentry.jpg";
+import imgBuiltins from "@/assets/qpr/svc-builtins.jpg";
+import imgTrim from "@/assets/qpr/svc-trim.jpg";
+import imgBeams from "@/assets/qpr/svc-beams.jpg";
+import imgCoffered from "@/assets/qpr/svc-coffered.jpg";
+import imgBarn from "@/assets/qpr/svc-barn-door.jpg";
+import imgIntPaint from "@/assets/qpr/svc-int-paint.jpg";
+import imgLvp from "@/assets/qpr/svc-lvp.jpg";
+import imgDrywall from "@/assets/qpr/svc-drywall.jpg";
 
 const galleryItems = [
-  { src: furnitureBefore, label: "Furniture Removal – Before" },
-  { src: furnitureAfter, label: "Furniture Removal – After" },
-  { src: garageCleanoutBefore, label: "Garage Cleanout – Before" },
-  { src: garageCleanoutAfter, label: "Garage Cleanout – After" },
-  { src: junkPileBefore, label: "Junk Pile Removal" },
-  { src: loadedTrailer, label: "Loaded & Ready to Haul" },
-  { src: junkPileBefore2, label: "Residential Cleanout" },
-  { src: emptyTrailer, label: "Clean Trailer – Ready to Go" },
-  { src: boxesBefore, label: "Box & Storage Cleanout" },
+  { src: imgFinish, label: "Finish Carpentry" },
+  { src: imgBuiltins, label: "Custom Built-ins" },
+  { src: imgTrim, label: "Trim & Molding" },
+  { src: imgBeams, label: "Faux Beams" },
+  { src: imgCoffered, label: "Coffered Ceilings" },
+  { src: imgBarn, label: "Custom Barn Doors" },
+  { src: imgIntPaint, label: "Interior Painting" },
+  { src: imgLvp, label: "LVP Flooring" },
+  { src: imgDrywall, label: "Drywall Work" },
 ];
 
 const GallerySection = () => (
-  <section className="py-20 lg:py-28 section-gradient">
+  <section id="gallery" className="py-20 lg:py-28 section-gradient">
     <div className="container mx-auto px-4 lg:px-8">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -63,21 +60,6 @@ const GallerySection = () => (
           </motion.div>
         ))}
       </div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.3 }}
-        className="text-center mt-12"
-      >
-        <Link to="/gallery">
-          <Button variant="secondary" size="lg" className="group text-lg px-10 py-6 h-auto secondary-color">
-            View Full Gallery
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
-        </Link>
-      </motion.div>
     </div>
   </section>
 );
