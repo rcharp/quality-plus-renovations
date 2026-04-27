@@ -4,23 +4,53 @@ import { useState, useCallback, useEffect } from "react";
 
 const testimonials = [
   {
-    text: "Yevgeniy and his team built custom built-ins for our living room and the craftsmanship is incredible. Every detail was perfect — clean lines, smooth finish, and they left the space spotless. Highly recommend!",
-    name: "Jessica T.",
+    text: "Eugene is extremely talented and meticulous in his work. He built a stone wall with side panels that included a pull out drawer for a DVD player. He mounted a TV, built a beautiful mantle with an electric fireplace below. His craftsmanship is outstanding.",
+    name: "Merri Jo Gamble",
     rating: 5,
   },
   {
-    text: "We hired Quality Plus to install LVP flooring throughout our home and add new baseboards. The work is flawless and they finished ahead of schedule. Honest, professional, and truly skilled.",
-    name: "Michael B.",
+    text: "I had the pleasure of working with Eugene on two separate projects for different clients, and I can't recommend him highly enough. From start to finish, Eugene demonstrated an incredible work ethic, attention to detail, and talent.",
+    name: "Amber Capaccio",
     rating: 5,
   },
   {
-    text: "Coffered ceiling and faux beams in our great room — absolutely stunning. The attention to detail is on another level. You can tell this is a family business that takes real pride in their work.",
-    name: "Amanda K.",
+    text: "We couldn't be happier with the built-in entertainment center Eugene built for us. He was communicative throughout the entire process and genuinely pleasant to work with. His workmanship is top-notch, and he took extra care to ensure every detail was perfect.",
+    name: "Lauren Shallenberger",
     rating: 5,
   },
   {
-    text: "Custom barn door for our master bedroom turned out beautifully. Yevgeniy was easy to work with, transparent on pricing, and the install was quick and clean. Will definitely hire again for our next project.",
-    name: "David R.",
+    text: "Eugene is one of the best around. Our General Contractor hired some inexperienced people to work on our home that did a shotty job. Eugene came in and rescued the project and fixed all their mistakes. His communication made the whole process easier.",
+    name: "Alexander Akers",
+    rating: 5,
+  },
+  {
+    text: "Eugene made our vision come to life and we couldn't be happier with the work he and his brother-in-law did. We had an oversized opening to our front room we wanted closed off to make into a home office. They finished off with a complete interior paint of our home as well.",
+    name: "Chelsi Svac",
+    rating: 5,
+  },
+  {
+    text: "Eugene did an outstanding job with our drywall and painting project! His craftsmanship, attention to detail, and professionalism were top notch from start to finish. He worked efficiently, kept the space clean, and delivered results that exceeded our expectations. We highly recommend Eugene to anyone looking for quality work.",
+    name: "Matthew Kibort",
+    rating: 5,
+  },
+  {
+    text: "Eugene is one of a kind. They are very dedicated and always on time. The quality of the work is truly impressive. Not only do they deliver top grade product, they communicate the timeline and get it done as promised.",
+    name: "Kristopher Leonard",
+    rating: 5,
+  },
+  {
+    text: "Quality Plus Renovations was the best! Eugene made our vision of built ins for our son's room a beautiful reality. He was honest, meticulous and his communication made it so easy. We are beyond happy! Just call, I promise you won't regret it.",
+    name: "Sommer Dushac",
+    rating: 5,
+  },
+  {
+    text: "Eugene was excellent! Very kind and easy to work with. Very high quality! He even noticed a few spots I forgot to mention and went ahead and took care of them. He had patched drywall, fixed baseboards, and painted an entire room in one day!",
+    name: "Allie Kautzer",
+    rating: 5,
+  },
+  {
+    text: "Eugene and Vlad are the best! They just completed several projects in my newer construction home including closing in a flex room and building a custom barn door. I'm hiring them to come back for additional projects asap!",
+    name: "Lynn Wight",
     rating: 5,
   },
 ];
