@@ -6,6 +6,7 @@ import { toast } from "sonner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import useSEO from "@/hooks/useSEO";
+import reviewQr from "@/assets/review-qr.png";
 const GOOGLE_REVIEW_URL = "https://search.google.com/local/writereview?placeid=ChIJ9TFpKko5w4gRF3KmhlNgx_o";
 const REVIEW_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/ozMipTj6FwiZJoUxZ2DF/webhook-trigger/ED6blx5rE66aRUYq4Scj";
 
@@ -78,7 +79,7 @@ const Review = () => {
       <Header />
       <main className="flex-1 pt-[180px] lg:pt-[300px] pb-20">
         <section className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <AnimatePresence mode="wait">
               {step === "rate" && (
                 <motion.div
@@ -94,28 +95,44 @@ const Review = () => {
                     </h1>
                     <p className="text-lg text-muted-foreground mt-3">We'd love to hear your feedback</p>
                   </div>
-                  <div className="space-y-3">
-                    {ratings.map((r) => (
-                      <button
-                        key={r.value}
-                        onClick={() => handleRate(r.value)}
-                        className="w-full flex items-center gap-4 bg-card rounded-2xl px-6 py-5 border border-border card-elevated hover:border-secondary transition-all hover:-translate-y-0.5"
-                      >
-                        <div className="flex gap-1">
-                          {[1, 2, 3, 4, 5].map((s) => (
-                            <Star
-                              key={s}
-                              className={`w-6 h-6 ${
-                                s <= r.value
-                                  ? "fill-accent text-accent secondary-color"
-                                  : "text-border"
-                              }`}
-                            />
-                          ))}
-                        </div>
-                        <span className="text-lg font-semibold text-foreground">{r.label}</span>
-                      </button>
-                    ))}
+                  <div className="grid lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-start">
+                    <div className="space-y-3 max-w-2xl w-full mx-auto lg:mx-0">
+                      {ratings.map((r) => (
+                        <button
+                          key={r.value}
+                          onClick={() => handleRate(r.value)}
+                          className="w-full flex items-center gap-4 bg-card rounded-2xl px-6 py-5 border border-border card-elevated hover:border-secondary transition-all hover:-translate-y-0.5"
+                        >
+                          <div className="flex gap-1">
+                            {[1, 2, 3, 4, 5].map((s) => (
+                              <Star
+                                key={s}
+                                className={`w-6 h-6 ${
+                                  s <= r.value
+                                    ? "fill-accent text-accent secondary-color"
+                                    : "text-border"
+                                }`}
+                              />
+                            ))}
+                          </div>
+                          <span className="text-lg font-semibold text-foreground">{r.label}</span>
+                        </button>
+                      ))}
+                    </div>
+                    <aside className="bg-card rounded-2xl p-6 border border-border card-elevated text-center w-full max-w-xs mx-auto lg:mx-0 lg:sticky lg:top-32">
+                      <p className="font-heading text-lg font-bold text-foreground mb-3">
+                        Or scan to review
+                      </p>
+                      <img
+                        src={reviewQr}
+                        alt="Scan QR code to leave a review for Quality Plus Renovations"
+                        className="w-full h-auto rounded-lg"
+                        loading="lazy"
+                      />
+                      <p className="text-sm text-muted-foreground mt-3">
+                        Point your phone camera at the code
+                      </p>
+                    </aside>
                   </div>
                 </motion.div>
               )}
