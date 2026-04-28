@@ -25,7 +25,7 @@ const HeroSection = () => {
       {/* Black Overlay */}
       <div className="absolute inset-0 bg-black/70" />
 
-      <div className="container mx-auto px-4 lg:px-8 pt-[200px] sm:pt-[382px] lg:pt-[320px] lg:mt-8 pb-16 lg:pb-12 relative z-10">
+      <div className="container mx-auto px-4 lg:px-8 pt-[260px] sm:pt-[382px] lg:pt-[320px] lg:mt-8 pb-16 lg:pb-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
           <div className="space-y-8 lg:pt-8">
@@ -34,7 +34,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-primary-foreground primary-color text-center lg:text-left">
+              <h1 className="font-heading text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-primary-foreground primary-color text-center lg:text-left">
                 <span className="relative z-10">Built with</span>
                 <br />
                 <span id="hero-highlighted" className="hero-highlighted relative z-0 text-primary-foreground primary-color bg-accent px-[5px]">Craftsmanship.</span>
