@@ -89,7 +89,7 @@ const Review = () => {
         <div className="absolute inset-0 bg-black/70" />
       </div>
       <Header />
-      <main className="flex-1 pt-[240px] lg:pt-[380px] pb-20">
+      <main className="flex-1 pt-[300px] sm:pt-[340px] lg:pt-[380px] pb-20">
         <section className="container mx-auto px-4 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <AnimatePresence mode="wait">
