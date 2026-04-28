@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import useSEO from "@/hooks/useSEO";
 import reviewQr from "@/assets/review-qr.png";
+import heroBg from "@/assets/qpr/hero-bg.jpg";
 const GOOGLE_REVIEW_URL = "https://search.google.com/local/writereview?placeid=ChIJ9TFpKko5w4gRF3KmhlNgx_o";
 const REVIEW_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/ozMipTj6FwiZJoUxZ2DF/webhook-trigger/ED6blx5rE66aRUYq4Scj";
 
@@ -76,6 +77,17 @@ const Review = () => {
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden max-w-[100vw] flex flex-col">
+      {/* Navbar background — matches homepage hero */}
+      <div
+        aria-hidden
+        className="absolute top-0 left-0 right-0 h-[180px] lg:h-[300px] z-0 overflow-hidden"
+      >
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${heroBg})` }}
+        />
+        <div className="absolute inset-0 bg-black/70" />
+      </div>
       <Header />
       <main className="flex-1 pt-[180px] lg:pt-[300px] pb-20">
         <section className="container mx-auto px-4 lg:px-8">
