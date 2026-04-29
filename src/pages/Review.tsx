@@ -41,11 +41,7 @@ const Review = () => {
 
   const handleRate = (value: number) => {
     setRating(value);
-    if (value >= 4) {
-      window.location.href = GOOGLE_REVIEW_URL;
-    } else {
-      setStep("feedback");
-    }
+    window.location.href = GOOGLE_REVIEW_URL;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
