@@ -84,7 +84,7 @@ interface GallerySectionProps {
 }
 
 const GallerySection = ({ preview = true, showHeader = true }: GallerySectionProps) => {
-  const items = preview ? galleryItems.slice(0, 6) : galleryItems;
+  const items = preview ? galleryItems.slice(0, 12) : galleryItems;
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   useEffect(() => {
