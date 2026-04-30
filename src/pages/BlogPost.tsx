@@ -30,7 +30,7 @@ const BlogPost = () => {
       <Header />
       <main className="flex-1">
         <article>
-          <header className="container mx-auto px-4 lg:px-8 pt-[200px] sm:pt-[260px] lg:pt-[280px] pb-10">
+          <header className="container mx-auto px-4 lg:px-8 pt-[320px] sm:pt-[360px] lg:pt-[280px] pb-10">
             <div className="max-w-3xl mx-auto">
               <Link
                 to="/blog"
