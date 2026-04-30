@@ -108,16 +108,6 @@ const GallerySection = ({ preview = true, showHeader = true }: GallerySectionPro
       after: cofferedLivingroomAfter,
       caption: "Living Room Coffered Ceiling — flat tray to custom coffered design",
     },
-    {
-      before: entertainmentProgress,
-      after: entertainmentLed,
-      caption: "Entertainment Center — rough build to LED-lit reveal",
-    },
-    {
-      before: barnDoorFraming,
-      after: barnDoorsTriple,
-      caption: "Custom Barn Doors — opening framed to triple-door install",
-    },
   ];
 
   return (
