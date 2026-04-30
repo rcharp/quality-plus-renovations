@@ -35,7 +35,6 @@ import cofferedLivingroomBefore from "@/assets/qpr/gallery/coffered-livingroom-b
 import cofferedLivingroomAfter from "@/assets/qpr/gallery/coffered-livingroom-after.png";
 
 const galleryItems: { src: string; label: string; span?: string }[] = [
-const galleryItems: { src: string; label: string; span?: string }[] = [
   // Coffered Ceilings
   { src: cofferedFinished, label: "Coffered Ceiling — Great Room", span: "lg:col-span-2 lg:row-span-2" },
   { src: cofferedMaster, label: "Master Bedroom Coffered Ceiling" },
