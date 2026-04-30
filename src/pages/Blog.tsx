@@ -26,7 +26,7 @@ const Blog = () => {
             style={{ backgroundImage: `url(${heroBg})` }}
           />
           <div className="absolute inset-0 bg-black/70" />
-          <div className="container mx-auto px-4 lg:px-8 pt-[200px] sm:pt-[260px] lg:pt-[280px] pb-20 lg:pb-28 relative z-10">
+          <div className="container mx-auto px-4 lg:px-8 pt-[320px] sm:pt-[360px] lg:pt-[280px] pb-20 lg:pb-28 relative z-10">
             <div className="max-w-3xl mx-auto text-center text-white space-y-5">
               <span className="inline-block text-base font-semibold uppercase tracking-[0.25em] secondary-color text-secondary">
                 Blog

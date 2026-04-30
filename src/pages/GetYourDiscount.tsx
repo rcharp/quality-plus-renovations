@@ -74,7 +74,7 @@ const GetYourDiscount = () => {
     <div className="min-h-screen bg-background overflow-x-hidden max-w-[100vw] flex flex-col">
       <Header />
       <main className="flex-1 bg-muted">
-        <div className="container mx-auto px-4 lg:px-8 pt-[200px] sm:pt-[260px] lg:pt-[280px] pb-20 lg:pb-28">
+        <div className="container mx-auto px-4 lg:px-8 pt-[320px] sm:pt-[360px] lg:pt-[280px] pb-20 lg:pb-28">
           <div className="max-w-2xl mx-auto">
             {isSubmitted ? (
               <div
