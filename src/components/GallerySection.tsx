@@ -31,6 +31,8 @@ import bedroomChandelier from "@/assets/qpr/gallery/bedroom-chandelier.webp";
 import doorwayTrim from "@/assets/qpr/gallery/doorway-trim.webp";
 import pantryShelving from "@/assets/qpr/gallery/pantry-shelving.webp";
 import garageFinished from "@/assets/qpr/gallery/garage-finished.webp";
+import cofferedLivingroomBefore from "@/assets/qpr/gallery/coffered-livingroom-before.png";
+import cofferedLivingroomAfter from "@/assets/qpr/gallery/coffered-livingroom-after.png";
 
 const galleryItems: { src: string; label: string; span?: string }[] = [
   { src: cofferedFinished, label: "Coffered Ceiling — Great Room", span: "lg:col-span-2 lg:row-span-2" },
@@ -88,6 +90,11 @@ const GallerySection = ({ preview = true, showHeader = true }: GallerySectionPro
   }, [lightboxIndex, items.length]);
 
   const beforeAfters = [
+    {
+      before: cofferedLivingroomBefore,
+      after: cofferedLivingroomAfter,
+      caption: "Living Room Coffered Ceiling — flat tray to custom coffered design",
+    },
     {
       before: cofferedInProgress,
       after: cofferedFinished,
