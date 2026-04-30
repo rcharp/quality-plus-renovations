@@ -165,7 +165,7 @@ const GallerySection = ({ preview = true, showHeader = true }: GallerySectionPro
           </h3>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="max-w-3xl mx-auto">
           {beforeAfters.map((ba, i) => (
             <motion.div
               key={i}
