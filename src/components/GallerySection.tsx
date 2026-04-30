@@ -127,7 +127,7 @@ const GallerySection = ({ preview = true, showHeader = true }: GallerySectionPro
           </motion.div>
         )}
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[180px] sm:auto-rows-[220px] lg:auto-rows-[240px] gap-4">
+        <div className="grid grid-flow-dense grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[180px] sm:auto-rows-[220px] lg:auto-rows-[240px] gap-4">
           {items.map((item, i) => (
             <motion.div
               key={i}
