@@ -15,7 +15,7 @@ const PageHero = ({ eyebrow, title, highlight, tagline, backgroundImage }: PageH
       style={{ backgroundImage: `url(${backgroundImage})` }}
     />
     <div className="absolute inset-0 bg-black/70" />
-    <div className="container mx-auto px-4 lg:px-8 pt-[260px] sm:pt-[300px] lg:pt-[280px] pb-20 lg:pb-28 relative z-10 text-center">
+    <div className="container mx-auto px-4 lg:px-8 pt-[320px] sm:pt-[360px] lg:pt-[280px] pb-20 lg:pb-28 relative z-10 text-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
