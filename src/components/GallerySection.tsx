@@ -35,31 +35,44 @@ import cofferedLivingroomBefore from "@/assets/qpr/gallery/coffered-livingroom-b
 import cofferedLivingroomAfter from "@/assets/qpr/gallery/coffered-livingroom-after.png";
 
 const galleryItems: { src: string; label: string; span?: string }[] = [
+  // Coffered Ceilings
   { src: cofferedFinished, label: "Coffered Ceiling — Great Room", span: "lg:col-span-2 lg:row-span-2" },
-  { src: builtinNavyLibrary, label: "Custom Navy Library Built-in" },
-  { src: barnDoorsTriple, label: "Triple Custom Barn Doors" },
-  { src: stoneFireplaceTv, label: "Stone Fireplace with TV Wall", span: "lg:col-span-2" },
-  { src: slatFireplaceFinished, label: "Slat Wall Fireplace Feature" },
-  { src: kitchenModernIsland, label: "Modern Kitchen Island" },
   { src: cofferedMaster, label: "Master Bedroom Coffered Ceiling" },
-  { src: entertainmentLed, label: "LED Entertainment Center" },
-  { src: barnDoorBlue, label: "Blue Custom Barn Door" },
-  { src: hallwayShiplapBarn, label: "Shiplap Hallway with Barn Door" },
-  { src: stoneFireplaceMantel, label: "Stone Fireplace & Mantel" },
-  { src: bedroomWainscoting, label: "Bedroom Wainscoting" },
+  { src: cofferedInProgress, label: "Coffered Ceiling Build" },
+
+  // Built-Ins & Entertainment Centers
+  { src: builtinNavyLibrary, label: "Custom Navy Library Built-in" },
   { src: builtinBunkBed, label: "Custom Built-in Bunk Bed", span: "lg:col-span-2" },
+  { src: entertainmentLed, label: "LED Entertainment Center" },
+  { src: entertainmentProgress, label: "Entertainment Center Build" },
+  { src: tvNiche, label: "TV Niche with Floating Shelf" },
+  { src: pantryShelving, label: "Custom Pantry Shelving" },
+
+  // Barn Doors
+  { src: barnDoorsTriple, label: "Triple Custom Barn Doors" },
+  { src: barnDoorBlue, label: "Blue Custom Barn Door" },
+  { src: barnDoorChevron, label: "Chevron Pattern Barn Door" },
+  { src: mirroredBarnDoor, label: "Mirrored Barn Door" },
+  { src: hallwayShiplapBarn, label: "Shiplap Hallway with Barn Door" },
+
+  // Fireplaces
+  { src: stoneFireplaceTv, label: "Stone Fireplace with TV Wall", span: "lg:col-span-2" },
+  { src: stoneFireplaceMantel, label: "Stone Fireplace & Mantel" },
+  { src: fireplaceMantelTv, label: "Fireplace Mantel & TV" },
+  { src: slatFireplaceFinished, label: "Slat Wall Fireplace Feature" },
+
+  // Kitchens
+  { src: kitchenModernIsland, label: "Modern Kitchen Island" },
   { src: kitchenWhitePendants, label: "White Kitchen with Pendants" },
   { src: slatRangeHood, label: "Slat Range Hood" },
-  { src: tvNiche, label: "TV Niche with Floating Shelf" },
-  { src: mirroredBarnDoor, label: "Mirrored Barn Door" },
-  { src: barnDoorChevron, label: "Chevron Pattern Barn Door" },
+
+  // Wainscoting & Trim
+  { src: bedroomWainscoting, label: "Bedroom Wainscoting" },
   { src: stairWainscoting, label: "Stairway Wainscoting" },
-  { src: fireplaceMantelTv, label: "Fireplace Mantel & TV" },
-  { src: cofferedInProgress, label: "Coffered Ceiling Build" },
   { src: bedroomChandelier, label: "Bedroom Trim & Chandelier" },
   { src: doorwayTrim, label: "Doorway Trim Detail" },
-  { src: entertainmentProgress, label: "Entertainment Center Build" },
-  { src: pantryShelving, label: "Custom Pantry Shelving" },
+
+  // Other
   { src: garageFinished, label: "Finished Garage Interior" },
 ];
 
