@@ -72,7 +72,7 @@ export const services: ServiceData[] = [
     metaDescription: "Custom built-in shelving, entertainment centers, mudrooms, and closets in Bradenton, Sarasota & Lakewood Ranch. Free quotes. Call (941) 405-9695.",
     heroTagline: "Built to Fit. Designed to Last.",
     overview: [
-      "Custom built-ins make your home work harder and look sharper. Whether it's a wall of shelving, a mudroom drop zone, an entertainment center, or a tailored closet system — we build it to fit your exact space.",
+      "Custom built-ins make your home work harder and look sharper. Whether it's a wall of shelving, a mudroom drop zone, or an entertainment center — we build it to fit your exact space.",
       "Every built-in is fabricated and installed by Quality Plus Renovations directly, so you get clean lines, level shelves, and a finish that looks like it was always part of the home.",
     ],
     benefits: [
