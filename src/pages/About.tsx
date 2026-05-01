@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { useQuoteModal } from "@/components/QuoteModal";
 import useSEO from "@/hooks/useSEO";
 import heroBg from "@/assets/qpr/hero-bg.jpg";
+import ownerPhoto from "@/assets/qpr/owner.jpg";
 
 const About = () => {
   const { openQuoteModal } = useQuoteModal();
@@ -80,12 +81,14 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="aspect-square rounded-2xl bg-card border border-border flex items-center justify-center overflow-hidden"
+                className="aspect-square rounded-2xl bg-card border border-border overflow-hidden"
               >
-                <div className="text-center text-muted-foreground">
-                  <User className="w-20 h-20 mx-auto mb-3 opacity-40" />
-                  <p className="text-sm uppercase tracking-wider">Your Photo Here</p>
-                </div>
+                <img
+                  src={ownerPhoto}
+                  alt="Yevgeniy Turko, owner of Quality Plus Renovations"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
