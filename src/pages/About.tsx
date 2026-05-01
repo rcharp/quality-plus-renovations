@@ -1,13 +1,14 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { CheckCircle2, Phone, ArrowRight, User } from "lucide-react";
+import { CheckCircle2, Phone, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useQuoteModal } from "@/components/QuoteModal";
 import useSEO from "@/hooks/useSEO";
 import heroBg from "@/assets/qpr/hero-bg.jpg";
 import ownerPhoto from "@/assets/qpr/owner.jpg";
+import workPhoto from "@/assets/qpr/work-photo.jpg";
 
 const About = () => {
   const { openQuoteModal } = useQuoteModal();
@@ -145,12 +146,14 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="aspect-square rounded-2xl bg-background border border-border flex items-center justify-center"
+                className="aspect-square rounded-2xl bg-background border border-border overflow-hidden"
               >
-                <div className="text-center text-muted-foreground">
-                  <User className="w-20 h-20 mx-auto mb-3 opacity-40" />
-                  <p className="text-sm uppercase tracking-wider">Your Work Photo Here</p>
-                </div>
+                <img
+                  src={workPhoto}
+                  alt="Quality Plus Renovations team member with work trailer"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </motion.div>
             </div>
           </div>
